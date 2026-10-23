@@ -15,6 +15,8 @@ namespace ShopLayout.Drawio
     {
         public string Id;
         public string Layer;
+        /// <summary>Optional parent shape (diagrams.net child cell); geometry is then written relative to it.</summary>
+        public DiagramItem Parent;
         public string Kind;
         public string Label;
         public ShapeKind Shape = ShapeKind.Rect;

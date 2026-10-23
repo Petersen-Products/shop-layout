@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="layer-building" value="Building" style="locked=1;" parent="0" />
         <mxCell id="layer-openings" value="Doors &amp; Docks" style="locked=1;" parent="0" />
-        <mxCell id="layer-rooms" value="Rooms" parent="0" />
+        <mxCell id="layer-rooms" value="Rooms" style="locked=1;" parent="0" />
         <mxCell id="layer-zones" value="Zones" parent="0" />
         <mxCell id="layer-equipment" value="Equipment" parent="0" />
         <mxCell id="layer-clearances" value="Clearances" parent="0" />
@@ -1418,52 +1418,52 @@
           </mxCell>
         </object>
         <object id="room-lunchroom" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="50.7" name="Lunchroom" type="lunchroom">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontStyle=1;fontColor=#333333;verticalAlign=middle;align=center;" vertex="1" parent="layer-rooms">
             <mxGeometry x="2730" y="3855" width="1035" height="490" as="geometry" />
           </mxCell>
         </object>
         <object id="room-office" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="170.7" merged_from="3 detected spaces" name="Office" type="office">
-          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[1,0.6303],[0.76938,0.6303],[0.76938,0.03636],[0.40159,0.04242],[0.33201,0.03636],[0.33201,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[1,0.6303],[0.76938,0.6303],[0.76938,0.03636],[0.40159,0.04242],[0.33201,0.03636],[0.33201,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontStyle=1;fontColor=#333333;verticalAlign=middle;align=center;" vertex="1" parent="layer-rooms">
             <mxGeometry x="3125" y="5150" width="2515" height="825" as="geometry" />
           </mxCell>
         </object>
         <object id="room-test-room" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="19.3" name="Test Room" type="lab">
-          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,0.9898],[1,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,0.9898],[1,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontStyle=1;fontColor=#333333;verticalAlign=middle;align=center;" vertex="1" parent="layer-rooms">
             <mxGeometry x="2715" y="2530" width="395" height="490" as="geometry" />
           </mxCell>
         </object>
         <object id="room-women-s-restroom" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="11.8" name="Women's Restroom" type="restroom">
-          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[0.98077,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[0.98077,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontStyle=1;fontColor=#333333;verticalAlign=middle;align=center;" vertex="1" parent="layer-rooms">
             <mxGeometry x="2745" y="5195" width="260" height="460" as="geometry" />
           </mxCell>
         </object>
         <object id="room-men-s-restroom" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="11.7" name="Men's Restroom" type="restroom">
-          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[0.98077,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[0.98077,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontStyle=1;fontColor=#333333;verticalAlign=middle;align=center;" vertex="1" parent="layer-rooms">
             <mxGeometry x="2745" y="4725" width="260" height="455" as="geometry" />
           </mxCell>
         </object>
         <object id="room-entrance" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="11.0" name="Entrance" type="entrance">
-          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[0.63014,0.98361],[1,1],[1,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[0.63014,0.98361],[1,1],[1,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontStyle=1;fontColor=#333333;verticalAlign=middle;align=center;" vertex="1" parent="layer-rooms">
             <mxGeometry x="2745" y="5670" width="365" height="305" as="geometry" />
           </mxCell>
         </object>
         <object id="room-mechanicals" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="10.9" name="Mechanicals" type="mechanical">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontStyle=1;fontColor=#333333;verticalAlign=middle;align=center;" vertex="1" parent="layer-rooms">
             <mxGeometry x="5245" y="425" width="395" height="275" as="geometry" />
           </mxCell>
         </object>
         <object id="room-conference-room" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="34.2" name="Conference Room" type="conference">
-          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[1,0.0122],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[1,0.0122],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontStyle=1;fontColor=#333333;verticalAlign=middle;align=center;" vertex="1" parent="layer-rooms">
             <mxGeometry x="3125" y="4725" width="840" height="410" as="geometry" />
           </mxCell>
         </object>
         <object id="room-space-1" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="354.7" name="Space 1" type="room">
-          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[1,0],[0.13504,0],[0.13675,0.38281],[0.00171,0.38281]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[1,0],[0.13504,0],[0.13675,0.38281],[0.00171,0.38281]];rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontStyle=1;fontColor=#333333;verticalAlign=middle;align=center;" vertex="1" parent="layer-rooms">
             <mxGeometry x="2730" y="2545" width="2925" height="1280" as="geometry" />
           </mxCell>
         </object>
         <object id="room-space-2" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="20.9" name="Space 2" type="room">
-          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[0.98837,1],[1,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[0.98837,1],[1,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontStyle=1;fontColor=#333333;verticalAlign=middle;align=center;" vertex="1" parent="layer-rooms">
             <mxGeometry x="3780" y="3855" width="430" height="490" as="geometry" />
           </mxCell>
         </object>

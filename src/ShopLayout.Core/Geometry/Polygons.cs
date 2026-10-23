@@ -245,6 +245,30 @@ namespace ShopLayout.Core.Geometry
             return r;
         }
 
+        public static double DistanceToBoundary(IReadOnlyList<Vec2> ring, Vec2 p)
+        {
+            double d = double.MaxValue;
+            for (int i = 0; i < ring.Count; i++) d = Math.Min(d, DistanceToSegment(p, ring[i], ring[(i + 1) % ring.Count]));
+            return d;
+        }
+
+        /// <summary>Interior point farthest from the boundary (grid search at <paramref name="step"/>); a good label anchor.</summary>
+        public static Vec2 PoleOfInaccessibility(IReadOnlyList<Vec2> ring, double step)
+        {
+            var (mn, mx) = Bounds(ring);
+            var best = new Vec2((mn.X + mx.X) / 2, (mn.Y + mx.Y) / 2);
+            double bestD = Contains(ring, best) ? DistanceToBoundary(ring, best) : -1;
+            for (double y = mn.Y + step / 2; y < mx.Y; y += step)
+                for (double x = mn.X + step / 2; x < mx.X; x += step)
+                {
+                    var p = new Vec2(x, y);
+                    if (!Contains(ring, p)) continue;
+                    double d = DistanceToBoundary(ring, p);
+                    if (d > bestD + 1e-9) { bestD = d; best = p; }
+                }
+            return best;
+        }
+
         public static double DistanceToSegment(Vec2 p, Vec2 a, Vec2 b)
         {
             var ab = b - a;

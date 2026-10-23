@@ -119,6 +119,15 @@ namespace ShopLayout.Tests
             Near(Area(rooms.First(r => r.Data["name"] == "Office")), 4.8 * 7.6, 0.4, "left room area");
             Near(Area(rooms.First(r => r.Data["name"] == "Space 1")), 4.8 * 7.6, 0.4, "right room area (to the sheet wall)");
 
+            Check(rooms.All(r => r.Style.Contains("fillColor=none") && r.Style.Contains("strokeColor=none")), "room shapes are invisible (walls show the room)");
+            Check(m.Layers.First(l => l.Id == LayoutImporter.LayerRooms).Locked, "rooms layer is locked");
+            Check(rooms.All(r => r.Label.Contains("%name%")), "rectangular rooms carry their own centred label");
+
+            // L-shaped room: the box centre is outside, so the label goes to the most interior point.
+            var lRoom = new List<Vec2> { new Vec2(0, 0), new Vec2(10, 0), new Vec2(10, 2), new Vec2(2, 2), new Vec2(2, 10), new Vec2(0, 10) };
+            var pole = Polygon2.PoleOfInaccessibility(lRoom, 0.1);
+            Check(Polygon2.Contains(lRoom, pole) && Polygon2.DistanceToBoundary(lRoom, pole) > 0.9, "label anchor of an L-shaped room lies well inside it");
+
             // Two points in one entry merge both rooms into a single shape spanning the partition.
             var (mm, _) = RunImport(c => { c.RoomNames.Clear(); c.RoomNames.Add(new ImportCleanup.RoomName { Name = "Shop", At = { new Vec2(2, 4), new Vec2(8, 4) } }); });
             var merged = mm.Items.Where(i => i.Kind == "room").ToList();

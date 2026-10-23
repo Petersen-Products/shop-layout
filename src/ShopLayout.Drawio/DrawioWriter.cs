@@ -108,6 +108,12 @@ namespace ShopLayout.Drawio
         {
             double cx = (it.Center.X - ox) * scale, cy = (oy - it.Center.Y) * scale;
             double pw = it.Width * scale, ph = it.Height * scale;
+            if (it.Parent != null)
+            {
+                // Child geometry is relative to the parent's top-left corner.
+                cx -= (it.Parent.Center.X - it.Parent.Width / 2 - ox) * scale;
+                cy -= (oy - (it.Parent.Center.Y + it.Parent.Height / 2)) * scale;
+            }
             string style = it.Style ?? "";
             double rot = ((360 - it.RotationDeg) % 360 + 360) % 360;
             if (rot > 1e-9 && 360 - rot > 1e-9) style += "rotation=" + N(rot) + ";";
@@ -130,7 +136,7 @@ namespace ShopLayout.Drawio
             }
             w.WriteAttributeString("style", style);
             w.WriteAttributeString("vertex", "1");
-            w.WriteAttributeString("parent", it.Layer);
+            w.WriteAttributeString("parent", it.Parent?.Id ?? it.Layer);
             w.WriteStartElement("mxGeometry");
             w.WriteAttributeString("x", N(cx - pw / 2));
             w.WriteAttributeString("y", N(cy - ph / 2));

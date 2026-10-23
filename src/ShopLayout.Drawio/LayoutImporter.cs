@@ -28,7 +28,9 @@ namespace ShopLayout.Drawio
         public const string StyleEquipment = "rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;";
         public const string StyleWall = "rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;";
         public const string StyleFloor = "rounded=0;html=1;fillColor=#f5f5f5;strokeColor=#b3b3b3;";
-        public const string StyleRoom = "rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;";
+        // Rooms are identified by their walls; the room shape itself is invisible and only carries the label and data.
+        public const string StyleRoom = "rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontStyle=1;fontColor=#333333;verticalAlign=middle;align=center;";
+        public const string StyleRoomLabel = "text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#333333;";
         public const string StyleZone = "rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;opacity=35;strokeColor=#82b366;dashed=1;fontSize=12;verticalAlign=top;";
         public const string StyleClearance = "rounded=0;html=1;fillColor=#f8cecc;opacity=30;strokeColor=#b85450;dashed=1;";
         public const string StyleText = "text;html=1;align=left;verticalAlign=top;fontSize=20;fontStyle=1;";
@@ -63,7 +65,7 @@ namespace ShopLayout.Drawio
             _m.MarginMeters = _c.MarginMeters;
             _m.Layers.Add(new DiagramLayer { Id = LayerBuilding, Name = "Building", Locked = true });
             _m.Layers.Add(new DiagramLayer { Id = LayerOpenings, Name = "Doors & Docks", Locked = true });
-            _m.Layers.Add(new DiagramLayer { Id = LayerRooms, Name = "Rooms" });
+            _m.Layers.Add(new DiagramLayer { Id = LayerRooms, Name = "Rooms", Locked = true });
             _m.Layers.Add(new DiagramLayer { Id = LayerZones, Name = "Zones" });
             _m.Layers.Add(new DiagramLayer { Id = LayerEquipment, Name = "Equipment" });
             _m.Layers.Add(new DiagramLayer { Id = LayerClearances, Name = "Clearances" });
@@ -506,10 +508,23 @@ namespace ShopLayout.Drawio
                 ri.Data["type"] = type;
                 ri.Data["area_m2"] = area.ToString("0.0", Inv);
                 if (members > 1) ri.Data["merged_from"] = members.ToString(Inv) + " detected spaces";
-                ri.Label = "%name%<br><span style=\"font-weight:normal;font-size:12px\">%area_m2% m²</span>";
+                const string label = "%name%<br><span style=\"font-weight:normal;font-size:12px\">%area_m2% m²</span>";
                 ri.UsePlaceholders = true;
                 _m.Items.Add(ri);
+                // Centre label when the box centre is well inside the room; otherwise (L-shapes) a child text
+                // at the most interior point. The child reads %name%/%area_m2% from the room through placeholders.
                 var (mn, mx) = Polygon2.Bounds(ring);
+                var boxCenter = new Vec2((mn.X + mx.X) / 2, (mn.Y + mx.Y) / 2);
+                if (Polygon2.Contains(ring, boxCenter) && Polygon2.DistanceToBoundary(ring, boxCenter) >= 0.6) ri.Label = label;
+                else
+                {
+                    ri.Label = "";
+                    _m.Items.Add(new DiagramItem
+                    {
+                        Id = id + "-label", Layer = LayerRooms, Parent = ri, Kind = "label", Shape = ShapeKind.Text, Style = StyleRoomLabel,
+                        Label = label, UsePlaceholders = true, Center = Polygon2.PoleOfInaccessibility(ring, 0.1), Width = 4, Height = 1.2
+                    });
+                }
                 _m.Log.Rooms.Add(new[] { name + (members > 1 ? $" (merged {members})" : ""), ri.Data["area_m2"], $"{F(mx.X - mn.X)} x {F(mx.Y - mn.Y)}", $"({F((mn.X + mx.X) / 2)}, {F((mn.Y + mx.Y) / 2)})" });
             }
             _m.Log.Summary.Add($"Rooms: {rooms.Count} enclosed space(s) of at least {_c.MinRoomArea.ToString(Inv)} m² (detected openings closed; other gaps up to {_c.MaxOpeningWidth.ToString(Inv)} m bridged)");
