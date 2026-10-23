@@ -1,0 +1,1308 @@
+{
+  "schema": "petersen.shop-layout",
+  "schemaVersion": "1.0.0",
+  "units": {
+    "length": "m",
+    "angle": "deg",
+    "matrixConvention": "4x4 row-major, column vectors: p_target = M · [p_local, 1]. 'solidworksArrayData' is IMathTransform.ArrayData unchanged (rotation [0..8] = images of local X,Y,Z axes, translation [9..11], scale [12])."
+  },
+  "source": {
+    "application": "SOLIDWORKS",
+    "applicationVersion": "33.2.0",
+    "rootFile": "Shop Floor.SLDASM",
+    "rootConfiguration": "Default",
+    "exporter": {
+      "name": "ShopLayoutExport",
+      "version": "1.0.0"
+    }
+  },
+  "settings": {
+    "floorPlane": "XY",
+    "planarToleranceDeg": 0.5,
+    "instanceIdStrategy": "componentIdPath",
+    "roleProperty": "LayoutRole",
+    "defaultTopLevelRole": "Equipment",
+    "ruleCount": 3,
+    "footprintResolution": 0.01,
+    "closingRadiusCells": 0,
+    "minIslandArea": 0.0004,
+    "minHoleArea": 0.01,
+    "includeHiddenChildren": true,
+    "excludeEnvelopes": true,
+    "resolveLightweight": true
+  },
+  "coordinateSystem": {
+    "floorPlane": "XY",
+    "origin": [0, 0, 0],
+    "u": [1, 0, 0],
+    "v": [0, 1, 0],
+    "normal": [0, 0, 1],
+    "rootToFloor": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+    "description": "Floor x/y are measured along u/v from origin; elevation along normal (right-handed, y up when viewed from above). All floor* values use this frame; transform.root uses the root assembly frame."
+  },
+  "library": {
+    "file": "equipment_library.json",
+    "contentHash": "sha256:81a62b7535d9ba88aba15956669a2f1c0f99335170b74d792d19271f84230a78"
+  },
+  "summary": {
+    "components": 16,
+    "equipment": 4,
+    "equipmentDefinitions": 3,
+    "building": 1,
+    "zones": 0,
+    "errors": 0,
+    "warnings": 5
+  },
+  "equipment": [
+    {
+      "instanceId": "1",
+      "componentId": "1",
+      "label": "Mill-1",
+      "instanceName": "Mill-1",
+      "namePath": "Mill-1",
+      "definitionId": "eq:equipment/mill.sldasm@Default#+Z",
+      "category": "CNC",
+      "classification": {
+        "role": "Equipment",
+        "source": "default"
+      },
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "pose": {
+        "x": 5,
+        "y": 3,
+        "elevation": 0,
+        "rotationDeg": 90,
+        "mirrored": false,
+        "scale": 1,
+        "upAxis": "+Z",
+        "upAxisSource": "detected",
+        "tiltDeg": 0,
+        "planar": true,
+        "note": "x/y/elevation = component origin in floor coordinates; rotationDeg = counter-clockwise angle of footprintAxisA from floor x."
+      },
+      "transform": {
+        "root": {
+          "matrix": [0, -1, 0, 5, 1, 0, 0, 3, 0, 0, 1, 0, 0, 0, 0, 1],
+          "solidworksArrayData": [0, 1, 0, -1, 0, 0, 0, 0, 1, 5, 3, 0, 1, 0, 0, 0]
+        },
+        "floor": {
+          "matrix": [0, -1, 0, 5, 1, 0, 0, 3, 0, 0, 1, 0, 0, 0, 0, 1]
+        },
+        "footprintToFloor": {
+          "a": [0, 1],
+          "b": [-1, 0],
+          "t": [5, 3],
+          "note": "floor = t + a·fa + b·fb for library footprint point (fa, fb)"
+        }
+      },
+      "floorFootprint": {
+        "source": "tessellatedOutline",
+        "accuracy": "tessellated",
+        "resolution": 0.01,
+        "complete": true,
+        "method": "mappedFromDefinition",
+        "bounds": {
+          "min": [3.5, 3],
+          "max": [5, 5]
+        },
+        "area": 2.25,
+        "regions": [
+          {
+            "outer": [
+              [4, 3],
+              [5, 3],
+              [5, 5],
+              [3.5, 5],
+              [3.5, 4.5],
+              [4, 4.5]
+            ]
+          }
+        ]
+      },
+      "floorClearances": [
+        {
+          "name": "Operator Clearance-1",
+          "definedBy": "1/4",
+          "zoneType": "clearance",
+          "shape": {
+            "source": "clearanceComponent",
+            "accuracy": "tessellated",
+            "resolution": 0.01,
+            "complete": true,
+            "method": "mappedFromDefinition",
+            "bounds": {
+              "min": [5, 3],
+              "max": [5.8, 5]
+            },
+            "area": 1.6,
+            "regions": [
+              {
+                "outer": [
+                  [5, 3],
+                  [5.8, 3],
+                  [5.8, 5],
+                  [5, 5]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "properties",
+          "definedBy": "properties",
+          "zoneType": "clearance",
+          "shape": {
+            "source": "properties",
+            "accuracy": "approximate",
+            "complete": true,
+            "method": "mappedFromDefinition",
+            "bounds": {
+              "min": [3, 3],
+              "max": [5, 5]
+            },
+            "area": 4,
+            "regions": [
+              {
+                "outer": [
+                  [3, 3],
+                  [5, 3],
+                  [5, 5],
+                  [3, 5]
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "floorBounds": {
+        "min": [3.5, 3, 0],
+        "max": [5, 5, 2.5]
+      },
+      "rootBoundingBox": {
+        "min": [3.5, 3, 0],
+        "max": [5.8, 5, 2.5],
+        "source": "solidworksGetBox",
+        "accuracy": "approximate"
+      },
+      "warnings": []
+    },
+    {
+      "instanceId": "2",
+      "componentId": "2",
+      "label": "Mill-2",
+      "instanceName": "Mill-2",
+      "namePath": "Mill-2",
+      "definitionId": "eq:equipment/mill.sldasm@Default#+Z",
+      "category": "CNC",
+      "classification": {
+        "role": "Equipment",
+        "source": "default"
+      },
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "pose": {
+        "x": 10,
+        "y": 0,
+        "elevation": 0,
+        "rotationDeg": 30,
+        "mirrored": false,
+        "scale": 1,
+        "upAxis": "+Z",
+        "upAxisSource": "detected",
+        "tiltDeg": 0,
+        "planar": true,
+        "note": "x/y/elevation = component origin in floor coordinates; rotationDeg = counter-clockwise angle of footprintAxisA from floor x."
+      },
+      "transform": {
+        "root": {
+          "matrix": [0.866025404, -0.5, 0, 10, 0.5, 0.866025404, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+          "solidworksArrayData": [0.866025404, 0.5, 0, -0.5, 0.866025404, 0, 0, 0, 1, 10, 0, 0, 1, 0, 0, 0]
+        },
+        "floor": {
+          "matrix": [0.866025404, -0.5, 0, 10, 0.5, 0.866025404, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+        },
+        "footprintToFloor": {
+          "a": [0.866025404, 0.5],
+          "b": [-0.5, 0.866025404],
+          "t": [10, 0],
+          "note": "floor = t + a·fa + b·fb for library footprint point (fa, fb)"
+        }
+      },
+      "floorFootprint": {
+        "source": "tessellatedOutline",
+        "accuracy": "tessellated",
+        "resolution": 0.01,
+        "complete": true,
+        "method": "mappedFromDefinition",
+        "bounds": {
+          "min": [9.5, 0],
+          "max": [11.732051, 2.299038]
+        },
+        "area": 2.25,
+        "regions": [
+          {
+            "outer": [
+              [10, 0],
+              [11.732051, 1],
+              [10.982051, 2.299038],
+              [10.549038, 2.049038],
+              [10.799038, 1.616025],
+              [9.5, 0.866025]
+            ]
+          }
+        ]
+      },
+      "floorClearances": [
+        {
+          "name": "Operator Clearance-1",
+          "definedBy": "1/4",
+          "zoneType": "clearance",
+          "shape": {
+            "source": "clearanceComponent",
+            "accuracy": "tessellated",
+            "resolution": 0.01,
+            "complete": true,
+            "method": "mappedFromDefinition",
+            "bounds": {
+              "min": [10, -0.69282],
+              "max": [12.132051, 1]
+            },
+            "area": 1.6,
+            "regions": [
+              {
+                "outer": [
+                  [10.4, -0.69282],
+                  [12.132051, 0.30718],
+                  [11.732051, 1],
+                  [10, 0]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "properties",
+          "definedBy": "properties",
+          "zoneType": "clearance",
+          "shape": {
+            "source": "properties",
+            "accuracy": "approximate",
+            "complete": true,
+            "method": "mappedFromDefinition",
+            "bounds": {
+              "min": [9, 0],
+              "max": [11.732051, 2.732051]
+            },
+            "area": 4,
+            "regions": [
+              {
+                "outer": [
+                  [10, 0],
+                  [11.732051, 1],
+                  [10.732051, 2.732051],
+                  [9, 1.732051]
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "floorBounds": {
+        "min": [9.5, 0, 0],
+        "max": [11.732051, 2.299038, 2.5]
+      },
+      "rootBoundingBox": {
+        "min": [9.25, -0.69282, 0],
+        "max": [12.132051, 2.299038, 2.5],
+        "source": "solidworksGetBox",
+        "accuracy": "approximate"
+      },
+      "warnings": []
+    },
+    {
+      "instanceId": "4",
+      "componentId": "4",
+      "label": "Lathe-1",
+      "instanceName": "Lathe-1",
+      "namePath": "Lathe-1",
+      "definitionId": "eq:equipment/lightweight lathe.sldprt@Default#+Z",
+      "classification": {
+        "role": "Equipment",
+        "source": "default"
+      },
+      "state": {
+        "suppression": "lightweight",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "pose": {
+        "x": 20,
+        "y": 0,
+        "elevation": 0,
+        "rotationDeg": 0,
+        "mirrored": false,
+        "scale": 1,
+        "upAxis": "+Z",
+        "upAxisSource": "detected",
+        "tiltDeg": 0,
+        "planar": true,
+        "note": "x/y/elevation = component origin in floor coordinates; rotationDeg = counter-clockwise angle of footprintAxisA from floor x."
+      },
+      "transform": {
+        "root": {
+          "matrix": [1, 0, 0, 20, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+          "solidworksArrayData": [1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0, 1, 0, 0, 0]
+        },
+        "floor": {
+          "matrix": [1, 0, 0, 20, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+        },
+        "footprintToFloor": {
+          "a": [1, 0],
+          "b": [0, 1],
+          "t": [20, 0],
+          "note": "floor = t + a·fa + b·fb for library footprint point (fa, fb)"
+        }
+      },
+      "floorFootprint": {
+        "source": "rootBoundingBox",
+        "accuracy": "approximate",
+        "complete": false,
+        "method": "mappedFromDefinition",
+        "bounds": {
+          "min": [20, 0],
+          "max": [23, 1]
+        },
+        "area": 3,
+        "regions": [
+          {
+            "outer": [
+              [20, 0],
+              [23, 0],
+              [23, 1],
+              [20, 1]
+            ]
+          }
+        ]
+      },
+      "floorClearances": [],
+      "floorBounds": {
+        "min": [20, 0, 0],
+        "max": [23, 1, 1.5]
+      },
+      "rootBoundingBox": {
+        "min": [20, 0, 0],
+        "max": [23, 1, 1.5],
+        "source": "solidworksGetBox",
+        "accuracy": "approximate"
+      },
+      "warnings": ["warning:GEOMETRY_FROM_BOUNDING_BOX", "warning:NO_TESSELLATION", "warning:PARTIAL_GEOMETRY", "info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "6/1",
+      "componentId": "6/1",
+      "label": "Robot-1",
+      "instanceName": "Robot-1",
+      "namePath": "Cell A-1/Robot-1",
+      "definitionId": "eq:equipment/robot.sldprt@Default#+Z",
+      "classification": {
+        "role": "Equipment",
+        "source": "default"
+      },
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "pose": {
+        "x": 30,
+        "y": 5,
+        "elevation": 0,
+        "rotationDeg": 45,
+        "mirrored": false,
+        "scale": 1,
+        "upAxis": "+Z",
+        "upAxisSource": "detected",
+        "tiltDeg": 0,
+        "planar": true,
+        "note": "x/y/elevation = component origin in floor coordinates; rotationDeg = counter-clockwise angle of footprintAxisA from floor x."
+      },
+      "transform": {
+        "root": {
+          "matrix": [0.707106781, -0.707106781, 0, 30, 0.707106781, 0.707106781, 0, 5, 0, 0, 1, 0, 0, 0, 0, 1],
+          "solidworksArrayData": [0.707106781, 0.707106781, 0, -0.707106781, 0.707106781, 0, 0, 0, 1, 30, 5, 0, 1, 0, 0, 0]
+        },
+        "floor": {
+          "matrix": [0.707106781, -0.707106781, 0, 30, 0.707106781, 0.707106781, 0, 5, 0, 0, 1, 0, 0, 0, 0, 1]
+        },
+        "footprintToFloor": {
+          "a": [0.707106781, 0.707106781],
+          "b": [-0.707106781, 0.707106781],
+          "t": [30, 5],
+          "note": "floor = t + a·fa + b·fb for library footprint point (fa, fb)"
+        }
+      },
+      "floorFootprint": {
+        "source": "authoredSketch",
+        "accuracy": "exact",
+        "complete": true,
+        "method": "mappedFromDefinition",
+        "bounds": {
+          "min": [29.400031, 4.400031],
+          "max": [30.599719, 5.599719]
+        },
+        "area": 1.12971867,
+        "regions": [
+          {
+            "outer": [
+              [29.99388, 4.400031],
+              [30.042804, 4.401529],
+              [30.091442, 4.407009],
+              [30.139472, 4.416435],
+              [30.186574, 4.429746],
+              [30.232434, 4.44685],
+              [30.276748, 4.467637],
+              [30.319219, 4.491965],
+              [30.359567, 4.519675],
+              [30.397521, 4.550582],
+              [30.43283, 4.584479],
+              [30.465259, 4.621141],
+              [30.494591, 4.660324],
+              [30.520632, 4.701768],
+              [30.543209, 4.745197],
+              [30.56217, 4.790321],
+              [30.57739, 4.836841],
+              [30.588768, 4.884447],
+              [30.596227, 4.932821],
+              [30.599719, 4.981643],
+              [30.59922, 5.030587],
+              [30.594733, 5.079327],
+              [30.586288, 5.127539],
+              [30.573942, 5.174903],
+              [30.557776, 5.221102],
+              [30.537898, 5.265831],
+              [30.51444, 5.30879],
+              [30.487559, 5.349694],
+              [30.457434, 5.388271],
+              [30.424264, 5.424264],
+              [30.388271, 5.457434],
+              [30.349694, 5.487559],
+              [30.30879, 5.51444],
+              [30.265831, 5.537898],
+              [30.221102, 5.557776],
+              [30.174903, 5.573942],
+              [30.127539, 5.586288],
+              [30.079327, 5.594733],
+              [30.030587, 5.59922],
+              [29.981643, 5.599719],
+              [29.932821, 5.596227],
+              [29.884447, 5.588768],
+              [29.836841, 5.57739],
+              [29.790321, 5.56217],
+              [29.745197, 5.543209],
+              [29.701768, 5.520632],
+              [29.660324, 5.494591],
+              [29.621141, 5.465259],
+              [29.584479, 5.43283],
+              [29.550582, 5.397521],
+              [29.519675, 5.359567],
+              [29.491965, 5.319219],
+              [29.467637, 5.276748],
+              [29.44685, 5.232434],
+              [29.429746, 5.186574],
+              [29.416435, 5.139472],
+              [29.407009, 5.091442],
+              [29.401529, 5.042804],
+              [29.400031, 4.99388],
+              [29.402526, 4.944997],
+              [29.408998, 4.896481],
+              [29.419402, 4.848653],
+              [29.43367, 4.801833],
+              [29.451707, 4.756331],
+              [29.473393, 4.712451],
+              [29.498583, 4.670484],
+              [29.52711, 4.63071],
+              [29.558784, 4.593394],
+              [29.593394, 4.558784],
+              [29.63071, 4.52711],
+              [29.670484, 4.498583],
+              [29.712451, 4.473393],
+              [29.756331, 4.451707],
+              [29.801833, 4.43367],
+              [29.848653, 4.419402],
+              [29.896481, 4.408998],
+              [29.944997, 4.402526]
+            ]
+          }
+        ]
+      },
+      "floorClearances": [
+        {
+          "name": "Swing",
+          "definedBy": "sketch:LAYOUT_CLEARANCE_Swing",
+          "zoneType": "clearance",
+          "shape": {
+            "source": "authoredSketch",
+            "accuracy": "exact",
+            "complete": true,
+            "method": "mappedFromDefinition",
+            "bounds": {
+              "min": [28.500124, 3.500124],
+              "max": [31.498881, 6.498881]
+            },
+            "area": 7.056090929,
+            "regions": [
+              {
+                "outer": [
+                  [29.980687, 3.500124],
+                  [30.135009, 3.506088],
+                  [30.287898, 3.527888],
+                  [30.437737, 3.565292],
+                  [30.582935, 3.617905],
+                  [30.721953, 3.685168],
+                  [30.853319, 3.766369],
+                  [30.97564, 3.860646],
+                  [31.087618, 3.967001],
+                  [31.188068, 4.084306],
+                  [31.275923, 4.211318],
+                  [31.350254, 4.34669],
+                  [31.410271, 4.488987],
+                  [31.45534, 4.636701],
+                  [31.484981, 4.788266],
+                  [31.498881, 4.942075],
+                  [31.496893, 5.096499],
+                  [31.479037, 5.249899],
+                  [31.445503, 5.400651],
+                  [31.396646, 5.547155],
+                  [31.332985, 5.68786],
+                  [31.255193, 5.821273],
+                  [31.164097, 5.94598],
+                  [31.06066, 6.06066],
+                  [30.94598, 6.164097],
+                  [30.821273, 6.255193],
+                  [30.68786, 6.332985],
+                  [30.547155, 6.396646],
+                  [30.400651, 6.445503],
+                  [30.249899, 6.479037],
+                  [30.096499, 6.496893],
+                  [29.942075, 6.498881],
+                  [29.788266, 6.484981],
+                  [29.636701, 6.45534],
+                  [29.488987, 6.410271],
+                  [29.34669, 6.350254],
+                  [29.211318, 6.275923],
+                  [29.084306, 6.188068],
+                  [28.967001, 6.087618],
+                  [28.860646, 5.97564],
+                  [28.766369, 5.853319],
+                  [28.685168, 5.721953],
+                  [28.617905, 5.582935],
+                  [28.565292, 5.437737],
+                  [28.527888, 5.287898],
+                  [28.506088, 5.135009],
+                  [28.500124, 4.980687],
+                  [28.51006, 4.826571],
+                  [28.535789, 4.674293],
+                  [28.577039, 4.525468],
+                  [28.633372, 4.381673],
+                  [28.704193, 4.244432],
+                  [28.788749, 4.1152],
+                  [28.886145, 3.995348],
+                  [28.995348, 3.886145],
+                  [29.1152, 3.788749],
+                  [29.244432, 3.704193],
+                  [29.381673, 3.633372],
+                  [29.525468, 3.577039],
+                  [29.674293, 3.535789],
+                  [29.826571, 3.51006]
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "floorBounds": {
+        "min": [29.400031, 4.400031, 0],
+        "max": [30.599719, 5.599719, 2]
+      },
+      "warnings": []
+    }
+  ],
+  "building": [
+    {
+      "instanceId": "3",
+      "componentId": "3",
+      "label": "Wall-1",
+      "instanceName": "Wall-1",
+      "namePath": "Wall-1",
+      "kind": "wall",
+      "file": {
+        "fileName": "Wall_L.SLDPRT",
+        "relativePath": "Building/Wall_L.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "classification": {
+        "role": "Building",
+        "source": "rule:walls"
+      },
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "elevation": 0,
+        "rotationDeg": 0,
+        "mirrored": false,
+        "scale": 1,
+        "upAxis": "+Z",
+        "upAxisSource": "detected",
+        "tiltDeg": 0,
+        "planar": true,
+        "note": "x/y/elevation = component origin in floor coordinates; rotationDeg = counter-clockwise angle of footprintAxisA from floor x."
+      },
+      "transform": {
+        "root": {
+          "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+          "solidworksArrayData": [1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0]
+        },
+        "floor": {
+          "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+        },
+        "footprintToFloor": {
+          "a": [1, 0],
+          "b": [0, 1],
+          "t": [0, 0],
+          "note": "floor = t + a·fa + b·fb for library footprint point (fa, fb)"
+        }
+      },
+      "floorFootprint": {
+        "source": "tessellatedOutline",
+        "accuracy": "tessellated",
+        "resolution": 0.01,
+        "complete": true,
+        "method": "mappedFromDefinition",
+        "bounds": {
+          "min": [0, 0],
+          "max": [10, 8]
+        },
+        "area": 3.56,
+        "regions": [
+          {
+            "outer": [
+              [0, 0],
+              [10, 0],
+              [10, 0.2],
+              [0.2, 0.2],
+              [0.2, 8],
+              [0, 8]
+            ]
+          }
+        ]
+      },
+      "floorClearances": [],
+      "floorBounds": {
+        "min": [0, 0, 0],
+        "max": [10, 8, 4]
+      },
+      "properties": {
+        "available": true,
+        "file": {},
+        "configuration": {}
+      },
+      "heightRange": [0, 4],
+      "warnings": []
+    }
+  ],
+  "zones": [],
+  "components": [
+    {
+      "componentId": "1",
+      "parentId": null,
+      "localId": 1,
+      "depth": 1,
+      "name2": "Mill-1",
+      "instanceName": "Mill-1",
+      "file": {
+        "fileName": "Mill.SLDASM",
+        "relativePath": "Equipment/Mill.SLDASM",
+        "docType": "assembly"
+      },
+      "configuration": "Default",
+      "role": "Equipment",
+      "roleSource": "default",
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "transformRoot": [0, -1, 0, 5, 1, 0, 0, 3, 0, 0, 1, 0, 0, 0, 0, 1],
+      "rootBoundingBox": {
+        "min": [3.5, 3, 0],
+        "max": [5.8, 5, 2.5]
+      },
+      "childIds": ["1/1", "1/2", "1/3", "1/4"]
+    },
+    {
+      "componentId": "1/1",
+      "parentId": "1",
+      "localId": 1,
+      "depth": 2,
+      "name2": "Mill-1/Base-1",
+      "instanceName": "Base-1",
+      "file": {
+        "fileName": "Mill Base.SLDPRT",
+        "relativePath": "Equipment/Mill Base.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "role": "Contained",
+      "roleSource": "inherited",
+      "ownerId": "1",
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "transformRoot": [0, -1, 0, 5, 1, 0, 0, 3, 0, 0, 1, 0, 0, 0, 0, 1],
+      "childIds": []
+    },
+    {
+      "componentId": "1/2",
+      "parentId": "1",
+      "localId": 2,
+      "depth": 2,
+      "name2": "Mill-1/Column-1",
+      "instanceName": "Column-1",
+      "file": {
+        "fileName": "Mill Column.SLDPRT",
+        "relativePath": "Equipment/Mill Column.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "role": "Contained",
+      "roleSource": "inherited",
+      "ownerId": "1",
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "transformRoot": [0, -1, 0, 5, 1, 0, 0, 3, 0, 0, 1, 0, 0, 0, 0, 1],
+      "childIds": []
+    },
+    {
+      "componentId": "1/3",
+      "parentId": "1",
+      "localId": 3,
+      "depth": 2,
+      "name2": "Mill-1/Bolt-1",
+      "instanceName": "Bolt-1",
+      "file": {
+        "fileName": "hex bolt.sldprt",
+        "relativePath": "../SOLIDWORKS Data/browser/ansi inch/bolts/hex bolt.sldprt",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "role": "Ignore",
+      "roleSource": "builtin:toolbox",
+      "ownerId": "1",
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "transformRoot": [0, -1, 0, 4.5, 1, 0, 0, 4, 0, 0, 1, 1, 0, 0, 0, 1],
+      "childIds": []
+    },
+    {
+      "componentId": "1/4",
+      "parentId": "1",
+      "localId": 4,
+      "depth": 2,
+      "name2": "Mill-1/Operator Clearance-1",
+      "instanceName": "Operator Clearance-1",
+      "file": {
+        "fileName": "Mill_clearance.SLDPRT",
+        "relativePath": "Equipment/Mill_clearance.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "role": "Clearance",
+      "roleSource": "rule:clearance bodies",
+      "ownerId": "1",
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "transformRoot": [0, -1, 0, 5, 1, 0, 0, 3, 0, 0, 1, 0, 0, 0, 0, 1],
+      "childIds": []
+    },
+    {
+      "componentId": "2",
+      "parentId": null,
+      "localId": 2,
+      "depth": 1,
+      "name2": "Mill-2",
+      "instanceName": "Mill-2",
+      "file": {
+        "fileName": "Mill.SLDASM",
+        "relativePath": "Equipment/Mill.SLDASM",
+        "docType": "assembly"
+      },
+      "configuration": "Default",
+      "role": "Equipment",
+      "roleSource": "default",
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "transformRoot": [0.866025404, -0.5, 0, 10, 0.5, 0.866025404, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+      "rootBoundingBox": {
+        "min": [9.25, -0.69282, 0],
+        "max": [12.132051, 2.299038, 2.5]
+      },
+      "childIds": ["2/1", "2/2", "2/3", "2/4"]
+    },
+    {
+      "componentId": "2/1",
+      "parentId": "2",
+      "localId": 1,
+      "depth": 2,
+      "name2": "Mill-2/Base-1",
+      "instanceName": "Base-1",
+      "file": {
+        "fileName": "Mill Base.SLDPRT",
+        "relativePath": "Equipment/Mill Base.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "role": "Contained",
+      "roleSource": "inherited",
+      "ownerId": "2",
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "transformRoot": [0.866025404, -0.5, 0, 10, 0.5, 0.866025404, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+      "childIds": []
+    },
+    {
+      "componentId": "2/2",
+      "parentId": "2",
+      "localId": 2,
+      "depth": 2,
+      "name2": "Mill-2/Column-1",
+      "instanceName": "Column-1",
+      "file": {
+        "fileName": "Mill Column.SLDPRT",
+        "relativePath": "Equipment/Mill Column.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "role": "Contained",
+      "roleSource": "inherited",
+      "ownerId": "2",
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "transformRoot": [0.866025404, -0.5, 0, 10, 0.5, 0.866025404, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+      "childIds": []
+    },
+    {
+      "componentId": "2/3",
+      "parentId": "2",
+      "localId": 3,
+      "depth": 2,
+      "name2": "Mill-2/Bolt-1",
+      "instanceName": "Bolt-1",
+      "file": {
+        "fileName": "hex bolt.sldprt",
+        "relativePath": "../SOLIDWORKS Data/browser/ansi inch/bolts/hex bolt.sldprt",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "role": "Ignore",
+      "roleSource": "builtin:toolbox",
+      "ownerId": "2",
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "transformRoot": [0.866025404, -0.5, 0, 10.616025404, 0.5, 0.866025404, 0, 0.933012702, 0, 0, 1, 1, 0, 0, 0, 1],
+      "childIds": []
+    },
+    {
+      "componentId": "2/4",
+      "parentId": "2",
+      "localId": 4,
+      "depth": 2,
+      "name2": "Mill-2/Operator Clearance-1",
+      "instanceName": "Operator Clearance-1",
+      "file": {
+        "fileName": "Mill_clearance.SLDPRT",
+        "relativePath": "Equipment/Mill_clearance.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "role": "Clearance",
+      "roleSource": "rule:clearance bodies",
+      "ownerId": "2",
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "transformRoot": [0.866025404, -0.5, 0, 10, 0.5, 0.866025404, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+      "childIds": []
+    },
+    {
+      "componentId": "3",
+      "parentId": null,
+      "localId": 3,
+      "depth": 1,
+      "name2": "Wall-1",
+      "instanceName": "Wall-1",
+      "file": {
+        "fileName": "Wall_L.SLDPRT",
+        "relativePath": "Building/Wall_L.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "role": "Building",
+      "roleSource": "rule:walls",
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "transformRoot": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+      "childIds": []
+    },
+    {
+      "componentId": "4",
+      "parentId": null,
+      "localId": 4,
+      "depth": 1,
+      "name2": "Lathe-1",
+      "instanceName": "Lathe-1",
+      "file": {
+        "fileName": "Lightweight Lathe.SLDPRT",
+        "relativePath": "Equipment/Lightweight Lathe.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "role": "Equipment",
+      "roleSource": "default",
+      "state": {
+        "suppression": "lightweight",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "transformRoot": [1, 0, 0, 20, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+      "rootBoundingBox": {
+        "min": [20, 0, 0],
+        "max": [23, 1, 1.5]
+      },
+      "childIds": []
+    },
+    {
+      "componentId": "5",
+      "parentId": null,
+      "localId": 5,
+      "depth": 1,
+      "name2": "Saw-1",
+      "instanceName": "Saw-1",
+      "file": {
+        "fileName": "Saw.SLDPRT",
+        "relativePath": "Equipment/Saw.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "role": "Equipment",
+      "roleSource": "default",
+      "state": {
+        "suppression": "suppressed",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "childIds": []
+    },
+    {
+      "componentId": "6",
+      "parentId": null,
+      "localId": 6,
+      "depth": 1,
+      "name2": "Cell A-1",
+      "instanceName": "Cell A-1",
+      "file": {
+        "fileName": "Cell A.SLDASM",
+        "relativePath": "Cells/Cell A.SLDASM",
+        "docType": "assembly"
+      },
+      "configuration": "Default",
+      "role": "Group",
+      "roleSource": "rule:cells",
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "transformRoot": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+      "childIds": ["6/1"]
+    },
+    {
+      "componentId": "6/1",
+      "parentId": "6",
+      "localId": 1,
+      "depth": 2,
+      "name2": "Cell A-1/Robot-1",
+      "instanceName": "Robot-1",
+      "file": {
+        "fileName": "Robot.SLDPRT",
+        "relativePath": "Equipment/Robot.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "role": "Equipment",
+      "roleSource": "default",
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "transformRoot": [0.707106781, -0.707106781, 0, 30, 0.707106781, 0.707106781, 0, 5, 0, 0, 1, 0, 0, 0, 0, 1],
+      "childIds": []
+    },
+    {
+      "componentId": "7",
+      "parentId": null,
+      "localId": 7,
+      "depth": 1,
+      "name2": "Person-1",
+      "instanceName": "Person-1",
+      "file": {
+        "fileName": "Person.SLDPRT",
+        "relativePath": "Misc/Person.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "role": "Ignore",
+      "roleSource": "property:LayoutRole",
+      "state": {
+        "suppression": "resolved",
+        "visible": true,
+        "fileFound": true,
+        "envelope": false,
+        "virtual": false,
+        "excludeFromBom": false,
+        "fixed": false,
+        "solving": "rigid",
+        "patternInstance": false,
+        "mirroredComponent": false
+      },
+      "transformRoot": [1, 0, 0, 2, 0, 1, 0, 2, 0, 0, 1, 0, 0, 0, 0, 1],
+      "childIds": []
+    }
+  ],
+  "warnings": [
+    {
+      "severity": "warning",
+      "code": "GEOMETRY_FROM_BOUNDING_BOX",
+      "componentId": "4",
+      "message": "'Lathe-1' footprint uses SolidWorks' approximate bounding box."
+    },
+    {
+      "severity": "warning",
+      "code": "NESTED_ROLE_IGNORED",
+      "componentId": "1/1",
+      "message": "'Mill-1/Base-1' is marked Equipment (property:LayoutRole) but lies inside '1', which is already placed; it is treated as part of that object to avoid double counting. Mark the parent as Group to place children individually."
+    },
+    {
+      "severity": "warning",
+      "code": "NESTED_ROLE_IGNORED",
+      "componentId": "2/1",
+      "message": "'Mill-2/Base-1' is marked Equipment (property:LayoutRole) but lies inside '2', which is already placed; it is treated as part of that object to avoid double counting. Mark the parent as Group to place children individually."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_TESSELLATION",
+      "componentId": "4",
+      "message": "lightweight, no data"
+    },
+    {
+      "severity": "warning",
+      "code": "PARTIAL_GEOMETRY",
+      "componentId": "4",
+      "message": "1 of 1 part(s) of 'Lathe-1' returned no geometry; the footprint may be incomplete."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "4",
+      "message": "Custom properties of 'Lathe-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "SUPPRESSED_EXCLUDED",
+      "componentId": "5",
+      "message": "Equipment 'Saw-1' is suppressed and was left out of the placed equipment list (it remains in the component tree)."
+    }
+  ],
+  "contentHash": "sha256:19d712992eca443fceb5141b8554b36d44eba0c763efa960351b76b3a91137a4"
+}

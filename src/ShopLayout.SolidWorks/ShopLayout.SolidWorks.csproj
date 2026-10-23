@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Interop assemblies are referenced (not embedded) and copied next to the exe; they are SolidWorks redistributables. -->
+  <!-- The only project that talks to the SolidWorks API. It turns a live assembly into the
+       SolidWorks-independent Raw* model defined in ShopLayout.Core. An add-in can reuse it as-is. -->
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ShopLayout.SolidWorks</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShopLayout.Core\ShopLayout.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="SolidWorks.Interop.sldworks">
+      <HintPath>$(SolidWorksApiDir)\SolidWorks.Interop.sldworks.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="SolidWorks.Interop.swconst">
+      <HintPath>$(SolidWorksApiDir)\SolidWorks.Interop.swconst.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

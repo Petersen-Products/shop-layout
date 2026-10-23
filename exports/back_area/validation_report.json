@@ -1,0 +1,3428 @@
+{
+  "schema": "petersen.shop-layout-validation",
+  "schemaVersion": "1.0.0",
+  "mode": "export",
+  "source": {
+    "application": "SOLIDWORKS",
+    "applicationVersion": "33.2.0",
+    "rootFile": "BACK AREA LAYOUT revised.SLDASM",
+    "rootConfiguration": "Default",
+    "exporter": {
+      "name": "ShopLayoutExport",
+      "version": "1.0.0"
+    }
+  },
+  "floorPlane": "XZ",
+  "summary": {
+    "components": 102,
+    "equipment": 100,
+    "definitions": 53,
+    "building": 2,
+    "zones": 0,
+    "errors": 0,
+    "warnings": 0,
+    "info": 158
+  },
+  "classification": [
+    {
+      "componentId": "23",
+      "name": "Room-1",
+      "role": "Building",
+      "source": "rule:room shell",
+      "file": "Room.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "25",
+      "name": "Rack 1-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "Rack 1.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "26",
+      "name": "Rack 1-2",
+      "role": "Equipment",
+      "source": "default",
+      "file": "Rack 1.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "45",
+      "name": "Assembly Table 1-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "Assembly Table 1.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "46",
+      "name": "Assembly Table 2-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "Assembly Table 2.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "54",
+      "name": "torque table-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "torque table.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "56",
+      "name": "wabash-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "wabash.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "57",
+      "name": "paint table-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "paint table.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "483",
+      "name": "BANDSAW-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "BANDSAW.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "497",
+      "name": "SHELVING-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "SHELVING.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "534",
+      "name": "4x8TABLE-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "4x8TABLE.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "535",
+      "name": "4x8TABLE-2",
+      "role": "Equipment",
+      "source": "default",
+      "file": "4x8TABLE.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "590",
+      "name": "FINISHING TABLE-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "FINISHING TABLE.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "591",
+      "name": "BUNDLEWINCH-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "BUNDLEWINCH.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "592",
+      "name": "FINSIHINGSHELVES-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "FINSIHINGSHELVES.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "593",
+      "name": "SHELVES-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "SHELVES.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "621",
+      "name": "STANDARDSHELF-2",
+      "role": "Equipment",
+      "source": "default",
+      "file": "STANDARDSHELF.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "629",
+      "name": "STANDARDSHELF-3",
+      "role": "Equipment",
+      "source": "default",
+      "file": "STANDARDSHELF.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "651",
+      "name": "STANDARDSHELF-4",
+      "role": "Equipment",
+      "source": "default",
+      "file": "STANDARDSHELF.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "656",
+      "name": "STANDARDSHELF-5",
+      "role": "Equipment",
+      "source": "default",
+      "file": "STANDARDSHELF.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "663",
+      "name": "STANDARDSHELF-6",
+      "role": "Equipment",
+      "source": "default",
+      "file": "STANDARDSHELF.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "690",
+      "name": "STANDARDSHELF-7",
+      "role": "Equipment",
+      "source": "default",
+      "file": "STANDARDSHELF.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "697",
+      "name": "STANDARDSHELF-8",
+      "role": "Equipment",
+      "source": "default",
+      "file": "STANDARDSHELF.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "705",
+      "name": "STANDARDSHELF-9",
+      "role": "Equipment",
+      "source": "default",
+      "file": "STANDARDSHELF.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "707",
+      "name": "STANDARDSHELF-10",
+      "role": "Equipment",
+      "source": "default",
+      "file": "STANDARDSHELF.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "719",
+      "name": "STANDARDSHELF-11",
+      "role": "Equipment",
+      "source": "default",
+      "file": "STANDARDSHELF.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "725",
+      "name": "STANDARDSHELF-12",
+      "role": "Equipment",
+      "source": "default",
+      "file": "STANDARDSHELF.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "731",
+      "name": "STANDARDSHELF-13",
+      "role": "Equipment",
+      "source": "default",
+      "file": "STANDARDSHELF.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "797",
+      "name": "TOOL CHEST-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "TOOL CHEST.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "798",
+      "name": "TABLE-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "TABLE.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "805",
+      "name": "WORK BENCH-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "WORK BENCH.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "806",
+      "name": "short Rack-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "short Rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "810",
+      "name": "Wall-1",
+      "role": "Building",
+      "source": "rule:building shell",
+      "file": "Wall.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "816",
+      "name": "Rack2-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "Rack2.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "817",
+      "name": "rack3-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "rack3.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "823",
+      "name": "table 2-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "table 2.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "827",
+      "name": "table 4-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "table 4.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "831",
+      "name": "parts rack-2",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "832",
+      "name": "parts rack-3",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "839",
+      "name": "parts rack-4",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "840",
+      "name": "parts rack-5",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "841",
+      "name": "parts rack-6",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "842",
+      "name": "parts rack-7",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "846",
+      "name": "parts rack-8",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "847",
+      "name": "parts rack-9",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "848",
+      "name": "parts rack-10",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "849",
+      "name": "parts rack-11",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "850",
+      "name": "parts rack-12",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "851",
+      "name": "parts rack-13",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "852",
+      "name": "parts rack-14",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "853",
+      "name": "parts rack-15",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "854",
+      "name": "parts rack-16",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "855",
+      "name": "parts rack-17",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "856",
+      "name": "parts rack-18",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "857",
+      "name": "parts rack-19",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "858",
+      "name": "parts rack-20",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "867",
+      "name": "parts rack-21",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "868",
+      "name": "parts rack-22",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "871",
+      "name": "parts rack-23",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "873",
+      "name": "parts rack-25",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "885",
+      "name": "new paint table-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "new paint table.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "887",
+      "name": "cnc machine 1-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "cnc machine 1.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "888",
+      "name": "cnc machine 2-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "cnc machine 2.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "889",
+      "name": "cnc machine 3-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "cnc machine 3.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "890",
+      "name": "cnc machine 4-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "cnc machine 4.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "891",
+      "name": "cnc machine 5-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "cnc machine 5.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "898",
+      "name": "feeder-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "feeder.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "899",
+      "name": "feeder-2",
+      "role": "Equipment",
+      "source": "default",
+      "file": "feeder.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "904",
+      "name": "new cnc machine-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "new cnc machine.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "905",
+      "name": "feeder-3",
+      "role": "Equipment",
+      "source": "default",
+      "file": "feeder.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "908",
+      "name": "machine shope lathe-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "machine shope lathe.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "911",
+      "name": "rack4-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "rack4.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "917",
+      "name": "work table-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "work table.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "918",
+      "name": "work table-2",
+      "role": "Equipment",
+      "source": "default",
+      "file": "work table.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "926",
+      "name": "small table-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "small table.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "929",
+      "name": "smaller table-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "smaller table.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "932",
+      "name": "small shelf-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "small shelf.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "937",
+      "name": "big fridge-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "big fridge.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "938",
+      "name": "small fridge-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "small fridge.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "940",
+      "name": "shelve5-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "shelve5.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "949",
+      "name": "heat sheet-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "heat sheet.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "951",
+      "name": "lathe-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "lathe.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "953",
+      "name": "sew talble 1-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "sew talble 1.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "958",
+      "name": "shelve 3-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "shelve 3.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "961",
+      "name": "sew table 2-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "sew table 2.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "963",
+      "name": "large sewing tale-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "large sewing tale.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "968",
+      "name": "medium sewing table-2",
+      "role": "Equipment",
+      "source": "default",
+      "file": "medium sewing table.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "977",
+      "name": "small sewing table-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "small sewing table.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "980",
+      "name": "sewing table 3-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "sewing table 3.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "983",
+      "name": "sewing table 4-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "sewing table 4.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "986",
+      "name": "hige table-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "hige table.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "989",
+      "name": "table 5-1",
+      "role": "Equipment",
+      "source": "default",
+      "file": "table 5.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "1008",
+      "name": "parts rack-26",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "1019",
+      "name": "parts rack-27",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "1020",
+      "name": "parts rack-28",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "1021",
+      "name": "parts rack-29",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "1022",
+      "name": "parts rack-30",
+      "role": "Equipment",
+      "source": "default",
+      "file": "parts rack.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "1034",
+      "name": "rack3-2",
+      "role": "Equipment",
+      "source": "default",
+      "file": "rack3.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "1039",
+      "name": "rack3-5",
+      "role": "Equipment",
+      "source": "default",
+      "file": "rack3.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "1041",
+      "name": "rack3-7",
+      "role": "Equipment",
+      "source": "default",
+      "file": "rack3.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "1044",
+      "name": "rack3-10",
+      "role": "Equipment",
+      "source": "default",
+      "file": "rack3.SLDPRT",
+      "suppression": "lightweight"
+    },
+    {
+      "componentId": "1046",
+      "name": "machine shope lathe-2",
+      "role": "Equipment",
+      "source": "default",
+      "file": "machine shope lathe.SLDPRT",
+      "suppression": "lightweight"
+    }
+  ],
+  "placed": [
+    {
+      "instanceId": "23",
+      "kind": "Building",
+      "label": "Room-1",
+      "definitionId": "bld:layout/parts/room.sldprt@Default#+Y",
+      "x": 0,
+      "y": 0,
+      "rotationDeg": 0,
+      "width": 53.4,
+      "depth": 56.72,
+      "height": 5.6388,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:OUTLINE_RESOLUTION_COARSENED", "info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "25",
+      "kind": "Equipment",
+      "label": "Rack 1-1",
+      "definitionId": "eq:layout/parts/rack 1.sldprt@Default#+Y",
+      "x": 10.178934,
+      "y": 6.35,
+      "rotationDeg": 270,
+      "width": 6.095,
+      "depth": 1.22,
+      "height": 3.6576,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "26",
+      "kind": "Equipment",
+      "label": "Rack 1-2",
+      "definitionId": "eq:layout/parts/rack 1.sldprt@Default#+Y",
+      "x": 5.302134,
+      "y": 7.1628,
+      "rotationDeg": 0,
+      "width": 6.095,
+      "depth": 1.22,
+      "height": 3.6576,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "45",
+      "kind": "Equipment",
+      "label": "Assembly Table 1-1",
+      "definitionId": "eq:layout/parts/assembly table 1.sldprt@Default#+Y",
+      "x": 0.1524,
+      "y": 13.5636,
+      "rotationDeg": 0,
+      "width": 2.44,
+      "depth": 1.83,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "46",
+      "kind": "Equipment",
+      "label": "Assembly Table 2-1",
+      "definitionId": "eq:layout/parts/assembly table 2.sldprt@Default#+Y",
+      "x": 0.1524,
+      "y": 16.002,
+      "rotationDeg": 0,
+      "width": 2.44,
+      "depth": 2.44,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "54",
+      "kind": "Equipment",
+      "label": "torque table-1",
+      "definitionId": "eq:layout/parts/torque table.sldprt@Default#+Y",
+      "x": 0.1524,
+      "y": 11.7348,
+      "rotationDeg": 0,
+      "width": 2.44,
+      "depth": 1.22,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "56",
+      "kind": "Equipment",
+      "label": "wabash-1",
+      "definitionId": "eq:layout/parts/wabash.sldprt@Default#+Y",
+      "x": 4.284464,
+      "y": 20.137664,
+      "rotationDeg": 270,
+      "width": 0.765,
+      "depth": 1.225,
+      "height": 1.52654,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "57",
+      "kind": "Equipment",
+      "label": "paint table-1",
+      "definitionId": "eq:layout/parts/paint table.sldprt@Default#+Y",
+      "x": 1.693664,
+      "y": 19.375664,
+      "rotationDeg": 90,
+      "width": 1.37,
+      "depth": 1.825,
+      "height": 0.762,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "483",
+      "kind": "Equipment",
+      "label": "BANDSAW-1",
+      "definitionId": "eq:layout/parts/bandsaw.sldprt@Default#+Y",
+      "x": 15.5448,
+      "y": 6.6294,
+      "rotationDeg": 270,
+      "width": 2.29,
+      "depth": 4.27,
+      "height": 1.2192,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "497",
+      "kind": "Equipment",
+      "label": "SHELVING-1",
+      "definitionId": "eq:layout/parts/shelving.sldprt@Default#+Y",
+      "x": 22.42581,
+      "y": 6.705968,
+      "rotationDeg": 0,
+      "width": 6.11,
+      "depth": 2.04,
+      "height": 3.6576,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "534",
+      "kind": "Equipment",
+      "label": "4x8TABLE-1",
+      "definitionId": "eq:layout/parts/4x8table.sldprt@Default#+Y",
+      "x": 15.236963,
+      "y": 18.125717,
+      "rotationDeg": 90,
+      "width": 2.44,
+      "depth": 1.22,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "535",
+      "kind": "Equipment",
+      "label": "4x8TABLE-2",
+      "definitionId": "eq:layout/parts/4x8table.sldprt@Default#-Y",
+      "x": 22.428447,
+      "y": 17.918911,
+      "rotationDeg": 90.434,
+      "width": 2.44,
+      "depth": 1.22,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "590",
+      "kind": "Equipment",
+      "label": "FINISHING TABLE-1",
+      "definitionId": "eq:layout/parts/finishing table.sldprt@Default#+Y",
+      "x": -3.048,
+      "y": 15.0114,
+      "rotationDeg": 90,
+      "width": 9.3,
+      "depth": 3.66,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "591",
+      "kind": "Equipment",
+      "label": "BUNDLEWINCH-1",
+      "definitionId": "eq:layout/parts/bundlewinch.sldprt@Default#+Y",
+      "x": -6.2992,
+      "y": 10.9728,
+      "rotationDeg": 90,
+      "width": 1.22,
+      "depth": 2.84,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "592",
+      "kind": "Equipment",
+      "label": "FINSIHINGSHELVES-1",
+      "definitionId": "eq:layout/parts/finsihingshelves.sldprt@Default#+Y",
+      "x": -8.0264,
+      "y": 16.002,
+      "rotationDeg": 270,
+      "width": 4.88,
+      "depth": 0.61,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "593",
+      "kind": "Equipment",
+      "label": "SHELVES-1",
+      "definitionId": "eq:layout/parts/shelves.sldprt@Default#+Y",
+      "x": -8.7884,
+      "y": 16.002,
+      "rotationDeg": 90,
+      "width": 4.88,
+      "depth": 0.91,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "621",
+      "kind": "Equipment",
+      "label": "STANDARDSHELF-2",
+      "definitionId": "eq:layout/parts/standardshelf.sldprt@Default#+Y",
+      "x": -16.1544,
+      "y": 8.9154,
+      "rotationDeg": 0,
+      "width": 10.97,
+      "depth": 1.07,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "629",
+      "kind": "Equipment",
+      "label": "STANDARDSHELF-3",
+      "definitionId": "eq:layout/parts/standardshelf.sldprt@Default#+Y",
+      "x": -16.1544,
+      "y": -14.2494,
+      "rotationDeg": 0,
+      "width": 10.97,
+      "depth": 1.07,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "651",
+      "kind": "Equipment",
+      "label": "STANDARDSHELF-4",
+      "definitionId": "eq:layout/parts/standardshelf.sldprt@Default#+Y",
+      "x": -16.1544,
+      "y": -9.525,
+      "rotationDeg": 0,
+      "width": 10.97,
+      "depth": 1.07,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "656",
+      "kind": "Equipment",
+      "label": "STANDARDSHELF-5",
+      "definitionId": "eq:layout/parts/standardshelf.sldprt@Default#+Y",
+      "x": -16.1544,
+      "y": -12.2682,
+      "rotationDeg": 0,
+      "width": 10.97,
+      "depth": 1.07,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "663",
+      "kind": "Equipment",
+      "label": "STANDARDSHELF-6",
+      "definitionId": "eq:layout/parts/standardshelf.sldprt@Default#+Y",
+      "x": -16.1544,
+      "y": -8.4582,
+      "rotationDeg": 0,
+      "width": 10.97,
+      "depth": 1.07,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "690",
+      "kind": "Equipment",
+      "label": "STANDARDSHELF-7",
+      "definitionId": "eq:layout/parts/standardshelf.sldprt@Default#+Y",
+      "x": -16.1544,
+      "y": -16.383,
+      "rotationDeg": 0,
+      "width": 10.97,
+      "depth": 1.07,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "697",
+      "kind": "Equipment",
+      "label": "STANDARDSHELF-8",
+      "definitionId": "eq:layout/parts/standardshelf.sldprt@Default#+Y",
+      "x": -16.1544,
+      "y": -18.0594,
+      "rotationDeg": 0,
+      "width": 10.97,
+      "depth": 1.07,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "705",
+      "kind": "Equipment",
+      "label": "STANDARDSHELF-9",
+      "definitionId": "eq:layout/parts/standardshelf.sldprt@Default#+Y",
+      "x": -16.1544,
+      "y": 0.9906,
+      "rotationDeg": 0,
+      "width": 10.97,
+      "depth": 1.07,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "707",
+      "kind": "Equipment",
+      "label": "STANDARDSHELF-10",
+      "definitionId": "eq:layout/parts/standardshelf.sldprt@Default#+Y",
+      "x": -16.1544,
+      "y": -0.6858,
+      "rotationDeg": 0,
+      "width": 10.97,
+      "depth": 1.07,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "719",
+      "kind": "Equipment",
+      "label": "STANDARDSHELF-11",
+      "definitionId": "eq:layout/parts/standardshelf.sldprt@Default#+Y",
+      "x": -16.1544,
+      "y": 3.1242,
+      "rotationDeg": 0,
+      "width": 10.97,
+      "depth": 1.07,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "725",
+      "kind": "Equipment",
+      "label": "STANDARDSHELF-12",
+      "definitionId": "eq:layout/parts/standardshelf.sldprt@Default#+Y",
+      "x": -16.1544,
+      "y": 7.6962,
+      "rotationDeg": 0,
+      "width": 10.97,
+      "depth": 1.07,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "731",
+      "kind": "Equipment",
+      "label": "STANDARDSHELF-13",
+      "definitionId": "eq:layout/parts/standardshelf.sldprt@Default#+Y",
+      "x": -16.1544,
+      "y": -6.3246,
+      "rotationDeg": 0,
+      "width": 10.97,
+      "depth": 1.07,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "797",
+      "kind": "Equipment",
+      "label": "TOOL CHEST-1",
+      "definitionId": "eq:layout/layouts/tool chest.sldprt@Default#+Y",
+      "x": 20.149696,
+      "y": 11.904072,
+      "rotationDeg": 0,
+      "width": 0.56,
+      "depth": 1.42,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "798",
+      "kind": "Equipment",
+      "label": "TABLE-1",
+      "definitionId": "eq:layout/layouts/table.sldprt@Default#+Y",
+      "x": 17.815218,
+      "y": 16.901842,
+      "rotationDeg": 90,
+      "width": 1.675,
+      "depth": 0.915,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "805",
+      "kind": "Equipment",
+      "label": "WORK BENCH-1",
+      "definitionId": "eq:layout/layouts/work bench.sldprt@Default#+Y",
+      "x": 19.695447,
+      "y": 15.505055,
+      "rotationDeg": 90.434,
+      "width": 3.43,
+      "depth": 0.43,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "806",
+      "kind": "Equipment",
+      "label": "short Rack-1",
+      "definitionId": "eq:layout/layouts/short rack.sldprt@Default#+Y",
+      "x": 20.298291,
+      "y": 16.39865,
+      "rotationDeg": 90.434,
+      "width": 2.54,
+      "depth": 0.61,
+      "height": 2.4384,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "810",
+      "kind": "Building",
+      "label": "Wall-1",
+      "definitionId": "bld:layout/layouts/wall.sldprt@Default#+Y",
+      "x": -0.3048,
+      "y": 10.3632,
+      "rotationDeg": 0,
+      "width": 0.305,
+      "depth": 10.515,
+      "height": 3.6576,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "816",
+      "kind": "Equipment",
+      "label": "Rack2-1",
+      "definitionId": "eq:layout/layouts/rack2.sldprt@Default#+Y",
+      "x": 5.269211,
+      "y": 11.697142,
+      "rotationDeg": 0,
+      "width": 1.065,
+      "depth": 7.62,
+      "height": 3.6576,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "817",
+      "kind": "Equipment",
+      "label": "rack3-1",
+      "definitionId": "eq:layout/layouts/rack3.sldprt@Default#+Y",
+      "x": 7.402782,
+      "y": 11.705067,
+      "rotationDeg": 0,
+      "width": 1.065,
+      "depth": 5.08,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "823",
+      "kind": "Equipment",
+      "label": "table 2-1",
+      "definitionId": "eq:layout/layouts/table 2.sldprt@Default#+Y",
+      "x": 25.067482,
+      "y": 16.9164,
+      "rotationDeg": 0,
+      "width": 2.415,
+      "depth": 0.915,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "827",
+      "kind": "Equipment",
+      "label": "table 4-1",
+      "definitionId": "eq:layout/layouts/table 4.sldprt@Default#+Y",
+      "x": 16.32346,
+      "y": 12.907539,
+      "rotationDeg": 0,
+      "width": 1.22,
+      "depth": 1.83,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "831",
+      "kind": "Equipment",
+      "label": "parts rack-2",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 9.852724,
+      "y": 14.921208,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "832",
+      "kind": "Equipment",
+      "label": "parts rack-3",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 10.284512,
+      "y": 14.918021,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "839",
+      "kind": "Equipment",
+      "label": "parts rack-4",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 11.808471,
+      "y": 14.906775,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "840",
+      "kind": "Equipment",
+      "label": "parts rack-5",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 13.332429,
+      "y": 14.895528,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "841",
+      "kind": "Equipment",
+      "label": "parts rack-6",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 11.376683,
+      "y": 14.909961,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "842",
+      "kind": "Equipment",
+      "label": "parts rack-7",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 12.900641,
+      "y": 14.898715,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "846",
+      "kind": "Equipment",
+      "label": "parts rack-8",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 10.277952,
+      "y": 14.029046,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "847",
+      "kind": "Equipment",
+      "label": "parts rack-9",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 10.271392,
+      "y": 13.14007,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "848",
+      "kind": "Equipment",
+      "label": "parts rack-10",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 9.846164,
+      "y": 14.032232,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "849",
+      "kind": "Equipment",
+      "label": "parts rack-11",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 9.839603,
+      "y": 13.143256,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "850",
+      "kind": "Equipment",
+      "label": "parts rack-12",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 11.801911,
+      "y": 14.017799,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "851",
+      "kind": "Equipment",
+      "label": "parts rack-13",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 11.79535,
+      "y": 13.128823,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "852",
+      "kind": "Equipment",
+      "label": "parts rack-14",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 13.325869,
+      "y": 14.006553,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "853",
+      "kind": "Equipment",
+      "label": "parts rack-15",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 13.319309,
+      "y": 13.117577,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "854",
+      "kind": "Equipment",
+      "label": "parts rack-16",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 11.370122,
+      "y": 14.020986,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "855",
+      "kind": "Equipment",
+      "label": "parts rack-17",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 11.363562,
+      "y": 13.13201,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "856",
+      "kind": "Equipment",
+      "label": "parts rack-18",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 12.894081,
+      "y": 14.009739,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "857",
+      "kind": "Equipment",
+      "label": "parts rack-19",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 12.88752,
+      "y": 13.120763,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "858",
+      "kind": "Equipment",
+      "label": "parts rack-20",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 10.699993,
+      "y": 12.705095,
+      "rotationDeg": 89.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "867",
+      "kind": "Equipment",
+      "label": "parts rack-21",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 12.223952,
+      "y": 12.693849,
+      "rotationDeg": 89.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "868",
+      "kind": "Equipment",
+      "label": "parts rack-22",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 13.74791,
+      "y": 12.682602,
+      "rotationDeg": 89.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "871",
+      "kind": "Equipment",
+      "label": "parts rack-23",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 9.86622,
+      "y": 16.749958,
+      "rotationDeg": 0,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "873",
+      "kind": "Equipment",
+      "label": "parts rack-25",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 9.859472,
+      "y": 15.835583,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "885",
+      "kind": "Equipment",
+      "label": "new paint table-1",
+      "definitionId": "eq:layout/layouts/new paint table.sldprt@Default#+Y",
+      "x": 27.848952,
+      "y": 3.653359,
+      "rotationDeg": 0,
+      "width": 0.94,
+      "depth": 3.05,
+      "height": 1.2192,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "887",
+      "kind": "Equipment",
+      "label": "cnc machine 1-1",
+      "definitionId": "eq:layout/layouts/cnc machine 1.sldprt@Default#+Y",
+      "x": 7.334369,
+      "y": -2.770946,
+      "rotationDeg": 0,
+      "width": 3.81,
+      "depth": 2.16,
+      "height": 2.4384,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "888",
+      "kind": "Equipment",
+      "label": "cnc machine 2-1",
+      "definitionId": "eq:layout/layouts/cnc machine 2.sldprt@Default#+Y",
+      "x": 18.825652,
+      "y": -4.0854,
+      "rotationDeg": 0,
+      "width": 4.57,
+      "depth": 2.16,
+      "height": 2.4384,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "889",
+      "kind": "Equipment",
+      "label": "cnc machine 3-1",
+      "definitionId": "eq:layout/layouts/cnc machine 3.sldprt@Default#+Y",
+      "x": 12.962824,
+      "y": -11.923116,
+      "rotationDeg": 0,
+      "width": 3.3,
+      "depth": 1.7,
+      "height": 2.4384,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "890",
+      "kind": "Equipment",
+      "label": "cnc machine 4-1",
+      "definitionId": "eq:layout/layouts/cnc machine 4.sldprt@Default#+Y",
+      "x": 4.44129,
+      "y": -5.98574,
+      "rotationDeg": 0,
+      "width": 4.32,
+      "depth": 1.725,
+      "height": 2.4384,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "891",
+      "kind": "Equipment",
+      "label": "cnc machine 5-1",
+      "definitionId": "eq:layout/layouts/cnc machine 5.sldprt@Default#+Y",
+      "x": 3.966984,
+      "y": -12.03152,
+      "rotationDeg": 0,
+      "width": 2.565,
+      "depth": 1.575,
+      "height": 2.4384,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "898",
+      "kind": "Equipment",
+      "label": "feeder-1",
+      "definitionId": "eq:layout/layouts/feeder.sldprt@Default#+Y",
+      "x": 6.532384,
+      "y": -11.494954,
+      "rotationDeg": 0,
+      "width": 2.135,
+      "depth": 0.445,
+      "height": 1.2192,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "899",
+      "kind": "Equipment",
+      "label": "feeder-2",
+      "definitionId": "eq:layout/layouts/feeder.sldprt@Default#+Y",
+      "x": 16.264824,
+      "y": -11.302761,
+      "rotationDeg": 0,
+      "width": 2.135,
+      "depth": 0.445,
+      "height": 1.2192,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "904",
+      "kind": "Equipment",
+      "label": "new cnc machine-1",
+      "definitionId": "eq:layout/layouts/new cnc machine.sldprt@Default#+Y",
+      "x": 20.029495,
+      "y": -12.406357,
+      "rotationDeg": 0,
+      "width": 4.625,
+      "depth": 2.285,
+      "height": 2.4384,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "905",
+      "kind": "Equipment",
+      "label": "feeder-3",
+      "definitionId": "eq:layout/layouts/feeder.sldprt@Default#+Y",
+      "x": 24.652295,
+      "y": -11.353096,
+      "rotationDeg": 0,
+      "width": 2.135,
+      "depth": 0.445,
+      "height": 1.2192,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "908",
+      "kind": "Equipment",
+      "label": "machine shope lathe-1",
+      "definitionId": "eq:layout/layouts/machine shope lathe.sldprt@Default#+Y",
+      "x": 28.268595,
+      "y": -2.383391,
+      "rotationDeg": 270,
+      "width": 2.185,
+      "depth": 1.065,
+      "height": 1.3716,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "911",
+      "kind": "Equipment",
+      "label": "rack4-1",
+      "definitionId": "eq:layout/layouts/rack4.sldprt@Default#+Y",
+      "x": 7.926288,
+      "y": 0.634227,
+      "rotationDeg": 0,
+      "width": 1.22,
+      "depth": 6.095,
+      "height": 3.6576,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "917",
+      "kind": "Equipment",
+      "label": "work table-1",
+      "definitionId": "eq:layout/layouts/work table.sldprt@Default#+Y",
+      "x": 21.9456,
+      "y": 2.903733,
+      "rotationDeg": 0,
+      "width": 3.66,
+      "depth": 1.22,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "918",
+      "kind": "Equipment",
+      "label": "work table-2",
+      "definitionId": "eq:layout/layouts/work table.sldprt@Default#+Y",
+      "x": 17.145,
+      "y": 2.854326,
+      "rotationDeg": 0,
+      "width": 3.66,
+      "depth": 1.22,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "926",
+      "kind": "Equipment",
+      "label": "small table-1",
+      "definitionId": "eq:layout/layouts/small table.sldprt@Default#+Y",
+      "x": 14.7066,
+      "y": 2.274845,
+      "rotationDeg": 0,
+      "width": 2.44,
+      "depth": 1.83,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "929",
+      "kind": "Equipment",
+      "label": "smaller table-1",
+      "definitionId": "eq:layout/layouts/smaller table.sldprt@Default#+Y",
+      "x": 14.416629,
+      "y": -0.1524,
+      "rotationDeg": 0,
+      "width": 2.44,
+      "depth": 1.22,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "932",
+      "kind": "Equipment",
+      "label": "small shelf-1",
+      "definitionId": "eq:layout/layouts/small shelf.sldprt@Default#+Y",
+      "x": 23.1648,
+      "y": -0.1524,
+      "rotationDeg": 0,
+      "width": 2.44,
+      "depth": 1.065,
+      "height": 3.6576,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "937",
+      "kind": "Equipment",
+      "label": "big fridge-1",
+      "definitionId": "eq:layout/layouts/big fridge.sldprt@Default#+Y",
+      "x": 18.837686,
+      "y": -0.065038,
+      "rotationDeg": 0,
+      "width": 1.37,
+      "depth": 0.76,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "938",
+      "kind": "Equipment",
+      "label": "small fridge-1",
+      "definitionId": "eq:layout/layouts/small fridge.sldprt@Default#+Y",
+      "x": 21.580886,
+      "y": -0.1524,
+      "rotationDeg": 0,
+      "width": 0.76,
+      "depth": 0.76,
+      "height": 1.524,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "940",
+      "kind": "Equipment",
+      "label": "shelve5-1",
+      "definitionId": "eq:layout/layouts/shelve5.sldprt@Default#+Y",
+      "x": 20.209286,
+      "y": -0.15603,
+      "rotationDeg": 0,
+      "width": 1.37,
+      "depth": 1.065,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "949",
+      "kind": "Equipment",
+      "label": "heat sheet-1",
+      "definitionId": "eq:layout/layouts/heat sheet.sldprt@Default#+Y",
+      "x": 17.713562,
+      "y": 0.57153,
+      "rotationDeg": 0,
+      "width": 0.56,
+      "depth": 1.17,
+      "height": 1.524,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "951",
+      "kind": "Equipment",
+      "label": "lathe-1",
+      "definitionId": "eq:layout/layouts/lathe.sldprt@Default#+Y",
+      "x": 9.274477,
+      "y": -0.050006,
+      "rotationDeg": 0,
+      "width": 0.76,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "953",
+      "kind": "Equipment",
+      "label": "sew talble 1-1",
+      "definitionId": "eq:layout/layouts/sew talble 1.sldprt@Default#+Y",
+      "x": 0.1524,
+      "y": 4.201102,
+      "rotationDeg": 0,
+      "width": 2.44,
+      "depth": 3.66,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "958",
+      "kind": "Equipment",
+      "label": "shelve 3-1",
+      "definitionId": "eq:layout/layouts/shelve 3.sldprt@Default#+Y",
+      "x": 4.771777,
+      "y": -0.1524,
+      "rotationDeg": 0,
+      "width": 2.745,
+      "depth": 1.065,
+      "height": 3.6576,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "961",
+      "kind": "Equipment",
+      "label": "sew table 2-1",
+      "definitionId": "eq:layout/layouts/sew table 2.sldprt@Default#+Y",
+      "x": 0.190738,
+      "y": 1.969375,
+      "rotationDeg": 0,
+      "width": 2.44,
+      "depth": 1.065,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "963",
+      "kind": "Equipment",
+      "label": "large sewing tale-1",
+      "definitionId": "eq:layout/layouts/large sewing tale.sldprt@Default#+Y",
+      "x": -5.727102,
+      "y": -1.292236,
+      "rotationDeg": 0,
+      "width": 3.66,
+      "depth": 6.095,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "968",
+      "kind": "Equipment",
+      "label": "medium sewing table-2",
+      "definitionId": "eq:layout/layouts/medium sewing table.sldprt@Default#+Y",
+      "x": -4.507902,
+      "y": -5.686436,
+      "rotationDeg": 0,
+      "width": 2.44,
+      "depth": 3.66,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "977",
+      "kind": "Equipment",
+      "label": "small sewing table-1",
+      "definitionId": "eq:layout/layouts/small sewing table.sldprt@Default#+Y",
+      "x": -4.507902,
+      "y": -4.756803,
+      "rotationDeg": 0,
+      "width": 1.83,
+      "depth": 1.92,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "980",
+      "kind": "Equipment",
+      "label": "sewing table 3-1",
+      "definitionId": "eq:layout/layouts/sewing table 3.sldprt@Default#+Y",
+      "x": -6.098953,
+      "y": -17.680295,
+      "rotationDeg": 0,
+      "width": 3.66,
+      "depth": 3.25,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "983",
+      "kind": "Equipment",
+      "label": "sewing table 4-1",
+      "definitionId": "eq:layout/layouts/sewing table 4.sldprt@Default#+Y",
+      "x": -6.135256,
+      "y": -11.544538,
+      "rotationDeg": 0,
+      "width": 3.66,
+      "depth": 4.42,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "986",
+      "kind": "Equipment",
+      "label": "hige table-1",
+      "definitionId": "eq:layout/layouts/hige table.sldprt@Default#+Y",
+      "x": -5.575367,
+      "y": -22.168779,
+      "rotationDeg": 270,
+      "width": 11.125,
+      "depth": 2.47,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "989",
+      "kind": "Equipment",
+      "label": "table 5-1",
+      "definitionId": "eq:layout/layouts/table 5.sldprt@Default#+Y",
+      "x": -7.807475,
+      "y": -27.938269,
+      "rotationDeg": 90,
+      "width": 3.69,
+      "depth": 1.22,
+      "height": 0.9144,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "1008",
+      "kind": "Equipment",
+      "label": "parts rack-26",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 10.29126,
+      "y": 15.832397,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "1019",
+      "kind": "Equipment",
+      "label": "parts rack-27",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 12.907389,
+      "y": 15.81309,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "1020",
+      "kind": "Equipment",
+      "label": "parts rack-28",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 11.383431,
+      "y": 15.824337,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "1021",
+      "kind": "Equipment",
+      "label": "parts rack-29",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 13.339177,
+      "y": 15.809904,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "1022",
+      "kind": "Equipment",
+      "label": "parts rack-30",
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "x": 11.815219,
+      "y": 15.82115,
+      "rotationDeg": 359.577,
+      "width": 0.43,
+      "depth": 0.915,
+      "height": 1.8288,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "1034",
+      "kind": "Equipment",
+      "label": "rack3-2",
+      "definitionId": "eq:layout/layouts/rack3.sldprt@Default#+Y",
+      "x": 28.4988,
+      "y": 12.16376,
+      "rotationDeg": 0,
+      "width": 1.065,
+      "depth": 5.08,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "1039",
+      "kind": "Equipment",
+      "label": "rack3-5",
+      "definitionId": "eq:layout/layouts/rack3.sldprt@Default#+Y",
+      "x": 7.402782,
+      "y": 11.705067,
+      "rotationDeg": 0,
+      "width": 1.065,
+      "depth": 5.08,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "1041",
+      "kind": "Equipment",
+      "label": "rack3-7",
+      "definitionId": "eq:layout/layouts/rack3.sldprt@Default#+Y",
+      "x": 7.402782,
+      "y": 11.705067,
+      "rotationDeg": 0,
+      "width": 1.065,
+      "depth": 5.08,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "1044",
+      "kind": "Equipment",
+      "label": "rack3-10",
+      "definitionId": "eq:layout/layouts/rack3.sldprt@Default#+Y",
+      "x": 7.402782,
+      "y": 11.705067,
+      "rotationDeg": 0,
+      "width": 1.065,
+      "depth": 5.08,
+      "height": 3.048,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "instanceId": "1046",
+      "kind": "Equipment",
+      "label": "machine shope lathe-2",
+      "definitionId": "eq:layout/layouts/machine shope lathe.sldprt@Default#+Y",
+      "x": 27.094183,
+      "y": -1.792521,
+      "rotationDeg": 0,
+      "width": 2.185,
+      "depth": 1.065,
+      "height": 1.3716,
+      "geometry": "tessellatedOutline",
+      "accuracy": "tessellated",
+      "clearances": 0,
+      "warnings": ["info:PROPERTIES_UNAVAILABLE"]
+    }
+  ],
+  "issues": [
+    {
+      "severity": "info",
+      "code": "OUTLINE_RESOLUTION_COARSENED",
+      "componentId": "23",
+      "message": "Footprint grid coarsened to 0.04 m to stay within maxRasterCells."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "23",
+      "message": "Custom properties of 'Room-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "25",
+      "message": "Custom properties of 'Rack 1-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "26",
+      "message": "Custom properties of 'Rack 1-2' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "45",
+      "message": "Custom properties of 'Assembly Table 1-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "46",
+      "message": "Custom properties of 'Assembly Table 2-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "54",
+      "message": "Custom properties of 'torque table-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "56",
+      "message": "Custom properties of 'wabash-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "57",
+      "message": "Custom properties of 'paint table-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "483",
+      "message": "Custom properties of 'BANDSAW-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "497",
+      "message": "Custom properties of 'SHELVING-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "534",
+      "message": "Custom properties of '4x8TABLE-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "535",
+      "message": "Custom properties of '4x8TABLE-2' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "590",
+      "message": "Custom properties of 'FINISHING TABLE-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "591",
+      "message": "Custom properties of 'BUNDLEWINCH-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "592",
+      "message": "Custom properties of 'FINSIHINGSHELVES-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "593",
+      "message": "Custom properties of 'SHELVES-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "621",
+      "message": "Custom properties of 'STANDARDSHELF-2' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "629",
+      "message": "Custom properties of 'STANDARDSHELF-3' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "651",
+      "message": "Custom properties of 'STANDARDSHELF-4' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "656",
+      "message": "Custom properties of 'STANDARDSHELF-5' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "663",
+      "message": "Custom properties of 'STANDARDSHELF-6' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "690",
+      "message": "Custom properties of 'STANDARDSHELF-7' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "697",
+      "message": "Custom properties of 'STANDARDSHELF-8' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "705",
+      "message": "Custom properties of 'STANDARDSHELF-9' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "707",
+      "message": "Custom properties of 'STANDARDSHELF-10' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "719",
+      "message": "Custom properties of 'STANDARDSHELF-11' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "725",
+      "message": "Custom properties of 'STANDARDSHELF-12' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "731",
+      "message": "Custom properties of 'STANDARDSHELF-13' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "797",
+      "message": "Custom properties of 'TOOL CHEST-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "798",
+      "message": "Custom properties of 'TABLE-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "805",
+      "message": "Custom properties of 'WORK BENCH-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "806",
+      "message": "Custom properties of 'short Rack-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "810",
+      "message": "Custom properties of 'Wall-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "816",
+      "message": "Custom properties of 'Rack2-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "817",
+      "message": "Custom properties of 'rack3-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "823",
+      "message": "Custom properties of 'table 2-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "827",
+      "message": "Custom properties of 'table 4-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "831",
+      "message": "Custom properties of 'parts rack-2' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "832",
+      "message": "Custom properties of 'parts rack-3' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "839",
+      "message": "Custom properties of 'parts rack-4' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "840",
+      "message": "Custom properties of 'parts rack-5' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "841",
+      "message": "Custom properties of 'parts rack-6' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "842",
+      "message": "Custom properties of 'parts rack-7' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "846",
+      "message": "Custom properties of 'parts rack-8' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "847",
+      "message": "Custom properties of 'parts rack-9' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "848",
+      "message": "Custom properties of 'parts rack-10' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "849",
+      "message": "Custom properties of 'parts rack-11' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "850",
+      "message": "Custom properties of 'parts rack-12' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "851",
+      "message": "Custom properties of 'parts rack-13' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "852",
+      "message": "Custom properties of 'parts rack-14' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "853",
+      "message": "Custom properties of 'parts rack-15' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "854",
+      "message": "Custom properties of 'parts rack-16' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "855",
+      "message": "Custom properties of 'parts rack-17' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "856",
+      "message": "Custom properties of 'parts rack-18' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "857",
+      "message": "Custom properties of 'parts rack-19' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "858",
+      "message": "Custom properties of 'parts rack-20' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "867",
+      "message": "Custom properties of 'parts rack-21' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "868",
+      "message": "Custom properties of 'parts rack-22' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "871",
+      "message": "Custom properties of 'parts rack-23' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "873",
+      "message": "Custom properties of 'parts rack-25' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "885",
+      "message": "Custom properties of 'new paint table-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "887",
+      "message": "Custom properties of 'cnc machine 1-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "888",
+      "message": "Custom properties of 'cnc machine 2-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "889",
+      "message": "Custom properties of 'cnc machine 3-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "890",
+      "message": "Custom properties of 'cnc machine 4-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "891",
+      "message": "Custom properties of 'cnc machine 5-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "898",
+      "message": "Custom properties of 'feeder-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "899",
+      "message": "Custom properties of 'feeder-2' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "904",
+      "message": "Custom properties of 'new cnc machine-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "905",
+      "message": "Custom properties of 'feeder-3' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "908",
+      "message": "Custom properties of 'machine shope lathe-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "911",
+      "message": "Custom properties of 'rack4-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "917",
+      "message": "Custom properties of 'work table-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "918",
+      "message": "Custom properties of 'work table-2' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "926",
+      "message": "Custom properties of 'small table-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "929",
+      "message": "Custom properties of 'smaller table-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "932",
+      "message": "Custom properties of 'small shelf-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "937",
+      "message": "Custom properties of 'big fridge-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "938",
+      "message": "Custom properties of 'small fridge-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "940",
+      "message": "Custom properties of 'shelve5-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "949",
+      "message": "Custom properties of 'heat sheet-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "951",
+      "message": "Custom properties of 'lathe-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "953",
+      "message": "Custom properties of 'sew talble 1-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "958",
+      "message": "Custom properties of 'shelve 3-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "961",
+      "message": "Custom properties of 'sew table 2-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "963",
+      "message": "Custom properties of 'large sewing tale-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "968",
+      "message": "Custom properties of 'medium sewing table-2' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "977",
+      "message": "Custom properties of 'small sewing table-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "980",
+      "message": "Custom properties of 'sewing table 3-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "983",
+      "message": "Custom properties of 'sewing table 4-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "986",
+      "message": "Custom properties of 'hige table-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "989",
+      "message": "Custom properties of 'table 5-1' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "1008",
+      "message": "Custom properties of 'parts rack-26' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "1019",
+      "message": "Custom properties of 'parts rack-27' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "1020",
+      "message": "Custom properties of 'parts rack-28' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "1021",
+      "message": "Custom properties of 'parts rack-29' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "1022",
+      "message": "Custom properties of 'parts rack-30' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "1034",
+      "message": "Custom properties of 'rack3-2' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "1039",
+      "message": "Custom properties of 'rack3-5' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "1041",
+      "message": "Custom properties of 'rack3-7' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "1044",
+      "message": "Custom properties of 'rack3-10' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "PROPERTIES_UNAVAILABLE",
+      "componentId": "1046",
+      "message": "Custom properties of 'machine shope lathe-2' could not be read (Lightweight); classified by rules/defaults only."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "23",
+      "message": "'Room-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "25",
+      "message": "'Rack 1-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "45",
+      "message": "'Assembly Table 1-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "46",
+      "message": "'Assembly Table 2-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "54",
+      "message": "'torque table-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "56",
+      "message": "'wabash-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "57",
+      "message": "'paint table-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "483",
+      "message": "'BANDSAW-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "497",
+      "message": "'SHELVING-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "534",
+      "message": "'4x8TABLE-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "535",
+      "message": "'4x8TABLE-2' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "590",
+      "message": "'FINISHING TABLE-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "591",
+      "message": "'BUNDLEWINCH-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "592",
+      "message": "'FINSIHINGSHELVES-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "593",
+      "message": "'SHELVES-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "621",
+      "message": "'STANDARDSHELF-2' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "797",
+      "message": "'TOOL CHEST-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "798",
+      "message": "'TABLE-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "805",
+      "message": "'WORK BENCH-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "806",
+      "message": "'short Rack-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "810",
+      "message": "'Wall-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "816",
+      "message": "'Rack2-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "817",
+      "message": "'rack3-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "823",
+      "message": "'table 2-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "827",
+      "message": "'table 4-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "831",
+      "message": "'parts rack-2' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "885",
+      "message": "'new paint table-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "887",
+      "message": "'cnc machine 1-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "888",
+      "message": "'cnc machine 2-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "889",
+      "message": "'cnc machine 3-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "890",
+      "message": "'cnc machine 4-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "891",
+      "message": "'cnc machine 5-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "898",
+      "message": "'feeder-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "904",
+      "message": "'new cnc machine-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "908",
+      "message": "'machine shope lathe-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "911",
+      "message": "'rack4-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "917",
+      "message": "'work table-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "926",
+      "message": "'small table-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "929",
+      "message": "'smaller table-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "932",
+      "message": "'small shelf-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "937",
+      "message": "'big fridge-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "938",
+      "message": "'small fridge-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "940",
+      "message": "'shelve5-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "949",
+      "message": "'heat sheet-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "951",
+      "message": "'lathe-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "953",
+      "message": "'sew talble 1-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "958",
+      "message": "'shelve 3-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "961",
+      "message": "'sew table 2-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "963",
+      "message": "'large sewing tale-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "968",
+      "message": "'medium sewing table-2' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "977",
+      "message": "'small sewing table-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "980",
+      "message": "'sewing table 3-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "983",
+      "message": "'sewing table 4-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "986",
+      "message": "'hige table-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    },
+    {
+      "severity": "info",
+      "code": "SKETCHES_UNAVAILABLE",
+      "componentId": "989",
+      "message": "'table 5-1' is lightweight, so layout sketches (LAYOUT_FOOTPRINT, LAYOUT_CLEARANCE*) could not be checked."
+    }
+  ]
+}

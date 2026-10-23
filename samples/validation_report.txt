@@ -1,0 +1,32 @@
+Shop layout export: Shop Floor.SLDASM [Default]
+Floor plane: XY   Components: 16   Equipment: 4 (3 definitions)   Building: 1   Zones: 0
+
+CLASSIFICATION (placed and grouping levels)
+  ID   Name                    Role              Source                 State
+  1    Mill-1                  Equipment         default                resolved
+  1/4    Operator Clearance-1  Clearance (in 1)  rule:clearance bodies  resolved
+  2    Mill-2                  Equipment         default                resolved
+  2/4    Operator Clearance-1  Clearance (in 2)  rule:clearance bodies  resolved
+  3    Wall-1                  Building          rule:walls             resolved
+  4    Lathe-1                 Equipment         default                lightweight
+  5    Saw-1                   Equipment         default                suppressed
+  6    Cell A-1                Group             rule:cells             resolved
+  6/1    Robot-1               Equipment         default                resolved
+  7    Person-1                Ignore            property:LayoutRole    resolved
+
+PLACED OBJECTS (metres, degrees, floor frame)
+  Instance  Kind       Label    W x D x H      X   Y  Rot  Geometry                   Issues
+  1         Equipment  Mill-1   2 x 1.5 x 2.5  5   3  90   tessellatedOutline
+  2         Equipment  Mill-2   2 x 1.5 x 2.5  10  0  30   tessellatedOutline
+  3         Building   Wall-1   10 x 8 x 4     0   0  0    tessellatedOutline
+  4         Equipment  Lathe-1  3 x 1 x 1.5    20  0  0    rootBoundingBox (partial)  3
+  6/1       Equipment  Robot-1  1.2 x 1.2 x 2  30  5  45   authoredSketch
+
+ISSUES: 0 error(s), 5 warning(s), 2 info
+  [warning] GEOMETRY_FROM_BOUNDING_BOX @4: 'Lathe-1' footprint uses SolidWorks' approximate bounding box.
+  [warning] NESTED_ROLE_IGNORED @1/1: 'Mill-1/Base-1' is marked Equipment (property:LayoutRole) but lies inside '1', which is already placed; it is treated as part of that object to avoid double counting. Mark the parent as Group to place children individually.
+  [warning] NESTED_ROLE_IGNORED @2/1: 'Mill-2/Base-1' is marked Equipment (property:LayoutRole) but lies inside '2', which is already placed; it is treated as part of that object to avoid double counting. Mark the parent as Group to place children individually.
+  [warning] NO_TESSELLATION @4: lightweight, no data
+  [warning] PARTIAL_GEOMETRY @4: 1 of 1 part(s) of 'Lathe-1' returned no geometry; the footprint may be incomplete.
+  [info] PROPERTIES_UNAVAILABLE @4: Custom properties of 'Lathe-1' could not be read (Lightweight); classified by rules/defaults only.
+  [info] SUPPRESSED_EXCLUDED @5: Equipment 'Saw-1' is suppressed and was left out of the placed equipment list (it remains in the component tree).

@@ -1,0 +1,98 @@
+// Shop layout export configuration. Comments and trailing commas are allowed.
+// Every setting is optional; omitted settings use the defaults shown here.
+{
+  "floor": {
+    // XY (up = +Z, default) | XZ (SolidWorks Top Plane, up = +Y) | YZ (up = +X)
+    // | custom (set u and v below) | referencePlane (set referencePlaneName).
+    // XZ: the BACK AREA LAYOUT assembly is modelled Y-up (validated 2026-10-23).
+    "plane": "XZ",
+    "referencePlaneName": "",
+    "origin": [0, 0, 0],
+    "u": [1, 0, 0],
+    "v": [0, 1, 0],
+    // Instances tilted more than this from the floor normal are flagged non-planar.
+    "planarToleranceDeg": 0.5
+  },
+
+  // Names of the custom properties the exporter looks for. None of them are required.
+  "properties": {
+    "role": "LayoutRole",          // Group | Equipment | Building | Clearance | Ignore
+    "kind": "LayoutKind",          // free text, e.g. wall, column, door, aisle
+    "category": "LayoutCategory",  // free text, e.g. CNC, Conveyor, Storage
+    "label": "LayoutLabel",        // display name; defaults to the instance name
+    "assetTag": "AssetTag",
+    "upAxis": "LayoutUpAxis",      // override detected local up axis: +X -X +Y -Y +Z -Z
+    "clearance": {
+      "front": "ClearanceFront",
+      "back": "ClearanceBack",
+      "left": "ClearanceLeft",
+      "right": "ClearanceRight",
+      "defaultUnit": "mm"
+    }
+  },
+
+  "ids": {
+    // componentIdPath: SolidWorks component-ID chain, e.g. "12/4" (stable across renames and saves).
+    // assetTagOrComponentIdPath: "asset:<AssetTag>" when the tag is present and unique.
+    "instanceIdStrategy": "componentIdPath"
+  },
+
+  "classification": {
+    // Role for a direct child of the root (or of a Group) when no property or rule applies.
+    "defaultTopLevelRole": "Equipment",
+    "includeSuppressed": false,
+    "ignoreToolbox": true,
+    // First matching rule wins. A rule matches when all of its criteria match.
+    // Criteria: fileName, filePath, instanceName, namePath, configuration, parentInstanceName,
+    //           ancestorInstanceName (globs: * ?), docType (part|assembly), depth/minDepth/maxDepth,
+    //           isEnvelope, isVirtual, excludeFromBom, suppressed, lightweight,
+    //           property {name, equals|matches|exists} or properties [ ... ].
+    // appliesTo: "top" (default; nodes directly under a Group), "contained" (inside equipment), "any".
+    "rules": [
+      { "name": "room shell",      "fileName": "room*",     "role": "Building", "kind": "room" },
+      { "name": "building shell",  "fileName": "*wall*",    "role": "Building", "kind": "wall" },
+      { "name": "columns",         "fileName": "*column*",  "role": "Building", "kind": "column" },
+      { "name": "floor slab",      "fileName": "*slab*",    "role": "Building", "kind": "slab" },
+      { "name": "doors",           "fileName": "*door*",    "role": "Building", "kind": "door" },
+      { "name": "aisles",          "fileName": "*aisle*",   "role": "Clearance", "kind": "aisle" },
+      { "name": "cells as groups", "instanceName": "Cell*", "docType": "assembly", "role": "Group" },
+      { "name": "people/mannequins", "fileName": "*mannequin*", "role": "Ignore", "appliesTo": "any" },
+      { "name": "clearance bodies in equipment", "fileName": "*clearance*", "role": "Clearance", "appliesTo": "contained" }
+    ]
+  },
+
+  "geometry": {
+    // Temporarily resolve lightweight components that return no geometry; never saved.
+    "resolveLightweight": true,
+    "restoreLightweight": true,
+    // Detailed footprint: grid cell size (m). 0.005 = 5 mm.
+    "footprintResolution": 0.005,
+    "maxRasterCells": 4000000,
+    // Closes gaps narrower than about two cells between parts of one machine.
+    "closingRadiusCells": 1,
+    "simplifyFactor": 1.0,
+    "minIslandArea": 0.0004,
+    "minHoleArea": 0.01,
+    "includeHiddenChildren": true,
+    "excludeEnvelopes": true,
+    "readSketches": true,
+    "footprintSketchName": "LAYOUT_FOOTPRINT",
+    "clearanceSketchPrefix": "LAYOUT_CLEARANCE",
+    "arcChordTolerance": 0.002,
+    "frameMatchTolerance": 0.02,
+    "computeBuildingGeometry": true
+  },
+
+  "output": {
+    "layoutFile": "shop_layout.json",
+    "libraryFile": "equipment_library.json",
+    "reportFile": "validation_report.json",
+    // Off for files committed to the repo: the run block holds the machine name, and absolute
+    // paths hold network-drive folder names. (The run block is excluded from contentHash either way.)
+    "includeRunInfo": false,
+    "includeComponentTree": true,
+    "includeAbsolutePaths": false,
+    "lengthDecimals": 6,
+    "indent": true
+  }
+}

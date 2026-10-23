@@ -1,0 +1,5624 @@
+{
+  "schema": "petersen.equipment-library",
+  "schemaVersion": "1.0.0",
+  "units": {
+    "length": "m",
+    "angle": "deg",
+    "matrixConvention": "4x4 row-major, column vectors: p_target = M · [p_local, 1]. 'solidworksArrayData' is IMathTransform.ArrayData unchanged (rotation [0..8] = images of local X,Y,Z axes, translation [9..11], scale [12])."
+  },
+  "source": {
+    "application": "SOLIDWORKS",
+    "applicationVersion": "33.2.0",
+    "rootFile": "BACK AREA LAYOUT revised.SLDASM",
+    "rootConfiguration": "Default",
+    "exporter": {
+      "name": "ShopLayoutExport",
+      "version": "1.0.0"
+    }
+  },
+  "description": "Reusable equipment definitions keyed by file + configuration + local up axis. Footprints are in each definition's local footprint frame (a, b); see localFrame.",
+  "definitions": [
+    {
+      "definitionId": "eq:layout/layouts/big fridge.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "big fridge.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/big fridge.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 1.37,
+        "depth": 0.76,
+        "height": 1.8288,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -0.762],
+        "max": [1.3716, 1.8288, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 1.8288],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [1.37, 0.76]
+          },
+          "area": 1.0412,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [1.37, 0],
+                [1.37, 0.76],
+                [0, 0.76]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [1.3716, 0.762]
+            },
+            "area": 1.045159258,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [1.3716, 0],
+                  [1.3716, 0.762],
+                  [0, 0.762]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0.6858, 0.381],
+            "width": 1.3716,
+            "depth": 0.762,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [1.3716, 0],
+              [1.3716, 0.762],
+              [0, 0.762]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "937",
+      "instanceIds": ["937"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/cnc machine 1.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "cnc machine 1.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/cnc machine 1.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 3.81,
+        "depth": 2.16,
+        "height": 2.4384,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -2.159],
+        "max": [3.81, 2.4384, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 2.4384],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [3.81, 2.16]
+          },
+          "area": 8.2296,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [3.81, 0],
+                [3.81, 2.16],
+                [0, 2.16]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [3.81, 2.159]
+            },
+            "area": 8.225789571,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [3.81, 0],
+                  [3.81, 2.159],
+                  [0, 2.159]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.905, 1.0795],
+            "width": 3.81,
+            "depth": 2.159,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [3.81, 0],
+              [3.81, 2.159],
+              [0, 2.159]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "887",
+      "instanceIds": ["887"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/cnc machine 2.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "cnc machine 2.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/cnc machine 2.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 4.57,
+        "depth": 2.16,
+        "height": 2.4384,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -2.159],
+        "max": [4.572, 2.4384, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 2.4384],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [4.57, 2.16]
+          },
+          "area": 9.8712,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [4.57, 0],
+                [4.57, 2.16],
+                [0, 2.16]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [4.572, 2.159]
+            },
+            "area": 9.870947691,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [4.572, 0],
+                  [4.572, 2.159],
+                  [0, 2.159]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [2.286, 1.0795],
+            "width": 4.572,
+            "depth": 2.159,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [4.572, 0],
+              [4.572, 2.159],
+              [0, 2.159]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "888",
+      "instanceIds": ["888"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/cnc machine 3.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "cnc machine 3.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/cnc machine 3.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 3.3,
+        "depth": 1.7,
+        "height": 2.4384,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.7018],
+        "max": [3.302, 2.4384, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 2.4384],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [3.3, 1.7]
+          },
+          "area": 5.61,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [3.3, 0],
+                [3.3, 1.7],
+                [0, 1.7]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [3.302, 1.7018]
+            },
+            "area": 5.619343641,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [3.302, 0],
+                  [3.302, 1.7018],
+                  [0, 1.7018]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.651, 0.8509],
+            "width": 3.302,
+            "depth": 1.7018,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [3.302, 0],
+              [3.302, 1.7018],
+              [0, 1.7018]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "889",
+      "instanceIds": ["889"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/cnc machine 4.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "cnc machine 4.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/cnc machine 4.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 4.32,
+        "depth": 1.725,
+        "height": 2.4384,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.7272],
+        "max": [4.318, 2.4384, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 2.4384],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [4.32, 1.725]
+          },
+          "area": 7.452,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [4.32, 0],
+                [4.32, 1.725],
+                [0, 1.725]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [4.318, 1.7272]
+            },
+            "area": 7.458049458,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [4.318, 0],
+                  [4.318, 1.7272],
+                  [0, 1.7272]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [2.159, 0.8636],
+            "width": 4.318,
+            "depth": 1.7272,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [4.318, 0],
+              [4.318, 1.7272],
+              [0, 1.7272]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "890",
+      "instanceIds": ["890"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/cnc machine 5.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "cnc machine 5.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/cnc machine 5.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.565,
+        "depth": 1.575,
+        "height": 2.4384,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.5748],
+        "max": [2.5654, 2.4384, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 2.4384],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [2.565, 1.575]
+          },
+          "area": 4.039875,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [2.565, 0],
+                [2.565, 1.575],
+                [0, 1.575]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [2.5654, 1.5748]
+            },
+            "area": 4.039991776,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [2.5654, 0],
+                  [2.5654, 1.5748],
+                  [0, 1.5748]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.2827, 0.7874],
+            "width": 2.5654,
+            "depth": 1.5748,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [2.5654, 0],
+              [2.5654, 1.5748],
+              [0, 1.5748]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "891",
+      "instanceIds": ["891"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/feeder.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "feeder.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/feeder.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.135,
+        "depth": 0.445,
+        "height": 1.2192,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -0.4445],
+        "max": [2.1336, 1.2192, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 1.2192],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [2.135, 0.445]
+          },
+          "area": 0.950075,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [2.135, 0],
+                [2.135, 0.445],
+                [0, 0.445]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [2.1336, 0.4445]
+            },
+            "area": 0.948385197,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [2.1336, 0],
+                  [2.1336, 0.4445],
+                  [0, 0.4445]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.0668, 0.22225],
+            "width": 2.1336,
+            "depth": 0.4445,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [2.1336, 0],
+              [2.1336, 0.4445],
+              [0, 0.4445]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "898",
+      "instanceIds": ["898", "899", "905"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/heat sheet.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "heat sheet.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/heat sheet.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 0.56,
+        "depth": 1.17,
+        "height": 1.524,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.1684],
+        "max": [0.5588, 1.524, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 1.524],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [0.56, 1.17]
+          },
+          "area": 0.6552,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [0.56, 0],
+                [0.56, 1.17],
+                [0, 1.17]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [0.5588, 1.1684]
+            },
+            "area": 0.652901927,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [0.5588, 0],
+                  [0.5588, 1.1684],
+                  [0, 1.1684]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0.2794, 0.5842],
+            "width": 0.5588,
+            "depth": 1.1684,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [0.5588, 0],
+              [0.5588, 1.1684],
+              [0, 1.1684]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "949",
+      "instanceIds": ["949"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/hige table.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "hige table.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/hige table.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 11.125,
+        "depth": 2.47,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -2.46888],
+        "max": [11.1252, 0.9144, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [11.125, 2.47]
+          },
+          "area": 27.47875,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [11.125, 0],
+                [11.125, 2.47],
+                [0, 2.47]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [11.1252, 2.46888]
+            },
+            "area": 27.466783758,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [11.1252, 0],
+                  [11.1252, 2.46888],
+                  [0, 2.46888]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [5.5626, 1.23444],
+            "width": 11.1252,
+            "depth": 2.46888,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [11.1252, 0],
+              [11.1252, 2.46888],
+              [0, 2.46888]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "986",
+      "instanceIds": ["986"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/large sewing tale.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "large sewing tale.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/large sewing tale.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 3.66,
+        "depth": 6.095,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -6.096],
+        "max": [3.6576, 0.9144, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [3.66, 6.095]
+          },
+          "area": 22.3077,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [3.66, 0],
+                [3.66, 6.095],
+                [0, 6.095]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [3.6576, 6.096]
+            },
+            "area": 22.29672986,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [3.6576, 0],
+                  [3.6576, 6.096],
+                  [0, 6.096]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.8288, 3.048],
+            "width": 3.6576,
+            "depth": 6.096,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [3.6576, 0],
+              [3.6576, 6.096],
+              [0, 6.096]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "963",
+      "instanceIds": ["963"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/lathe.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "lathe.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/lathe.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 0.76,
+        "depth": 0.915,
+        "height": 1.8288,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -0.9144],
+        "max": [0.762, 1.8288, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 1.8288],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [0.76, 0.915]
+          },
+          "area": 0.6954,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [0.76, 0],
+                [0.76, 0.915],
+                [0, 0.915]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [0.762, 0.9144]
+            },
+            "area": 0.696772808,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [0.762, 0],
+                  [0.762, 0.9144],
+                  [0, 0.9144]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0.381, 0.4572],
+            "width": 0.762,
+            "depth": 0.9144,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [0.762, 0],
+              [0.762, 0.9144],
+              [0, 0.9144]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "951",
+      "instanceIds": ["951"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/machine shope lathe.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "machine shope lathe.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/machine shope lathe.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.185,
+        "depth": 1.065,
+        "height": 1.3716,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.0668],
+        "max": [2.1844, 1.3716, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 1.3716],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [2.185, 1.065]
+          },
+          "area": 2.327025,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [2.185, 0],
+                [2.185, 1.065],
+                [0, 1.065]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [2.1844, 1.0668]
+            },
+            "area": 2.330318003,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [2.1844, 0],
+                  [2.1844, 1.0668],
+                  [0, 1.0668]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.0922, 0.5334],
+            "width": 2.1844,
+            "depth": 1.0668,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [2.1844, 0],
+              [2.1844, 1.0668],
+              [0, 1.0668]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "908",
+      "instanceIds": ["908", "1046"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/medium sewing table.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "medium sewing table.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/medium sewing table.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.44,
+        "depth": 3.66,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -3.6576],
+        "max": [2.4384, 0.9144, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [2.44, 3.66]
+          },
+          "area": 8.9304,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [2.44, 0],
+                [2.44, 3.66],
+                [0, 3.66]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [2.4384, 3.6576]
+            },
+            "area": 8.91869177,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [2.4384, 0],
+                  [2.4384, 3.6576],
+                  [0, 3.6576]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.2192, 1.8288],
+            "width": 2.4384,
+            "depth": 3.6576,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [2.4384, 0],
+              [2.4384, 3.6576],
+              [0, 3.6576]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "968",
+      "instanceIds": ["968"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/new cnc machine.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "new cnc machine.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/new cnc machine.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 4.625,
+        "depth": 2.285,
+        "height": 2.4384,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -2.286],
+        "max": [4.6228, 2.4384, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 2.4384],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [4.625, 2.285]
+          },
+          "area": 10.568125,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [4.625, 0],
+                [4.625, 2.285],
+                [0, 2.285]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [4.6228, 2.286]
+            },
+            "area": 10.567720572,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [4.6228, 0],
+                  [4.6228, 2.286],
+                  [0, 2.286]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [2.3114, 1.143],
+            "width": 4.6228,
+            "depth": 2.286,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [4.6228, 0],
+              [4.6228, 2.286],
+              [0, 2.286]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "904",
+      "instanceIds": ["904"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/new paint table.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "new paint table.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/new paint table.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 0.94,
+        "depth": 3.05,
+        "height": 1.2192,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -3.048],
+        "max": [0.9398, 1.2192, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 1.2192],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [0.94, 3.05]
+          },
+          "area": 2.867,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [0.94, 0],
+                [0.94, 3.05],
+                [0, 3.05]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [0.9398, 3.048]
+            },
+            "area": 2.864510565,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [0.9398, 0],
+                  [0.9398, 3.048],
+                  [0, 3.048]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0.4699, 1.524],
+            "width": 0.9398,
+            "depth": 3.048,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [0.9398, 0],
+              [0.9398, 3.048],
+              [0, 3.048]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "885",
+      "instanceIds": ["885"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/parts rack.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "parts rack.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/parts rack.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 0.43,
+        "depth": 0.915,
+        "height": 1.8288,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -0.9144],
+        "max": [0.4318, 1.8288, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 1.8288],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [0.43, 0.915]
+          },
+          "area": 0.39345,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [0.43, 0],
+                [0.43, 0.915],
+                [0, 0.915]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [0.4318, 0.9144]
+            },
+            "area": 0.394837919,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [0.4318, 0],
+                  [0.4318, 0.9144],
+                  [0, 0.9144]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0.2159, 0.4572],
+            "width": 0.4318,
+            "depth": 0.9144,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [0.4318, 0],
+              [0.4318, 0.9144],
+              [0, 0.9144]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "831",
+      "instanceIds": ["831", "832", "839", "840", "841", "842", "846", "847", "848", "849", "850", "851", "852", "853", "854", "855", "856", "857", "858", "867", "868", "871", "873", "1008", "1019", "1020", "1021", "1022"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/rack2.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "Rack2.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/Rack2.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 1.065,
+        "depth": 7.62,
+        "height": 3.6576,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -7.62],
+        "max": [1.0668, 3.6576, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 3.6576],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [1.065, 7.62]
+          },
+          "area": 8.1153,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [1.065, 0],
+                [1.065, 7.62],
+                [0, 7.62]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [1.0668, 7.62]
+            },
+            "area": 8.129015865,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [1.0668, 0],
+                  [1.0668, 7.62],
+                  [0, 7.62]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0.5334, 3.81],
+            "width": 1.0668,
+            "depth": 7.62,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [1.0668, 0],
+              [1.0668, 7.62],
+              [0, 7.62]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "816",
+      "instanceIds": ["816"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/rack3.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "rack3.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/rack3.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 1.065,
+        "depth": 5.08,
+        "height": 3.048,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -5.08],
+        "max": [1.0668, 3.048, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 3.048],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [1.065, 5.08]
+          },
+          "area": 5.4102,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [1.065, 0],
+                [1.065, 5.08],
+                [0, 5.08]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [1.0668, 5.08]
+            },
+            "area": 5.41934391,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [1.0668, 0],
+                  [1.0668, 5.08],
+                  [0, 5.08]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0.5334, 2.54],
+            "width": 1.0668,
+            "depth": 5.08,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [1.0668, 0],
+              [1.0668, 5.08],
+              [0, 5.08]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "817",
+      "instanceIds": ["817", "1034", "1039", "1041", "1044"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/rack4.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "rack4.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/rack4.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 1.22,
+        "depth": 6.095,
+        "height": 3.6576,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -6.096],
+        "max": [1.2192, 3.6576, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 3.6576],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [1.22, 6.095]
+          },
+          "area": 7.4359,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [1.22, 0],
+                [1.22, 6.095],
+                [0, 6.095]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [1.2192, 6.096]
+            },
+            "area": 7.432243529,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [1.2192, 0],
+                  [1.2192, 6.096],
+                  [0, 6.096]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0.6096, 3.048],
+            "width": 1.2192,
+            "depth": 6.096,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [1.2192, 0],
+              [1.2192, 6.096],
+              [0, 6.096]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "911",
+      "instanceIds": ["911"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/sew table 2.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "sew table 2.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/sew table 2.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.44,
+        "depth": 1.065,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.0668],
+        "max": [2.4384, 0.9144, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [2.44, 1.065]
+          },
+          "area": 2.5986,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [2.44, 0],
+                [2.44, 1.065],
+                [0, 1.065]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [2.4384, 1.0668]
+            },
+            "area": 2.601285148,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [2.4384, 0],
+                  [2.4384, 1.0668],
+                  [0, 1.0668]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.2192, 0.5334],
+            "width": 2.4384,
+            "depth": 1.0668,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [2.4384, 0],
+              [2.4384, 1.0668],
+              [0, 1.0668]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "961",
+      "instanceIds": ["961"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/sew talble 1.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "sew talble 1.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/sew talble 1.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.44,
+        "depth": 3.66,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -3.6576],
+        "max": [2.4384, 0.9144, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [2.44, 3.66]
+          },
+          "area": 7.0638,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [1.675, 0],
+                [1.675, 2.44],
+                [2.44, 2.44],
+                [2.44, 3.66],
+                [0, 3.66]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [2.4384, 3.6576]
+            },
+            "area": 7.989661256,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [1.6764, 0],
+                  [2.4384, 2.4384],
+                  [2.4384, 3.6576],
+                  [0, 3.6576]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.2192, 1.8288],
+            "width": 2.4384,
+            "depth": 3.6576,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [2.4384, 0],
+              [2.4384, 3.6576],
+              [0, 3.6576]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 20,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "953",
+      "instanceIds": ["953"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/sewing table 3.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "sewing table 3.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/sewing table 3.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 3.66,
+        "depth": 3.25,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -3.2512],
+        "max": [3.6576, 0.9144, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [3.66, 3.25]
+          },
+          "area": 11.2629,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [3.66, 0],
+                [3.66, 3.25],
+                [0.735, 3.25],
+                [0.735, 2.39],
+                [0, 2.39]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [3.6576, 3.2512]
+            },
+            "area": 11.573524858,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [3.6576, 0],
+                  [3.6576, 3.2512],
+                  [0.7366, 3.2512],
+                  [0, 2.3876]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.8288, 1.6256],
+            "width": 3.6576,
+            "depth": 3.2512,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [3.6576, 0],
+              [3.6576, 3.2512],
+              [0, 3.2512]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 20,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "980",
+      "instanceIds": ["980"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/sewing table 4.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "sewing table 4.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/sewing table 4.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 3.66,
+        "depth": 4.42,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -3.6576],
+        "max": [3.6576, 0.9144, 0.762],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, -0.76],
+            "max": [3.66, 3.66]
+          },
+          "area": 12.2488,
+          "regions": [
+            {
+              "outer": [
+                [2.135, -0.76],
+                [3.66, -0.76],
+                [3.66, 2.44],
+                [1.77, 2.44],
+                [1.77, 3.66],
+                [0, 3.66],
+                [0, 0],
+                [2.135, 0]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, -0.762],
+              "max": [3.6576, 3.6576]
+            },
+            "area": 14.200229291,
+            "regions": [
+              {
+                "outer": [
+                  [2.1336, -0.762],
+                  [3.6576, -0.762],
+                  [3.6576, 2.4384],
+                  [1.76784, 3.6576],
+                  [0, 3.6576],
+                  [0, 0]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.8288, 1.4478],
+            "width": 3.6576,
+            "depth": 4.4196,
+            "angleDeg": 0,
+            "corners": [
+              [0, -0.762],
+              [3.6576, -0.762],
+              [3.6576, 3.6576],
+              [0, 3.6576]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 28,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "983",
+      "instanceIds": ["983"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/shelve 3.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "shelve 3.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/shelve 3.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.745,
+        "depth": 1.065,
+        "height": 3.6576,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.0668],
+        "max": [2.7432, 3.6576, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 3.6576],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [2.745, 1.065]
+          },
+          "area": 2.923425,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [2.745, 0],
+                [2.745, 1.065],
+                [0, 1.065]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [2.7432, 1.0668]
+            },
+            "area": 2.926445823,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [2.7432, 0],
+                  [2.7432, 1.0668],
+                  [0, 1.0668]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.3716, 0.5334],
+            "width": 2.7432,
+            "depth": 1.0668,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [2.7432, 0],
+              [2.7432, 1.0668],
+              [0, 1.0668]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "958",
+      "instanceIds": ["958"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/shelve5.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "shelve5.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/shelve5.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 1.37,
+        "depth": 1.065,
+        "height": 1.8288,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.0668],
+        "max": [1.3716, 1.8288, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 1.8288],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [1.37, 1.065]
+          },
+          "area": 1.45905,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [1.37, 0],
+                [1.37, 1.065],
+                [0, 1.065]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [1.3716, 1.0668]
+            },
+            "area": 1.463222912,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [1.3716, 0],
+                  [1.3716, 1.0668],
+                  [0, 1.0668]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0.6858, 0.5334],
+            "width": 1.3716,
+            "depth": 1.0668,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [1.3716, 0],
+              [1.3716, 1.0668],
+              [0, 1.0668]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "940",
+      "instanceIds": ["940"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/short rack.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "short Rack.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/short Rack.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.54,
+        "depth": 0.61,
+        "height": 2.4384,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -0.6096],
+        "max": [2.54, 2.4384, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 2.4384],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [2.54, 0.61]
+          },
+          "area": 1.5494,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [2.54, 0],
+                [2.54, 0.61],
+                [0, 0.61]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [2.54, 0.6096]
+            },
+            "area": 1.548383996,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [2.54, 0],
+                  [2.54, 0.6096],
+                  [0, 0.6096]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.27, 0.3048],
+            "width": 2.54,
+            "depth": 0.6096,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [2.54, 0],
+              [2.54, 0.6096],
+              [0, 0.6096]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "806",
+      "instanceIds": ["806"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/small fridge.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "small fridge.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/small fridge.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 0.76,
+        "depth": 0.76,
+        "height": 1.524,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -0.762],
+        "max": [0.762, 1.524, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 1.524],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [0.76, 0.76]
+          },
+          "area": 0.5776,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [0.76, 0],
+                [0.76, 0.76],
+                [0, 0.76]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [0.762, 0.762]
+            },
+            "area": 0.580644037,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [0.762, 0],
+                  [0.762, 0.762],
+                  [0, 0.762]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0.381, 0.381],
+            "width": 0.762,
+            "depth": 0.762,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [0.762, 0],
+              [0.762, 0.762],
+              [0, 0.762]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "938",
+      "instanceIds": ["938"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/small sewing table.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "small sewing table.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/small sewing table.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 1.83,
+        "depth": 1.92,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [-1.8288, 0, -1.92024],
+        "max": [0, 0.9144, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [-1.83, 0],
+            "max": [0, 1.92]
+          },
+          "area": 2.7694,
+          "regions": [
+            {
+              "outer": [
+                [-1.22, 0],
+                [0, 0],
+                [0, 1.92],
+                [-1.83, 1.92],
+                [-1.83, 1.22],
+                [-1.22, 1.22]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [-1.8288, 0],
+              "max": [0, 1.92024]
+            },
+            "area": 3.14012279,
+            "regions": [
+              {
+                "outer": [
+                  [-1.2192, 0],
+                  [0, 0],
+                  [0, 1.92024],
+                  [-1.8288, 1.92024],
+                  [-1.8288, 1.2192]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [-0.9144, 0.96012],
+            "width": 1.8288,
+            "depth": 1.92024,
+            "angleDeg": 0,
+            "corners": [
+              [-1.8288, 0],
+              [0, 0],
+              [0, 1.92024],
+              [-1.8288, 1.92024]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 20,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "977",
+      "instanceIds": ["977"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/small shelf.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "small shelf.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/small shelf.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.44,
+        "depth": 1.065,
+        "height": 3.6576,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.0668],
+        "max": [2.4384, 3.6576, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 3.6576],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [2.44, 1.065]
+          },
+          "area": 2.5986,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [2.44, 0],
+                [2.44, 1.065],
+                [0, 1.065]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [2.4384, 1.0668]
+            },
+            "area": 2.601285148,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [2.4384, 0],
+                  [2.4384, 1.0668],
+                  [0, 1.0668]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.2192, 0.5334],
+            "width": 2.4384,
+            "depth": 1.0668,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [2.4384, 0],
+              [2.4384, 1.0668],
+              [0, 1.0668]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "932",
+      "instanceIds": ["932"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/small table.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "small table.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/small table.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.44,
+        "depth": 1.83,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.8288],
+        "max": [2.4384, 0.9144, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [2.44, 1.83]
+          },
+          "area": 4.4652,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [2.44, 0],
+                [2.44, 1.83],
+                [0, 1.83]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [2.4384, 1.8288]
+            },
+            "area": 4.459345885,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [2.4384, 0],
+                  [2.4384, 1.8288],
+                  [0, 1.8288]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.2192, 0.9144],
+            "width": 2.4384,
+            "depth": 1.8288,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [2.4384, 0],
+              [2.4384, 1.8288],
+              [0, 1.8288]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "926",
+      "instanceIds": ["926"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/smaller table.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "smaller table.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/smaller table.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.44,
+        "depth": 1.22,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.2192],
+        "max": [2.4384, 0.9144, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [2.44, 1.22]
+          },
+          "area": 2.9768,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [2.44, 0],
+                [2.44, 1.22],
+                [0, 1.22]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [2.4384, 1.2192]
+            },
+            "area": 2.972897353,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [2.4384, 0],
+                  [2.4384, 1.2192],
+                  [0, 1.2192]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.2192, 0.6096],
+            "width": 2.4384,
+            "depth": 1.2192,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [2.4384, 0],
+              [2.4384, 1.2192],
+              [0, 1.2192]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "929",
+      "instanceIds": ["929"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/table 2.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "table 2.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/table 2.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.415,
+        "depth": 0.915,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -0.9144],
+        "max": [2.413, 0.9144, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [2.415, 0.915]
+          },
+          "area": 2.209725,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [2.415, 0],
+                [2.415, 0.915],
+                [0, 0.915]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [2.413, 0.9144]
+            },
+            "area": 2.206447253,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [2.413, 0],
+                  [2.413, 0.9144],
+                  [0, 0.9144]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.2065, 0.4572],
+            "width": 2.413,
+            "depth": 0.9144,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [2.413, 0],
+              [2.413, 0.9144],
+              [0, 0.9144]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "823",
+      "instanceIds": ["823"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/table 4.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "table 4.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/table 4.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 1.22,
+        "depth": 1.83,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.8288],
+        "max": [1.2192, 0.9144, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [1.22, 1.83]
+          },
+          "area": 2.2326,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [1.22, 0],
+                [1.22, 1.83],
+                [0, 1.83]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [1.2192, 1.8288]
+            },
+            "area": 2.229672942,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [1.2192, 0],
+                  [1.2192, 1.8288],
+                  [0, 1.8288]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0.6096, 0.9144],
+            "width": 1.2192,
+            "depth": 1.8288,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [1.2192, 0],
+              [1.2192, 1.8288],
+              [0, 1.8288]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "827",
+      "instanceIds": ["827"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/table 5.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "table 5.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/table 5.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 3.69,
+        "depth": 1.22,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.2192],
+        "max": [3.68808, 0.9144, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [3.69, 1.22]
+          },
+          "area": 4.5018,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [3.69, 0],
+                [3.69, 1.22],
+                [0, 1.22]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [3.68808, 1.2192]
+            },
+            "area": 4.49650728,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [3.68808, 0],
+                  [3.68808, 1.2192],
+                  [0, 1.2192]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.84404, 0.6096],
+            "width": 3.68808,
+            "depth": 1.2192,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [3.68808, 0],
+              [3.68808, 1.2192],
+              [0, 1.2192]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "989",
+      "instanceIds": ["989"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/table.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "TABLE.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/TABLE.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 1.675,
+        "depth": 0.915,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -0.9144],
+        "max": [1.6764, 0.9144, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [1.675, 0.915]
+          },
+          "area": 1.532625,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [1.675, 0],
+                [1.675, 0.915],
+                [0, 0.915]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [1.6764, 0.9144]
+            },
+            "area": 1.53290008,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [1.6764, 0],
+                  [1.6764, 0.9144],
+                  [0, 0.9144]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0.8382, 0.4572],
+            "width": 1.6764,
+            "depth": 0.9144,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [1.6764, 0],
+              [1.6764, 0.9144],
+              [0, 0.9144]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "798",
+      "instanceIds": ["798"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/tool chest.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "TOOL CHEST.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/TOOL CHEST.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 0.56,
+        "depth": 1.42,
+        "height": 1.8288,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.4224],
+        "max": [0.5588, 1.8288, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 1.8288],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [0.56, 1.42]
+          },
+          "area": 0.7952,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [0.56, 0],
+                [0.56, 1.42],
+                [0, 1.42]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [0.5588, 1.4224]
+            },
+            "area": 0.794837093,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [0.5588, 0],
+                  [0.5588, 1.4224],
+                  [0, 1.4224]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0.2794, 0.7112],
+            "width": 0.5588,
+            "depth": 1.4224,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [0.5588, 0],
+              [0.5588, 1.4224],
+              [0, 1.4224]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "797",
+      "instanceIds": ["797"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/work bench.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "WORK BENCH.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/WORK BENCH.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 3.43,
+        "depth": 0.43,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -0.4318],
+        "max": [3.429, 0.9144, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [3.43, 0.43]
+          },
+          "area": 1.4749,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [3.43, 0],
+                [3.43, 0.43],
+                [0, 0.43]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [3.429, 0.4318]
+            },
+            "area": 1.480642184,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [3.429, 0],
+                  [3.429, 0.4318],
+                  [0, 0.4318]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.7145, 0.2159],
+            "width": 3.429,
+            "depth": 0.4318,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [3.429, 0],
+              [3.429, 0.4318],
+              [0, 0.4318]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "805",
+      "instanceIds": ["805"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/layouts/work table.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "work table.SLDPRT",
+        "relativePath": "LAYOUT/LAYOUTS/work table.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 3.66,
+        "depth": 1.22,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.2192],
+        "max": [3.6576, 0.9144, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [3.66, 1.22]
+          },
+          "area": 4.4652,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [3.66, 0],
+                [3.66, 1.22],
+                [0, 1.22]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [3.6576, 1.2192]
+            },
+            "area": 4.459345885,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [3.6576, 0],
+                  [3.6576, 1.2192],
+                  [0, 1.2192]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.8288, 0.6096],
+            "width": 3.6576,
+            "depth": 1.2192,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [3.6576, 0],
+              [3.6576, 1.2192],
+              [0, 1.2192]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "917",
+      "instanceIds": ["917", "918"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/parts/4x8table.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "4x8TABLE.SLDPRT",
+        "relativePath": "LAYOUT/PARTS/4x8TABLE.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.44,
+        "depth": 1.22,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [-1.2192, 0, -0.6096],
+        "max": [1.2192, 0.9144, 0.6096],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [-1.22, -0.61],
+            "max": [1.22, 0.61]
+          },
+          "area": 2.9768,
+          "regions": [
+            {
+              "outer": [
+                [-1.22, -0.61],
+                [1.22, -0.61],
+                [1.22, 0.61],
+                [-1.22, 0.61]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [-1.2192, -0.6096],
+              "max": [1.2192, 0.6096]
+            },
+            "area": 2.972897353,
+            "regions": [
+              {
+                "outer": [
+                  [-1.2192, -0.6096],
+                  [1.2192, -0.6096],
+                  [1.2192, 0.6096],
+                  [-1.2192, 0.6096]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0, 0],
+            "width": 2.4384,
+            "depth": 1.2192,
+            "angleDeg": 0,
+            "corners": [
+              [-1.2192, -0.6096],
+              [1.2192, -0.6096],
+              [1.2192, 0.6096],
+              [-1.2192, 0.6096]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "534",
+      "instanceIds": ["534"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/parts/4x8table.sldprt@Default#-Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "4x8TABLE.SLDPRT",
+        "relativePath": "LAYOUT/PARTS/4x8TABLE.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "-Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "+Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.44,
+        "depth": 1.22,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [-1.2192, 0, -0.6096],
+        "max": [1.2192, 0.9144, 0.6096],
+        "source": "tessellation"
+      },
+      "heightRange": [-0.9144, 0],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [-1.22, -0.61],
+            "max": [1.22, 0.61]
+          },
+          "area": 2.9768,
+          "regions": [
+            {
+              "outer": [
+                [-1.22, -0.61],
+                [1.22, -0.61],
+                [1.22, 0.61],
+                [-1.22, 0.61]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [-1.2192, -0.6096],
+              "max": [1.2192, 0.6096]
+            },
+            "area": 2.972897353,
+            "regions": [
+              {
+                "outer": [
+                  [-1.2192, -0.6096],
+                  [1.2192, -0.6096],
+                  [1.2192, 0.6096],
+                  [-1.2192, 0.6096]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0, 0],
+            "width": 2.4384,
+            "depth": 1.2192,
+            "angleDeg": 0,
+            "corners": [
+              [-1.2192, -0.6096],
+              [1.2192, -0.6096],
+              [1.2192, 0.6096],
+              [-1.2192, 0.6096]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "535",
+      "instanceIds": ["535"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/parts/assembly table 1.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "Assembly Table 1.SLDPRT",
+        "relativePath": "LAYOUT/PARTS/Assembly Table 1.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.44,
+        "depth": 1.83,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, 0],
+        "max": [2.4384, 0.9144, 1.8288],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, -1.83],
+            "max": [2.44, 0]
+          },
+          "area": 4.4652,
+          "regions": [
+            {
+              "outer": [
+                [0, -1.83],
+                [2.44, -1.83],
+                [2.44, 0],
+                [0, 0]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, -1.8288],
+              "max": [2.4384, 0]
+            },
+            "area": 4.459345885,
+            "regions": [
+              {
+                "outer": [
+                  [0, -1.8288],
+                  [2.4384, -1.8288],
+                  [2.4384, 0],
+                  [0, 0]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.2192, -0.9144],
+            "width": 2.4384,
+            "depth": 1.8288,
+            "angleDeg": 0,
+            "corners": [
+              [0, -1.8288],
+              [2.4384, -1.8288],
+              [2.4384, 0],
+              [0, 0]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "45",
+      "instanceIds": ["45"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/parts/assembly table 2.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "Assembly Table 2.SLDPRT",
+        "relativePath": "LAYOUT/PARTS/Assembly Table 2.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.44,
+        "depth": 2.44,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, 0],
+        "max": [2.4384, 0.9144, 2.4384],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, -2.44],
+            "max": [2.44, 0]
+          },
+          "area": 5.9536,
+          "regions": [
+            {
+              "outer": [
+                [0, -2.44],
+                [2.44, -2.44],
+                [2.44, 0],
+                [0, 0]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, -2.4384],
+              "max": [2.4384, 0]
+            },
+            "area": 5.945794707,
+            "regions": [
+              {
+                "outer": [
+                  [0, -2.4384],
+                  [2.4384, -2.4384],
+                  [2.4384, 0],
+                  [0, 0]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.2192, -1.2192],
+            "width": 2.4384,
+            "depth": 2.4384,
+            "angleDeg": 0,
+            "corners": [
+              [0, -2.4384],
+              [2.4384, -2.4384],
+              [2.4384, 0],
+              [0, 0]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "46",
+      "instanceIds": ["46"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/parts/bandsaw.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "BANDSAW.SLDPRT",
+        "relativePath": "LAYOUT/PARTS/BANDSAW.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.29,
+        "depth": 4.27,
+        "height": 1.2192,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [-1.143, 0, -2.1336],
+        "max": [1.143, 1.2192, 2.1336],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 1.2192],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [-1.145, -2.135],
+            "max": [1.145, 2.135]
+          },
+          "area": 9.7783,
+          "regions": [
+            {
+              "outer": [
+                [-1.145, -2.135],
+                [1.145, -2.135],
+                [1.145, 2.135],
+                [-1.145, 2.135]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [-1.143, -2.1336],
+              "max": [1.143, 2.1336]
+            },
+            "area": 9.754819241,
+            "regions": [
+              {
+                "outer": [
+                  [-1.143, -2.1336],
+                  [1.143, -2.1336],
+                  [1.143, 2.1336],
+                  [-1.143, 2.1336]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0, 0],
+            "width": 2.286,
+            "depth": 4.2672,
+            "angleDeg": 0,
+            "corners": [
+              [-1.143, -2.1336],
+              [1.143, -2.1336],
+              [1.143, 2.1336],
+              [-1.143, 2.1336]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "483",
+      "instanceIds": ["483"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/parts/bundlewinch.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "BUNDLEWINCH.SLDPRT",
+        "relativePath": "LAYOUT/PARTS/BUNDLEWINCH.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 1.22,
+        "depth": 2.84,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [-0.6096, 0, -1.4224],
+        "max": [0.6096, 0.9144, 1.4224],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [-0.61, -1.42],
+            "max": [0.61, 1.42]
+          },
+          "area": 2.47355,
+          "regions": [
+            {
+              "outer": [
+                [-0.61, -1.42],
+                [0, -1.42],
+                [0, 0.205],
+                [0.61, 0.205],
+                [0.61, 1.42],
+                [-0.61, 1.42]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [-0.6096, -1.4224],
+              "max": [0.6096, 1.4224]
+            },
+            "area": 2.972897313,
+            "regions": [
+              {
+                "outer": [
+                  [-0.6096, -1.4224],
+                  [0, -1.4224],
+                  [0.6096, 0.2032],
+                  [0.6096, 1.4224],
+                  [-0.6096, 1.4224]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0, 0],
+            "width": 1.2192,
+            "depth": 2.8448,
+            "angleDeg": 0,
+            "corners": [
+              [-0.6096, -1.4224],
+              [0.6096, -1.4224],
+              [0.6096, 1.4224],
+              [-0.6096, 1.4224]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 20,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "591",
+      "instanceIds": ["591"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/parts/finishing table.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "FINISHING TABLE.SLDPRT",
+        "relativePath": "LAYOUT/PARTS/FINISHING TABLE.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 9.3,
+        "depth": 3.66,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [-4.6482, 0, -1.8288],
+        "max": [4.6482, 0.9144, 1.8288],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [-4.65, -1.83],
+            "max": [4.65, 1.83]
+          },
+          "area": 30.97885,
+          "regions": [
+            {
+              "outer": [
+                [-4.65, -1.83],
+                [4.65, -1.83],
+                [4.65, 1.83],
+                [2.21, 1.83],
+                [2.21, -0.455],
+                [-0.23, -0.455],
+                [-0.23, 0.455],
+                [1.6, 0.455],
+                [1.6, 1.83],
+                [-4.65, 1.83]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [-4.6482, -1.8288],
+              "max": [4.6482, 1.8288]
+            },
+            "area": 34.002512209,
+            "regions": [
+              {
+                "outer": [
+                  [-4.6482, -1.8288],
+                  [4.6482, -1.8288],
+                  [4.6482, 1.8288],
+                  [-4.6482, 1.8288]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0, 0],
+            "width": 9.2964,
+            "depth": 3.6576,
+            "angleDeg": 0,
+            "corners": [
+              [-4.6482, -1.8288],
+              [4.6482, -1.8288],
+              [4.6482, 1.8288],
+              [-4.6482, 1.8288]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 36,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "590",
+      "instanceIds": ["590"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/parts/finsihingshelves.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "FINSIHINGSHELVES.SLDPRT",
+        "relativePath": "LAYOUT/PARTS/FINSIHINGSHELVES.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 4.88,
+        "depth": 0.61,
+        "height": 1.8288,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [-2.4384, 0, -0.3048],
+        "max": [2.4384, 1.8288, 0.3048],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 1.8288],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [-2.44, -0.305],
+            "max": [2.44, 0.305]
+          },
+          "area": 2.9768,
+          "regions": [
+            {
+              "outer": [
+                [-2.44, -0.305],
+                [2.44, -0.305],
+                [2.44, 0.305],
+                [-2.44, 0.305]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [-2.4384, -0.3048],
+              "max": [2.4384, 0.3048]
+            },
+            "area": 2.972897353,
+            "regions": [
+              {
+                "outer": [
+                  [-2.4384, -0.3048],
+                  [2.4384, -0.3048],
+                  [2.4384, 0.3048],
+                  [-2.4384, 0.3048]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0, 0],
+            "width": 4.8768,
+            "depth": 0.6096,
+            "angleDeg": 0,
+            "corners": [
+              [-2.4384, -0.3048],
+              [2.4384, -0.3048],
+              [2.4384, 0.3048],
+              [-2.4384, 0.3048]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "592",
+      "instanceIds": ["592"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/parts/paint table.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "paint table.SLDPRT",
+        "relativePath": "LAYOUT/PARTS/paint table.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 1.37,
+        "depth": 1.825,
+        "height": 0.762,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -0.4572],
+        "max": [1.3716, 0.762, 1.3716],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.762],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, -1.37],
+            "max": [1.37, 0.455]
+          },
+          "area": 2.083925,
+          "regions": [
+            {
+              "outer": [
+                [0, -1.37],
+                [1.37, -1.37],
+                [1.37, 0],
+                [0.455, 0],
+                [0.455, 0.455],
+                [0, 0.455]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, -1.3716],
+              "max": [1.3716, 0.4572]
+            },
+            "area": 2.299350324,
+            "regions": [
+              {
+                "outer": [
+                  [0, -1.3716],
+                  [1.3716, -1.3716],
+                  [1.3716, 0],
+                  [0.4572, 0.4572],
+                  [0, 0.4572]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0.6858, -0.4572],
+            "width": 1.3716,
+            "depth": 1.8288,
+            "angleDeg": 0,
+            "corners": [
+              [0, -1.3716],
+              [1.3716, -1.3716],
+              [1.3716, 0.4572],
+              [0, 0.4572]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 20,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "57",
+      "instanceIds": ["57"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/parts/rack 1.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "Rack 1.SLDPRT",
+        "relativePath": "LAYOUT/PARTS/Rack 1.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 6.095,
+        "depth": 1.22,
+        "height": 3.6576,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, -1.2192],
+        "max": [6.096, 3.6576, 0],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 3.6576],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [6.095, 1.22]
+          },
+          "area": 7.4359,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [6.095, 0],
+                [6.095, 1.22],
+                [0, 1.22]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [6.096, 1.2192]
+            },
+            "area": 7.432243529,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [6.096, 0],
+                  [6.096, 1.2192],
+                  [0, 1.2192]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [3.048, 0.6096],
+            "width": 6.096,
+            "depth": 1.2192,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [6.096, 0],
+              [6.096, 1.2192],
+              [0, 1.2192]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "25",
+      "instanceIds": ["25", "26"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/parts/shelves.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "SHELVES.SLDPRT",
+        "relativePath": "LAYOUT/PARTS/SHELVES.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 4.88,
+        "depth": 0.91,
+        "height": 3.048,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [-2.4384, 0, -0.4572],
+        "max": [2.4384, 3.048, 0.4572],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 3.048],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [-2.44, -0.455],
+            "max": [2.44, 0.455]
+          },
+          "area": 4.4408,
+          "regions": [
+            {
+              "outer": [
+                [-2.44, -0.455],
+                [2.44, -0.455],
+                [2.44, 0.455],
+                [-2.44, 0.455]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [-2.4384, -0.4572],
+              "max": [2.4384, 0.4572]
+            },
+            "area": 4.459345885,
+            "regions": [
+              {
+                "outer": [
+                  [-2.4384, -0.4572],
+                  [2.4384, -0.4572],
+                  [2.4384, 0.4572],
+                  [-2.4384, 0.4572]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0, 0],
+            "width": 4.8768,
+            "depth": 0.9144,
+            "angleDeg": 0,
+            "corners": [
+              [-2.4384, -0.4572],
+              [2.4384, -0.4572],
+              [2.4384, 0.4572],
+              [-2.4384, 0.4572]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "593",
+      "instanceIds": ["593"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/parts/shelving.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "SHELVING.SLDPRT",
+        "relativePath": "LAYOUT/PARTS/SHELVING.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 6.11,
+        "depth": 2.04,
+        "height": 3.6576,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [-3.05054, 0, -1.01854],
+        "max": [3.05054, 3.6576, 1.01854],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 3.6576],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [-3.055, -1.02],
+            "max": [3.055, 1.02]
+          },
+          "area": 11.2464,
+          "regions": [
+            {
+              "outer": [
+                [-3.055, -1.02],
+                [3.055, -1.02],
+                [3.055, 1.02],
+                [-3.055, 1.02]
+              ],
+              "holes": [
+                [
+                  [-3.045, -0.1],
+                  [-3.045, 0.1],
+                  [3.045, 0.1],
+                  [3.045, -0.1]
+                ]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [-3.05054, -1.01854],
+              "max": [3.05054, 1.01854]
+            },
+            "area": 12.428388228,
+            "regions": [
+              {
+                "outer": [
+                  [-3.05054, -1.01854],
+                  [3.05054, -1.01854],
+                  [3.05054, 1.01854],
+                  [-3.05054, 1.01854]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0, 0],
+            "width": 6.10108,
+            "depth": 2.03708,
+            "angleDeg": 0,
+            "corners": [
+              [-3.05054, -1.01854],
+              [3.05054, -1.01854],
+              [3.05054, 1.01854],
+              [-3.05054, 1.01854]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 48,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "497",
+      "instanceIds": ["497"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/parts/standardshelf.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "STANDARDSHELF.SLDPRT",
+        "relativePath": "LAYOUT/PARTS/STANDARDSHELF.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 10.97,
+        "depth": 1.07,
+        "height": 3.048,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [-5.4864, 0, -0.5334],
+        "max": [5.4864, 3.048, 0.5334],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 3.048],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [-5.485, -0.535],
+            "max": [5.485, 0.535]
+          },
+          "area": 11.7379,
+          "regions": [
+            {
+              "outer": [
+                [-5.485, -0.535],
+                [5.485, -0.535],
+                [5.485, 0.535],
+                [-5.485, 0.535]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [-5.4864, -0.5334],
+              "max": [5.4864, 0.5334]
+            },
+            "area": 11.705783293,
+            "regions": [
+              {
+                "outer": [
+                  [-5.4864, -0.5334],
+                  [5.4864, -0.5334],
+                  [5.4864, 0.5334],
+                  [-5.4864, 0.5334]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0, 0],
+            "width": 10.9728,
+            "depth": 1.0668,
+            "angleDeg": 0,
+            "corners": [
+              [-5.4864, -0.5334],
+              [5.4864, -0.5334],
+              [5.4864, 0.5334],
+              [-5.4864, 0.5334]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "621",
+      "instanceIds": ["621", "629", "651", "656", "663", "690", "697", "705", "707", "719", "725", "731"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/parts/torque table.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "torque table.SLDPRT",
+        "relativePath": "LAYOUT/PARTS/torque table.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2.44,
+        "depth": 1.22,
+        "height": 0.9144,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, 0],
+        "max": [2.4384, 0.9144, 1.2192],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 0.9144],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, -1.22],
+            "max": [2.44, 0]
+          },
+          "area": 2.9768,
+          "regions": [
+            {
+              "outer": [
+                [0, -1.22],
+                [2.44, -1.22],
+                [2.44, 0],
+                [0, 0]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, -1.2192],
+              "max": [2.4384, 0]
+            },
+            "area": 2.972897353,
+            "regions": [
+              {
+                "outer": [
+                  [0, -1.2192],
+                  [2.4384, -1.2192],
+                  [2.4384, 0],
+                  [0, 0]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1.2192, -0.6096],
+            "width": 2.4384,
+            "depth": 1.2192,
+            "angleDeg": 0,
+            "corners": [
+              [0, -1.2192],
+              [2.4384, -1.2192],
+              [2.4384, 0],
+              [0, 0]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "54",
+      "instanceIds": ["54"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:layout/parts/wabash.sldprt@Default#+Y",
+      "kind": "equipment",
+      "file": {
+        "fileName": "wabash.SLDPRT",
+        "relativePath": "LAYOUT/PARTS/wabash.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Y",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "-Z",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 0.765,
+        "depth": 1.225,
+        "height": 1.52654,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, 0],
+        "max": [0.762, 1.52654, 1.2192],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 1.52654],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.005,
+          "complete": true,
+          "bounds": {
+            "min": [0, -1.22],
+            "max": [0.765, 0.005]
+          },
+          "area": 0.93215,
+          "regions": [
+            {
+              "outer": [
+                [0, -1.22],
+                [0.765, -1.22],
+                [0.76, -1.205],
+                [0.765, 0.005],
+                [0, 0]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, -1.2192],
+              "max": [0.762, 0]
+            },
+            "area": 0.929030441,
+            "regions": [
+              {
+                "outer": [
+                  [0, -1.2192],
+                  [0.762, -1.2192],
+                  [0.762, 0],
+                  [0, 0]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0.381, -0.6096],
+            "width": 0.762,
+            "depth": 1.2192,
+            "angleDeg": 0,
+            "corners": [
+              [0, -1.2192],
+              [0.762, -1.2192],
+              [0.762, 0],
+              [0, 0]
+            ]
+          }
+        }
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 796,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "56",
+      "instanceIds": ["56"],
+      "warnings": ["info:PROPERTIES_UNAVAILABLE", "info:SKETCHES_UNAVAILABLE"]
+    }
+  ],
+  "contentHash": "sha256:4520c13a933741b645d9537d42e646bff0b9ed42b2d7cbc3f70cf415e7d461f9"
+}

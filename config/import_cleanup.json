@@ -1,0 +1,102 @@
+// One-time import cleanup: SolidWorks snapshot -> diagrams.net.
+// Everything here is applied by `ShopLayoutExport drawio` and logged in <name>_import_log.md.
+{
+  "diagramName": "Back Area",
+  // 100 px = 1 m, so 1 px = 1 cm. The grid is 10 px = 10 cm.
+  "scalePxPerMeter": 100,
+  "gridSizePx": 10,
+  "marginMeters": 2.0,
+
+  // Rotations within this many degrees of a multiple of 90 are squared up (about the footprint centre).
+  "snapToleranceDeg": 1.0,
+
+  // Instances of the same equipment definition at the same pose are duplicates; the lowest ID is kept.
+  "duplicates": { "drop": true, "positionTolerance": 0.001, "angleToleranceDeg": 0.01 },
+
+  "labels": {
+    // "parts rack-12" -> "parts rack", then mapped below (case-insensitive). Unmapped names are kept as-is.
+    "stripInstanceSuffix": true,
+    "map": {
+      "4x8TABLE": "4x8 Table",
+      "Assembly Table 1": "Assembly Table 1",
+      "Assembly Table 2": "Assembly Table 2",
+      "BANDSAW": "Bandsaw",
+      "big fridge": "Big Fridge",
+      "BUNDLEWINCH": "Bundle Winch",
+      "cnc machine 1": "CNC Machine 1",
+      "cnc machine 2": "CNC Machine 2",
+      "cnc machine 3": "CNC Machine 3",
+      "cnc machine 4": "CNC Machine 4",
+      "cnc machine 5": "CNC Machine 5",
+      "feeder": "Feeder",
+      "FINISHING TABLE": "Finishing Table",
+      "FINSIHINGSHELVES": "Finishing Shelves",
+      "heat sheet": "Heat Sheet",
+      "hige table": "Huge Table",
+      "large sewing tale": "Large Sewing Table",
+      "lathe": "Lathe",
+      "machine shope lathe": "Machine Shop Lathe",
+      "medium sewing table": "Medium Sewing Table",
+      "new cnc machine": "New CNC Machine",
+      "new paint table": "New Paint Table",
+      "paint table": "Paint Table",
+      "parts rack": "Parts Rack",
+      "Rack 1": "Rack 1",
+      "Rack2": "Rack 2",
+      "rack3": "Rack 3",
+      "rack4": "Rack 4",
+      "Room": "Room",
+      "sew table 2": "Sewing Table 2",
+      "sew talble 1": "Sewing Table 1",
+      "sewing table 3": "Sewing Table 3",
+      "sewing table 4": "Sewing Table 4",
+      "shelve 3": "Shelf 3",
+      "shelve5": "Shelf 5",
+      "SHELVES": "Shelves",
+      "SHELVING": "Shelving",
+      "short Rack": "Short Rack",
+      "small fridge": "Small Fridge",
+      "small sewing table": "Small Sewing Table",
+      "small shelf": "Small Shelf",
+      "small table": "Small Table",
+      "smaller table": "Smaller Table",
+      "STANDARDSHELF": "Standard Shelf",
+      "TABLE": "Table",
+      "table 2": "Table 2",
+      "table 4": "Table 4",
+      "table 5": "Table 5",
+      "TOOL CHEST": "Tool Chest",
+      "torque table": "Torque Table",
+      "wabash": "Wabash",
+      "Wall": "Wall",
+      "WORK BENCH": "Work Bench",
+      "work table": "Work Table"
+    }
+  },
+
+  // All building elements (Room, Wall, ...) are cut at the same height and drawn the same way,
+  // as one consistent set of wall segments plus the floor outline.
+  "building": {
+    "cutHeight": 1.2,
+    "wallResolution": 0.01,
+    "minWallArea": 0.005,
+    "floorFromElements": ["Room"]
+  },
+
+  // Rooms are the enclosed spaces in the wall plan. Openings up to maxOpeningWidth (doors) are
+  // bridged when finding them. Name rooms by giving a point inside each one (floor metres).
+  "rooms": {
+    "detect": true,
+    "resolution": 0.05,
+    "maxOpeningWidth": 1.3,
+    "minArea": 4.0,
+    "names": [
+      // { "at": [12.5, 3.0], "name": "Machine Shop", "type": "room" }
+    ]
+  },
+
+  // Extra hand-drawn zones (floor metres), e.g. aisles or work areas.
+  "zones": [
+    // { "name": "Main Aisle", "type": "aisle", "polygon": [[0,0],[20,0],[20,2],[0,2]] }
+  ]
+}

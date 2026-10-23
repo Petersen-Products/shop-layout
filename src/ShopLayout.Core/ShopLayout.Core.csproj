@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Pure C#: no SolidWorks reference. Holds the data model, classification, geometry, and JSON output
+       so the extraction logic can be reused by the console host, a future add-in, and the tests. -->
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ShopLayout.Core</RootNamespace>
+  </PropertyGroup>
+</Project>

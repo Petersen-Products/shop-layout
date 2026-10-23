@@ -1,0 +1,541 @@
+{
+  "schema": "petersen.equipment-library",
+  "schemaVersion": "1.0.0",
+  "units": {
+    "length": "m",
+    "angle": "deg",
+    "matrixConvention": "4x4 row-major, column vectors: p_target = M · [p_local, 1]. 'solidworksArrayData' is IMathTransform.ArrayData unchanged (rotation [0..8] = images of local X,Y,Z axes, translation [9..11], scale [12])."
+  },
+  "source": {
+    "application": "SOLIDWORKS",
+    "applicationVersion": "33.2.0",
+    "rootFile": "Shop Floor.SLDASM",
+    "rootConfiguration": "Default",
+    "exporter": {
+      "name": "ShopLayoutExport",
+      "version": "1.0.0"
+    }
+  },
+  "description": "Reusable equipment definitions keyed by file + configuration + local up axis. Footprints are in each definition's local footprint frame (a, b); see localFrame.",
+  "definitions": [
+    {
+      "definitionId": "eq:equipment/lightweight lathe.sldprt@Default#+Z",
+      "kind": "equipment",
+      "file": {
+        "fileName": "Lightweight Lathe.SLDPRT",
+        "relativePath": "Equipment/Lightweight Lathe.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Z",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "+Y",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 3,
+        "depth": 1,
+        "height": 1.5,
+        "basis": "rootBoundingBox",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, 0],
+        "max": [3, 1, 1.5],
+        "source": "rootBoundingBox"
+      },
+      "heightRange": [0, 1.5],
+      "footprint": {
+        "primary": {
+          "source": "rootBoundingBox",
+          "accuracy": "approximate",
+          "complete": false,
+          "bounds": {
+            "min": [0, 0],
+            "max": [3, 1]
+          },
+          "area": 3,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [3, 0],
+                [3, 1],
+                [0, 1]
+              ]
+            }
+          ]
+        },
+        "alternatives": {}
+      },
+      "clearances": [],
+      "properties": {
+        "available": false,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 0,
+        "partsResolvedForGeometry": 0,
+        "triangles": 0,
+        "meshSources": [],
+        "complete": false
+      },
+      "representativeComponentId": "4",
+      "instanceIds": ["4"],
+      "warnings": ["warning:GEOMETRY_FROM_BOUNDING_BOX", "warning:NO_TESSELLATION", "warning:PARTIAL_GEOMETRY", "info:PROPERTIES_UNAVAILABLE"]
+    },
+    {
+      "definitionId": "eq:equipment/mill.sldasm@Default#+Z",
+      "kind": "equipment",
+      "file": {
+        "fileName": "Mill.SLDASM",
+        "relativePath": "Equipment/Mill.SLDASM",
+        "docType": "assembly"
+      },
+      "configuration": "Default",
+      "category": "CNC",
+      "localFrame": {
+        "upAxis": "+Z",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "+Y",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 2,
+        "depth": 1.5,
+        "height": 2.5,
+        "basis": "tessellatedOutline",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [0, 0, 0],
+        "max": [2, 1.5, 2.5],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 2.5],
+      "footprint": {
+        "primary": {
+          "source": "tessellatedOutline",
+          "accuracy": "tessellated",
+          "resolution": 0.01,
+          "complete": true,
+          "bounds": {
+            "min": [0, 0],
+            "max": [2, 1.5]
+          },
+          "area": 2.25,
+          "regions": [
+            {
+              "outer": [
+                [0, 0],
+                [2, 0],
+                [2, 1.5],
+                [1.5, 1.5],
+                [1.5, 1],
+                [0, 1]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [2, 1.5]
+            },
+            "area": 2.625,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [2, 0],
+                  [2, 1.5],
+                  [1.5, 1.5],
+                  [0, 1]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [1, 0.75],
+            "width": 2,
+            "depth": 1.5,
+            "angleDeg": 0,
+            "corners": [
+              [0, 0],
+              [2, 0],
+              [2, 1.5],
+              [0, 1.5]
+            ]
+          }
+        }
+      },
+      "clearances": [
+        {
+          "name": "Operator Clearance-1",
+          "definedBy": "1/4",
+          "zoneType": "clearance",
+          "shape": {
+            "source": "clearanceComponent",
+            "accuracy": "tessellated",
+            "resolution": 0.01,
+            "complete": true,
+            "bounds": {
+              "min": [0, -0.8],
+              "max": [2, 0]
+            },
+            "area": 1.6,
+            "regions": [
+              {
+                "outer": [
+                  [0, -0.8],
+                  [2, -0.8],
+                  [2, 0],
+                  [0, 0]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "properties",
+          "definedBy": "properties",
+          "zoneType": "clearance",
+          "shape": {
+            "source": "properties",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [0, 0],
+              "max": [2, 2]
+            },
+            "area": 4,
+            "regions": [
+              {
+                "outer": [
+                  [0, 0],
+                  [2, 0],
+                  [2, 2],
+                  [0, 2]
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "available": true,
+        "file": {
+          "ClearanceBack": "500",
+          "Description": {
+            "value": "Mill",
+            "expression": "$PRP:\"SW-File Name\""
+          },
+          "LayoutCategory": "CNC"
+        },
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 2,
+        "partsWithGeometry": 2,
+        "partsResolvedForGeometry": 0,
+        "triangles": 24,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "1",
+      "instanceIds": ["1", "2"],
+      "warnings": []
+    },
+    {
+      "definitionId": "eq:equipment/robot.sldprt@Default#+Z",
+      "kind": "equipment",
+      "file": {
+        "fileName": "Robot.SLDPRT",
+        "relativePath": "Equipment/Robot.SLDPRT",
+        "docType": "part"
+      },
+      "configuration": "Default",
+      "localFrame": {
+        "upAxis": "+Z",
+        "footprintAxisA": "+X",
+        "footprintAxisB": "+Y",
+        "description": "Footprint coordinates (a, b) are the component's own coordinates along footprintAxisA/B; height is along upAxis. Place with the instance's transform.footprintToFloor."
+      },
+      "dimensions": {
+        "width": 1.199501,
+        "depth": 1.19975,
+        "height": 2,
+        "basis": "authoredSketch",
+        "note": "width along footprintAxisA, depth along footprintAxisB, height along upAxis"
+      },
+      "localBoundingBox": {
+        "min": [-0.5, -0.5, 0],
+        "max": [0.5, 0.5, 2],
+        "source": "tessellation"
+      },
+      "heightRange": [0, 2],
+      "footprint": {
+        "primary": {
+          "source": "authoredSketch",
+          "accuracy": "exact",
+          "complete": true,
+          "bounds": {
+            "min": [-0.599501, -0.599875],
+            "max": [0.6, 0.599875]
+          },
+          "area": 1.12971867,
+          "regions": [
+            {
+              "outer": [
+                [0.012239, -0.599875],
+                [0.061094, -0.596882],
+                [0.109542, -0.589916],
+                [0.157261, -0.579024],
+                [0.203934, -0.564279],
+                [0.249249, -0.545779],
+                [0.292906, -0.523647],
+                [0.334613, -0.49803],
+                [0.374094, -0.469099],
+                [0.411085, -0.437046],
+                [0.44534, -0.402084],
+                [0.476632, -0.364447],
+                [0.504752, -0.324384],
+                [0.529513, -0.282163],
+                [0.55075, -0.238064],
+                [0.568322, -0.192381],
+                [0.582112, -0.145417],
+                [0.592027, -0.097486],
+                [0.598004, -0.048906],
+                [0.6, 0],
+                [0.598004, 0.048906],
+                [0.592027, 0.097486],
+                [0.582112, 0.145417],
+                [0.568322, 0.192381],
+                [0.55075, 0.238064],
+                [0.529513, 0.282163],
+                [0.504752, 0.324384],
+                [0.476632, 0.364447],
+                [0.44534, 0.402084],
+                [0.411085, 0.437046],
+                [0.374094, 0.469099],
+                [0.334613, 0.49803],
+                [0.292906, 0.523647],
+                [0.249249, 0.545779],
+                [0.203934, 0.564279],
+                [0.157261, 0.579024],
+                [0.109542, 0.589916],
+                [0.061094, 0.596882],
+                [0.012239, 0.599875],
+                [-0.036697, 0.598877],
+                [-0.085389, 0.593893],
+                [-0.133513, 0.584957],
+                [-0.180748, 0.572128],
+                [-0.22678, 0.555492],
+                [-0.271303, 0.535158],
+                [-0.314021, 0.511264],
+                [-0.354649, 0.483967],
+                [-0.392916, 0.45345],
+                [-0.428569, 0.419915],
+                [-0.46137, 0.383585],
+                [-0.491101, 0.344703],
+                [-0.517563, 0.303526],
+                [-0.540581, 0.26033],
+                [-0.560002, 0.215402],
+                [-0.575696, 0.16904],
+                [-0.587558, 0.121553],
+                [-0.595511, 0.073257],
+                [-0.599501, 0.024473],
+                [-0.599501, -0.024473],
+                [-0.595511, -0.073257],
+                [-0.587558, -0.121553],
+                [-0.575696, -0.16904],
+                [-0.560002, -0.215402],
+                [-0.540581, -0.26033],
+                [-0.517563, -0.303526],
+                [-0.491101, -0.344703],
+                [-0.46137, -0.383585],
+                [-0.428569, -0.419915],
+                [-0.392916, -0.45345],
+                [-0.354649, -0.483967],
+                [-0.314021, -0.511264],
+                [-0.271303, -0.535158],
+                [-0.22678, -0.555492],
+                [-0.180748, -0.572128],
+                [-0.133513, -0.584957],
+                [-0.085389, -0.593893],
+                [-0.036697, -0.598877]
+              ]
+            }
+          ]
+        },
+        "alternatives": {
+          "tessellatedOutline": {
+            "source": "tessellatedOutline",
+            "accuracy": "tessellated",
+            "resolution": 0.01,
+            "complete": true,
+            "bounds": {
+              "min": [-0.5, -0.5],
+              "max": [0.5, 0.5]
+            },
+            "area": 1,
+            "regions": [
+              {
+                "outer": [
+                  [-0.5, -0.5],
+                  [0.5, -0.5],
+                  [0.5, 0.5],
+                  [-0.5, 0.5]
+                ]
+              }
+            ]
+          },
+          "convexHull": {
+            "source": "convexHull",
+            "accuracy": "approximate",
+            "complete": true,
+            "bounds": {
+              "min": [-0.5, -0.5],
+              "max": [0.5, 0.5]
+            },
+            "area": 1,
+            "regions": [
+              {
+                "outer": [
+                  [-0.5, -0.5],
+                  [0.5, -0.5],
+                  [0.5, 0.5],
+                  [-0.5, 0.5]
+                ]
+              }
+            ]
+          },
+          "orientedRect": {
+            "source": "orientedRect",
+            "accuracy": "approximate",
+            "center": [0, 0],
+            "width": 1,
+            "depth": 1,
+            "angleDeg": 0,
+            "corners": [
+              [-0.5, -0.5],
+              [0.5, -0.5],
+              [0.5, 0.5],
+              [-0.5, 0.5]
+            ]
+          }
+        }
+      },
+      "clearances": [
+        {
+          "name": "Swing",
+          "definedBy": "sketch:LAYOUT_CLEARANCE_Swing",
+          "zoneType": "clearance",
+          "shape": {
+            "source": "authoredSketch",
+            "accuracy": "exact",
+            "complete": true,
+            "bounds": {
+              "min": [-1.498011, -1.499503],
+              "max": [1.5, 1.499503]
+            },
+            "area": 7.056090929,
+            "regions": [
+              {
+                "outer": [
+                  [0.038622, -1.499503],
+                  [0.192598, -1.487584],
+                  [0.344532, -1.459897],
+                  [0.492814, -1.416734],
+                  [0.635872, -1.358553],
+                  [0.772189, -1.285972],
+                  [0.900321, -1.199759],
+                  [1.01891, -1.100828],
+                  [1.126698, -0.990228],
+                  [1.222543, -0.869132],
+                  [1.305428, -0.738822],
+                  [1.374475, -0.600681],
+                  [1.428953, -0.456172],
+                  [1.468284, -0.306828],
+                  [1.49205, -0.154231],
+                  [1.5, 0],
+                  [1.49205, 0.154231],
+                  [1.468284, 0.306828],
+                  [1.428953, 0.456172],
+                  [1.374475, 0.600681],
+                  [1.305428, 0.738822],
+                  [1.222543, 0.869132],
+                  [1.126698, 0.990228],
+                  [1.01891, 1.100828],
+                  [0.900321, 1.199759],
+                  [0.772189, 1.285972],
+                  [0.635872, 1.358553],
+                  [0.492814, 1.416734],
+                  [0.344532, 1.459897],
+                  [0.192598, 1.487584],
+                  [0.038622, 1.499503],
+                  [-0.115763, 1.495526],
+                  [-0.268921, 1.475697],
+                  [-0.419228, 1.440225],
+                  [-0.565092, 1.389486],
+                  [-0.704965, 1.324018],
+                  [-0.837366, 1.244516],
+                  [-0.96089, 1.151821],
+                  [-1.074228, 1.046916],
+                  [-1.17618, 0.930914],
+                  [-1.265663, 0.805044],
+                  [-1.341731, 0.670641],
+                  [-1.403575, 0.529128],
+                  [-1.450542, 0.382007],
+                  [-1.482132, 0.230836],
+                  [-1.498011, 0.077218],
+                  [-1.498011, -0.077218],
+                  [-1.482132, -0.230836],
+                  [-1.450542, -0.382007],
+                  [-1.403575, -0.529128],
+                  [-1.341731, -0.670641],
+                  [-1.265663, -0.805044],
+                  [-1.17618, -0.930914],
+                  [-1.074228, -1.046916],
+                  [-0.96089, -1.151821],
+                  [-0.837366, -1.244516],
+                  [-0.704965, -1.324018],
+                  [-0.565092, -1.389486],
+                  [-0.419228, -1.440225],
+                  [-0.268921, -1.475697],
+                  [-0.115763, -1.495526]
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "available": true,
+        "file": {},
+        "configuration": {}
+      },
+      "geometryStats": {
+        "partsTotal": 1,
+        "partsWithGeometry": 1,
+        "partsResolvedForGeometry": 0,
+        "triangles": 12,
+        "meshSources": ["faceTessellation"],
+        "complete": true
+      },
+      "representativeComponentId": "6/1",
+      "instanceIds": ["6/1"],
+      "warnings": []
+    }
+  ],
+  "contentHash": "sha256:81a62b7535d9ba88aba15956669a2f1c0f99335170b74d792d19271f84230a78"
+}

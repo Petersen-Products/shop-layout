@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Self-contained console test runner (no test framework dependency). Run: dotnet build, then run bin/Debug/net48/ShopLayout.Tests.exe from a short path -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ShopLayout.Tests</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ShopLayout.Core\ShopLayout.Core.csproj" />
+    <ProjectReference Include="..\..\src\ShopLayout.Drawio\ShopLayout.Drawio.csproj" />
+  </ItemGroup>
+</Project>

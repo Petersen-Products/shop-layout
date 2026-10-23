@@ -1,0 +1,10 @@
+bin/
+obj/
+.vs/
+.claude/
+*.user
+# local, unsanitized outputs
+shop_layout_export/
+# diagrams.net desktop backups
+*.drawio.bkp
+*.drawio.dtmp

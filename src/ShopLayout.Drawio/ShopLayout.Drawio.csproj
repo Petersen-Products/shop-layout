@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- One-time import: ExportResult (from a SolidWorks snapshot) + cleanup rules -> diagrams.net file and shape library.
+       No SolidWorks reference; runs entirely from the snapshot. -->
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ShopLayout.Drawio</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShopLayout.Core\ShopLayout.Core.csproj" />
+  </ItemGroup>
+</Project>
