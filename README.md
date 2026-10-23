@@ -2,21 +2,23 @@
 
 Editable shop-floor layouts for diagrams.net, imported once from SolidWorks.
 
-**The diagram is the source of truth.** SolidWorks was used for a one-time import (October 2026) and is no longer part of the workflow.
+**The live layout is in OneDrive,** not in this repo: `OneDrive - Petersen products Co › Documents › Shop Layout › back_area.drawio`. Edit that copy in diagrams.net (Open Existing Diagram › OneDrive). SolidWorks was used for a one-time import (October 2026) and is no longer part of the workflow.
+
+This repo keeps the import tooling and the import record. Its copy of the diagram is the layout **as imported**; it is not kept in sync with OneDrive.
 
 | Path | What it is |
 |---|---|
-| `diagrams/back_area.drawio` | **The layout.** Edit it in diagrams.net. |
+| `diagrams/back_area.drawio` | The layout as imported (snapshot). The live copy is in OneDrive. |
 | `diagrams/back_area_library.xml` | True-size equipment shapes (diagrams.net › File › Open Library). |
 | `diagrams/back_area_import_log.md` | What the import changed: squared rotations, dropped duplicates, renamed labels, detected rooms. |
 | `exports/back_area/` | The import record: the sanitized SolidWorks snapshot plus the JSON exports made from it. Read-only history. |
 | `config/` | Export settings and the import cleanup rules. |
 | `src/`, `tests/` | The exporter and the importer (C#, .NET Framework 4.8). Only needed to re-run the import. |
 
-**Editing the layout:**
-- **In the browser:** open [app.diagrams.net](https://app.diagrams.net), choose *GitHub*, and open `diagrams/back_area.drawio`. Each save becomes a commit.
-- **Locally, or with Claude:** edit and commit the file like any other. It is uncompressed XML, so diffs are readable.
-- Two people saving the same diagram at the same time will conflict, so coordinate big edits.
+**Editing the layout** (the OneDrive copy):
+- **In the browser:** open [app.diagrams.net](https://app.diagrams.net), choose *OneDrive*, and open `Documents/Shop Layout/back_area.drawio`. OneDrive keeps version history.
+- **Locally, or with Claude:** the file syncs to the *Documents › Shop Layout* folder of the OneDrive client on your PC. It is uncompressed XML, so it can be edited as text too.
+- To share it, share the *Shop Layout* folder from OneDrive.
 
 **Conventions in the diagram:**
 - 100 px = 1 m, and the grid is 10 cm.
