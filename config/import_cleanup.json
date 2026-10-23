@@ -80,7 +80,23 @@
     "cutHeight": 1.2,
     "wallResolution": 0.01,
     "minWallArea": 0.005,
-    "floorFromElements": ["Room"]
+    "floorFromElements": ["Room"],
+    // Sheet walls (the right wall is 2 mm siding) are drawn at least this thick.
+    "minDisplayThickness": 0.1
+  },
+
+  // Openings = gaps in the walls at the cut height that have wall above them (at a header cut).
+  // Each is classified from its sill and head height: door (head <= 2.5 m), overhead door,
+  // loadingDock (sill 0.6-1.5 m) or window. This model's docks are floor-level from inside, so
+  // they read as overhead doors; mark them below by a point near each opening (floor metres).
+  "openings": {
+    "detect": true,
+    "headerCuts": [2.3, 4.0],
+    "minWidth": 0.5,
+    "drawPlatforms": true,
+    "overrides": [
+      // { "at": [-23.6, 4.7], "type": "loadingDock", "name": "Dock 1" }
+    ]
   },
 
   // Rooms are the enclosed spaces in the wall plan. Openings up to maxOpeningWidth (doors) are
@@ -90,8 +106,17 @@
     "resolution": 0.05,
     "maxOpeningWidth": 1.3,
     "minArea": 4.0,
+    // "at" is a point inside the room (floor metres). Several points merge those rooms into one.
+    // Detected spaces without a name are labelled "Space 1", "Space 2", ... (largest first).
     "names": [
-      // { "at": [12.5, 3.0], "name": "Machine Shop", "type": "room" }
+      { "name": "Lunchroom",         "type": "lunchroom",  "at": [5.475, -16.0] },
+      { "name": "Office",            "type": "office",     "at": [[19.8, -29.175], [14.325, -29.175], [8.0, -29.0], [19.8, -33.5]] },
+      { "name": "Test Room",         "type": "lab",        "at": [2.125, -2.75] },
+      { "name": "Women's Restroom",  "type": "restroom",   "at": [1.75, -29.25] },
+      { "name": "Men's Restroom",    "type": "restroom",   "at": [1.75, -24.525] },
+      { "name": "Entrance",          "type": "entrance",   "at": [2.275, -33.225] },
+      { "name": "Mechanicals",       "type": "mechanical", "at": [27.425, 19.375] },
+      { "name": "Conference Room",   "type": "conference", "at": [8.45, -24.3] }
     ]
   },
 

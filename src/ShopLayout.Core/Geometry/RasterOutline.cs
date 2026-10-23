@@ -74,9 +74,18 @@ namespace ShopLayout.Core.Geometry
                 if (y < minY) minY = y; if (y > maxY) maxY = y;
             }
             SetupGrid(minX, minY, maxX, maxY, opt, result, out double ox, out double oy, out int nx, out int ny, out double r);
-            var grid = new bool[nx * ny];
+            var grid = FillSection(seg2d, ox, oy, nx, ny, r);
+            return FinishGrid(grid, nx, ny, ox, oy, r, opt, result);
+        }
 
-            // Bucket segments by the grid rows they span, then fill each row between crossing pairs.
+        /// <summary>
+        /// Rasterizes oriented section segments onto a caller-defined grid (cell centres at ox + (i+½)r).
+        /// Uses the non-zero winding rule so overlapping solids union; a row whose winding does not return
+        /// to zero (inconsistent triangle orientation) falls back to even-odd for that row.
+        /// </summary>
+        public static bool[] FillSection(IReadOnlyList<double> seg2d, double ox, double oy, int nx, int ny, double r)
+        {
+            var grid = new bool[nx * ny];
             var rows = new List<int>[ny];
             for (int s = 0; s + 3 < seg2d.Count; s += 4)
             {
@@ -85,7 +94,7 @@ namespace ShopLayout.Core.Geometry
                 int j1 = Math.Min(ny - 1, (int)Math.Ceiling((Math.Max(y0, y1) - oy) / r - 0.5));
                 for (int j = j0; j <= j1; j++) (rows[j] ?? (rows[j] = new List<int>())).Add(s);
             }
-            var xs = new List<double>();
+            var xs = new List<(double x, int dir)>();
             for (int j = 0; j < ny; j++)
             {
                 if (rows[j] == null) continue;
@@ -95,18 +104,66 @@ namespace ShopLayout.Core.Geometry
                 {
                     double x0 = seg2d[s], y0 = seg2d[s + 1], x1 = seg2d[s + 2], y1 = seg2d[s + 3];
                     if ((y0 > cy) == (y1 > cy)) continue;
-                    xs.Add(x0 + (cy - y0) * (x1 - x0) / (y1 - y0));
+                    xs.Add((x0 + (cy - y0) * (x1 - x0) / (y1 - y0), y1 > y0 ? 1 : -1));
                 }
-                xs.Sort();
-                for (int k = 0; k + 1 < xs.Count; k += 2)
+                xs.Sort((a, b) => a.x.CompareTo(b.x));
+                int total = 0;
+                foreach (var c in xs) total += c.dir;
+                if (total == 0)
                 {
-                    int i0 = Math.Max(0, (int)Math.Ceiling((xs[k] - ox) / r - 0.5));
-                    int i1 = Math.Min(nx - 1, (int)Math.Floor((xs[k + 1] - ox) / r - 0.5));
-                    for (int i = i0; i <= i1; i++) grid[j * nx + i] = true;
+                    int wind = 0;
+                    for (int k = 0; k + 1 < xs.Count; k++)
+                    {
+                        wind += xs[k].dir;
+                        if (wind != 0) FillSpan(grid, j, nx, ox, r, xs[k].x, xs[k + 1].x);
+                    }
+                }
+                else
+                {
+                    for (int k = 0; k + 1 < xs.Count; k += 2) FillSpan(grid, j, nx, ox, r, xs[k].x, xs[k + 1].x);
                 }
             }
-            return FinishGrid(grid, nx, ny, ox, oy, r, opt, result);
+            MarkThinMaterial(grid, seg2d, ox, oy, nx, ny, r);
+            return grid;
         }
+
+        /// <summary>
+        /// Solids thinner than a cell (sheet-metal siding, 2 mm skins) have no cell centre inside them and
+        /// would vanish. Where a segment's material side (left of travel) has no filled cell, the cell on
+        /// the segment is marked, so such walls survive as a one-cell line. Normal walls are untouched.
+        /// </summary>
+        private static void MarkThinMaterial(bool[] grid, IReadOnlyList<double> seg2d, double ox, double oy, int nx, int ny, double r)
+        {
+            var marks = new List<int>();
+            for (int s = 0; s + 3 < seg2d.Count; s += 4)
+            {
+                double x0 = seg2d[s], y0 = seg2d[s + 1], x1 = seg2d[s + 2], y1 = seg2d[s + 3];
+                double dx = x1 - x0, dy = y1 - y0, len = Math.Sqrt(dx * dx + dy * dy);
+                if (len < 1e-12) continue;
+                double lx = -dy / len * 0.5 * r, ly = dx / len * 0.5 * r; // half a cell towards the material
+                int steps = Math.Max(1, (int)Math.Ceiling(len / (0.5 * r)));
+                for (int k = 0; k <= steps; k++)
+                {
+                    double px = x0 + dx * k / steps, py = y0 + dy * k / steps;
+                    int qi = (int)Math.Floor((px + lx - ox) / r), qj = (int)Math.Floor((py + ly - oy) / r);
+                    if (qi < 0 || qj < 0 || qi >= nx || qj >= ny || grid[qj * nx + qi]) continue;
+                    int pi = (int)Math.Floor((px - ox) / r), pj = (int)Math.Floor((py - oy) / r);
+                    if (pi >= 0 && pj >= 0 && pi < nx && pj < ny) marks.Add(pj * nx + pi);
+                }
+            }
+            foreach (int m in marks) grid[m] = true;
+        }
+
+        private static void FillSpan(bool[] grid, int j, int nx, double ox, double r, double xa, double xb)
+        {
+            int i0 = Math.Max(0, (int)Math.Ceiling((xa - ox) / r - 0.5));
+            int i1 = Math.Min(nx - 1, (int)Math.Floor((xb - ox) / r - 0.5));
+            for (int i = i0; i <= i1; i++) grid[j * nx + i] = true;
+        }
+
+        /// <summary>Traces a caller-provided occupancy grid into regions (same tracing as <see cref="Build"/>).</summary>
+        public static OutlineResult FromGrid(bool[] grid, int nx, int ny, double ox, double oy, double r, OutlineOptions opt) =>
+            FinishGrid(grid, nx, ny, ox, oy, r, opt, new OutlineResult { EffectiveResolution = r, GridWidth = nx, GridHeight = ny });
 
         private static void SetupGrid(double minX, double minY, double maxX, double maxY, OutlineOptions opt, OutlineResult result,
             out double ox, out double oy, out int nx, out int ny, out double r)

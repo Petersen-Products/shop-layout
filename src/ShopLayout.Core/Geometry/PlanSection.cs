@@ -9,7 +9,9 @@ namespace ShopLayout.Core.Geometry
     {
         /// <summary>
         /// Intersects each triangle with the plane z = <paramref name="cutHeight"/> and returns the crossing
-        /// segments as (x0,y0,x1,y1). Closed solids give closed cross-section loops.
+        /// segments as (x0,y0,x1,y1). Closed solids give closed cross-section loops. Each segment is
+        /// oriented from its triangle's winding (material consistently on one side), which lets the
+        /// section fill use the non-zero rule so overlapping solids add up instead of cancelling.
         /// </summary>
         /// <param name="tris">Triangles in floor coordinates, 9 doubles each.</param>
         public static List<double> Segments(IReadOnlyList<double> tris, double cutHeight)
@@ -31,7 +33,15 @@ namespace ShopLayout.Core.Geometry
                 }
                 if (pts.Count == 2 && (pts[0] - pts[1]).Length > 1e-9)
                 {
-                    seg.Add(pts[0].X); seg.Add(pts[0].Y); seg.Add(pts[1].X); seg.Add(pts[1].Y);
+                    // Horizontal part of the triangle normal; walk so it points to the right of travel.
+                    double ux = tris[t + 3] - tris[t], uy = tris[t + 4] - tris[t + 1], uz = tris[t + 5] - tris[t + 2];
+                    double vx = tris[t + 6] - tris[t], vy = tris[t + 7] - tris[t + 1], vz = tris[t + 8] - tris[t + 2];
+                    double nx = uy * vz - uz * vy, ny = uz * vx - ux * vz;
+                    var d = pts[1] - pts[0];
+                    bool flip = d.X * -ny + d.Y * nx < 0;
+                    var a = flip ? pts[1] : pts[0];
+                    var b = flip ? pts[0] : pts[1];
+                    seg.Add(a.X); seg.Add(a.Y); seg.Add(b.X); seg.Add(b.Y);
                 }
             }
             return seg;

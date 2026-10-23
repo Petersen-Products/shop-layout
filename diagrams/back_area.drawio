@@ -1,9 +1,10 @@
 <mxfile host="ShopLayoutExport" type="device">
   <diagram id="back-area" name="Back Area">
-    <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="5761" pageHeight="6337" math="0" shadow="0">
+    <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="5958" pageHeight="6341" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="layer-building" value="Building" style="locked=1;" parent="0" />
+        <mxCell id="layer-openings" value="Doors &amp; Docks" style="locked=1;" parent="0" />
         <mxCell id="layer-rooms" value="Rooms" parent="0" />
         <mxCell id="layer-zones" value="Zones" parent="0" />
         <mxCell id="layer-equipment" value="Equipment" parent="0" />
@@ -11,926 +12,1468 @@
         <mxCell id="layer-notes" value="Notes" parent="0" />
         <object id="floor-1" label="" area_m2="3007.9" source="Room-1">
           <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0.00075,1],[0.45169,1],[0.45169,0.98872],[0.99925,0.98872],[1,0],[0.00075,0],[0,0.51551]];rounded=0;html=1;fillColor=#f5f5f5;strokeColor=#b3b3b3;" vertex="1" parent="layer-building">
-            <mxGeometry x="220" y="380" width="5340" height="5672" as="geometry" />
+            <mxGeometry x="320" y="380" width="5340" height="5672" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-25" label="Rack 1" component_id="25" definition="Rack 1" depth_m="1.22" elevation_m="0" footprint="tessellatedOutline" height_m="3.658" rotation_deg="270" sw_configuration="Default" sw_file="Rack 1.SLDPRT" sw_instance="Rack 1-1" width_m="6.095">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=90;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3374.14" y="2108.75" width="609.5" height="122" as="geometry" />
+            <mxGeometry x="3474.14" y="2108.75" width="609.5" height="122" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-26" label="Rack 1" component_id="26" definition="Rack 1" depth_m="1.22" elevation_m="0" footprint="tessellatedOutline" height_m="3.658" rotation_deg="0" sw_configuration="Default" sw_file="Rack 1.SLDPRT" sw_instance="Rack 1-2" width_m="6.095">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3130.21" y="1661.72" width="609.5" height="122" as="geometry" />
+            <mxGeometry x="3230.21" y="1661.72" width="609.5" height="122" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-45" label="Assembly Table 1" component_id="45" definition="Assembly Table 1" depth_m="1.83" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="Assembly Table 1.SLDPRT" sw_instance="Assembly Table 1-1" width_m="2.44">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="2615.24" y="1143.64" width="244" height="183" as="geometry" />
+            <mxGeometry x="2715.24" y="1143.64" width="244" height="183" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-46" label="Assembly Table 2" component_id="46" definition="Assembly Table 2" depth_m="2.44" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="Assembly Table 2.SLDPRT" sw_instance="Assembly Table 2-1" width_m="2.44">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="2615.24" y="899.8" width="244" height="244" as="geometry" />
+            <mxGeometry x="2715.24" y="899.8" width="244" height="244" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-54" label="Torque Table" component_id="54" definition="Torque Table" depth_m="1.22" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="torque table.SLDPRT" sw_instance="torque table-1" width_m="2.44">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="2615.24" y="1326.52" width="244" height="122" as="geometry" />
+            <mxGeometry x="2715.24" y="1326.52" width="244" height="122" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-56" label="Wabash" component_id="56" definition="Wabash" depth_m="1.225" elevation_m="0" footprint="tessellatedOutline" height_m="1.527" rotation_deg="270" sw_configuration="Default" sw_file="wabash.SLDPRT" sw_instance="wabash-1" width_m="0.765">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=90;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="2929.45" y="463.23" width="76.5" height="122.5" as="geometry" />
+            <mxGeometry x="3029.45" y="463.23" width="76.5" height="122.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-57" label="Paint Table" component_id="57" definition="Paint Table" depth_m="1.825" elevation_m="0" footprint="tessellatedOutline" height_m="0.762" rotation_deg="90" sw_configuration="Default" sw_file="paint table.SLDPRT" sw_instance="paint table-1" width_m="1.37">
           <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[1,0.24932],[0.33212,0.24932],[0.33212,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=270;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="2746.62" y="402.68" width="137" height="182.5" as="geometry" />
+            <mxGeometry x="2846.62" y="402.68" width="137" height="182.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-483" label="Bandsaw" component_id="483" definition="Bandsaw" depth_m="4.27" elevation_m="0" footprint="tessellatedOutline" height_m="1.219" rotation_deg="270" sw_configuration="Default" sw_file="BANDSAW.SLDPRT" sw_instance="BANDSAW-1" width_m="2.29">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=90;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4039.98" y="1623.56" width="229" height="427" as="geometry" />
+            <mxGeometry x="4139.98" y="1623.56" width="229" height="427" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-497" label="Shelving" component_id="497" definition="Shelving" depth_m="2.04" elevation_m="0" footprint="tessellatedOutline" height_m="3.658" rotation_deg="0" sw_configuration="Default" sw_file="SHELVING.SLDPRT" sw_instance="SHELVING-1" width_m="6.11">
           <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[1,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4537.08" y="1727.4" width="611" height="204" as="geometry" />
+            <mxGeometry x="4637.08" y="1727.4" width="611" height="204" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-534" label="4x8 Table" component_id="534" definition="4x8 Table" depth_m="1.22" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="90" sw_configuration="Default" sw_file="4x8TABLE.SLDPRT" sw_instance="4x8TABLE-1" width_m="2.44">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=270;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4001.7" y="626.43" width="244" height="122" as="geometry" />
+            <mxGeometry x="4101.7" y="626.43" width="244" height="122" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-535" label="4x8 Table" component_id="535" definition="4x8 Table (2)" depth_m="1.22" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" import_note="rotation squared from 90.434 deg" rotation_deg="90" sw_configuration="Default" sw_file="4x8TABLE.SLDPRT" sw_instance="4x8TABLE-2" width_m="2.44">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=270;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4720.84" y="647.11" width="244" height="122" as="geometry" />
+            <mxGeometry x="4820.84" y="647.11" width="244" height="122" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-590" label="Finishing Table" component_id="590" definition="Finishing Table" depth_m="3.66" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="90" sw_configuration="Default" sw_file="FINISHING TABLE.SLDPRT" sw_instance="FINISHING TABLE-1" width_m="9.3">
           <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[1,0],[0.73763,0],[0.73763,0.62432],[0.47527,0.62432],[0.47527,0.37568],[0.67204,0.37568],[0.67204,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=270;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="1830.2" y="815.86" width="930" height="366" as="geometry" />
+            <mxGeometry x="1930.2" y="815.86" width="930" height="366" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-591" label="Bundle Winch" component_id="591" definition="Bundle Winch" depth_m="2.84" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="90" sw_configuration="Default" sw_file="BUNDLEWINCH.SLDPRT" sw_instance="BUNDLEWINCH-1" width_m="1.22">
           <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[0.5,1],[0.5,0.42782],[1,0.42782],[1,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=270;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="1909.08" y="1260.72" width="122" height="284" as="geometry" />
+            <mxGeometry x="2009.08" y="1260.72" width="122" height="284" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-592" label="Finishing Shelves" component_id="592" definition="Finishing Shelves" depth_m="0.61" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" rotation_deg="270" sw_configuration="Default" sw_file="FINSIHINGSHELVES.SLDPRT" sw_instance="FINSIHINGSHELVES-1" width_m="4.88">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=90;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="1553.36" y="869.3" width="488" height="61" as="geometry" />
+            <mxGeometry x="1653.36" y="869.3" width="488" height="61" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-593" label="Shelves" component_id="593" definition="Shelves" depth_m="0.91" elevation_m="0" footprint="tessellatedOutline" height_m="3.048" rotation_deg="90" sw_configuration="Default" sw_file="SHELVES.SLDPRT" sw_instance="SHELVES-1" width_m="4.88">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=270;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="1477.16" y="854.3" width="488" height="91" as="geometry" />
+            <mxGeometry x="1577.16" y="854.3" width="488" height="91" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-621" label="Standard Shelf" component_id="621" definition="Standard Shelf" depth_m="1.07" elevation_m="0" footprint="tessellatedOutline" height_m="3.048" rotation_deg="0" sw_configuration="Default" sw_file="STANDARDSHELF.SLDPRT" sw_instance="STANDARDSHELF-2" width_m="10.97">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="436.06" y="1554.96" width="1097" height="107" as="geometry" />
+            <mxGeometry x="536.06" y="1554.96" width="1097" height="107" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-629" label="Standard Shelf" component_id="629" definition="Standard Shelf" depth_m="1.07" elevation_m="0" footprint="tessellatedOutline" height_m="3.048" rotation_deg="0" sw_configuration="Default" sw_file="STANDARDSHELF.SLDPRT" sw_instance="STANDARDSHELF-3" width_m="10.97">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="436.06" y="3871.44" width="1097" height="107" as="geometry" />
+            <mxGeometry x="536.06" y="3871.44" width="1097" height="107" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-651" label="Standard Shelf" component_id="651" definition="Standard Shelf" depth_m="1.07" elevation_m="0" footprint="tessellatedOutline" height_m="3.048" rotation_deg="0" sw_configuration="Default" sw_file="STANDARDSHELF.SLDPRT" sw_instance="STANDARDSHELF-4" width_m="10.97">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="436.06" y="3399" width="1097" height="107" as="geometry" />
+            <mxGeometry x="536.06" y="3399" width="1097" height="107" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-656" label="Standard Shelf" component_id="656" definition="Standard Shelf" depth_m="1.07" elevation_m="0" footprint="tessellatedOutline" height_m="3.048" rotation_deg="0" sw_configuration="Default" sw_file="STANDARDSHELF.SLDPRT" sw_instance="STANDARDSHELF-5" width_m="10.97">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="436.06" y="3673.32" width="1097" height="107" as="geometry" />
+            <mxGeometry x="536.06" y="3673.32" width="1097" height="107" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-663" label="Standard Shelf" component_id="663" definition="Standard Shelf" depth_m="1.07" elevation_m="0" footprint="tessellatedOutline" height_m="3.048" rotation_deg="0" sw_configuration="Default" sw_file="STANDARDSHELF.SLDPRT" sw_instance="STANDARDSHELF-6" width_m="10.97">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="436.06" y="3292.32" width="1097" height="107" as="geometry" />
+            <mxGeometry x="536.06" y="3292.32" width="1097" height="107" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-690" label="Standard Shelf" component_id="690" definition="Standard Shelf" depth_m="1.07" elevation_m="0" footprint="tessellatedOutline" height_m="3.048" rotation_deg="0" sw_configuration="Default" sw_file="STANDARDSHELF.SLDPRT" sw_instance="STANDARDSHELF-7" width_m="10.97">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="436.06" y="4084.8" width="1097" height="107" as="geometry" />
+            <mxGeometry x="536.06" y="4084.8" width="1097" height="107" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-697" label="Standard Shelf" component_id="697" definition="Standard Shelf" depth_m="1.07" elevation_m="0" footprint="tessellatedOutline" height_m="3.048" rotation_deg="0" sw_configuration="Default" sw_file="STANDARDSHELF.SLDPRT" sw_instance="STANDARDSHELF-8" width_m="10.97">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="436.06" y="4252.44" width="1097" height="107" as="geometry" />
+            <mxGeometry x="536.06" y="4252.44" width="1097" height="107" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-705" label="Standard Shelf" component_id="705" definition="Standard Shelf" depth_m="1.07" elevation_m="0" footprint="tessellatedOutline" height_m="3.048" rotation_deg="0" sw_configuration="Default" sw_file="STANDARDSHELF.SLDPRT" sw_instance="STANDARDSHELF-9" width_m="10.97">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="436.06" y="2347.44" width="1097" height="107" as="geometry" />
+            <mxGeometry x="536.06" y="2347.44" width="1097" height="107" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-707" label="Standard Shelf" component_id="707" definition="Standard Shelf" depth_m="1.07" elevation_m="0" footprint="tessellatedOutline" height_m="3.048" rotation_deg="0" sw_configuration="Default" sw_file="STANDARDSHELF.SLDPRT" sw_instance="STANDARDSHELF-10" width_m="10.97">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="436.06" y="2515.08" width="1097" height="107" as="geometry" />
+            <mxGeometry x="536.06" y="2515.08" width="1097" height="107" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-719" label="Standard Shelf" component_id="719" definition="Standard Shelf" depth_m="1.07" elevation_m="0" footprint="tessellatedOutline" height_m="3.048" rotation_deg="0" sw_configuration="Default" sw_file="STANDARDSHELF.SLDPRT" sw_instance="STANDARDSHELF-11" width_m="10.97">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="436.06" y="2134.08" width="1097" height="107" as="geometry" />
+            <mxGeometry x="536.06" y="2134.08" width="1097" height="107" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-725" label="Standard Shelf" component_id="725" definition="Standard Shelf" depth_m="1.07" elevation_m="0" footprint="tessellatedOutline" height_m="3.048" rotation_deg="0" sw_configuration="Default" sw_file="STANDARDSHELF.SLDPRT" sw_instance="STANDARDSHELF-12" width_m="10.97">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="436.06" y="1676.88" width="1097" height="107" as="geometry" />
+            <mxGeometry x="536.06" y="1676.88" width="1097" height="107" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-731" label="Standard Shelf" component_id="731" definition="Standard Shelf" depth_m="1.07" elevation_m="0" footprint="tessellatedOutline" height_m="3.048" rotation_deg="0" sw_configuration="Default" sw_file="STANDARDSHELF.SLDPRT" sw_instance="STANDARDSHELF-13" width_m="10.97">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="436.06" y="3078.96" width="1097" height="107" as="geometry" />
+            <mxGeometry x="536.06" y="3078.96" width="1097" height="107" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-797" label="Tool Chest" component_id="797" definition="Tool Chest" depth_m="1.42" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" rotation_deg="0" sw_configuration="Default" sw_file="TOOL CHEST.SLDPRT" sw_instance="TOOL CHEST-1" width_m="0.56">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4614.97" y="1167.59" width="56" height="142" as="geometry" />
+            <mxGeometry x="4714.97" y="1167.59" width="56" height="142" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-798" label="Table" component_id="798" definition="Table" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="90" sw_configuration="Default" sw_file="TABLE.SLDPRT" sw_instance="TABLE-1" width_m="1.675">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=270;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4252.02" y="680.32" width="167.5" height="91.5" as="geometry" />
+            <mxGeometry x="4352.02" y="680.32" width="167.5" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-805" label="Work Bench" component_id="805" definition="Work Bench" depth_m="0.43" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" import_note="rotation squared from 90.434 deg" rotation_deg="90" sw_configuration="Default" sw_file="WORK BENCH.SLDPRT" sw_instance="WORK BENCH-1" width_m="3.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=270;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4375.25" y="756.66" width="343" height="43" as="geometry" />
+            <mxGeometry x="4475.25" y="756.66" width="343" height="43" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-806" label="Short Rack" component_id="806" definition="Short Rack" depth_m="0.61" elevation_m="0" footprint="tessellatedOutline" height_m="2.438" import_note="rotation squared from 90.434 deg" rotation_deg="90" sw_configuration="Default" sw_file="short Rack.SLDPRT" sw_instance="short Rack-1" width_m="2.54">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=270;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4471.37" y="702.87" width="254" height="61" as="geometry" />
+            <mxGeometry x="4571.37" y="702.87" width="254" height="61" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-816" label="Rack 2" component_id="816" definition="Rack 2" depth_m="7.62" elevation_m="0" footprint="tessellatedOutline" height_m="3.658" rotation_deg="0" sw_configuration="Default" sw_file="Rack2.SLDPRT" sw_instance="Rack2-1" width_m="1.065">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3126.92" y="568.29" width="106.5" height="762" as="geometry" />
+            <mxGeometry x="3226.92" y="568.29" width="106.5" height="762" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-817" label="Rack 3" component_id="817" definition="Rack 3" depth_m="5.08" elevation_m="0" footprint="tessellatedOutline" height_m="3.048" rotation_deg="0" sw_configuration="Default" sw_file="rack3.SLDPRT" sw_instance="rack3-1" width_m="1.065">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3340.28" y="821.49" width="106.5" height="508" as="geometry" />
+            <mxGeometry x="3440.28" y="821.49" width="106.5" height="508" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-823" label="Table 2" component_id="823" definition="Table 2" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="table 2.SLDPRT" sw_instance="table 2-1" width_m="2.415">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="5106.75" y="716.86" width="241.5" height="91.5" as="geometry" />
+            <mxGeometry x="5206.75" y="716.86" width="241.5" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-827" label="Table 4" component_id="827" definition="Table 4" depth_m="1.83" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="table 4.SLDPRT" sw_instance="table 4-1" width_m="1.22">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4232.35" y="1026.25" width="122" height="183" as="geometry" />
+            <mxGeometry x="4332.35" y="1026.25" width="122" height="183" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-831" label="Parts Rack" component_id="831" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-2" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3585.61" y="916.54" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3685.61" y="916.54" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-832" label="Parts Rack" component_id="832" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-3" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3628.79" y="916.86" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3728.79" y="916.86" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-839" label="Parts Rack" component_id="839" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-4" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3781.18" y="917.98" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3881.18" y="917.98" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-840" label="Parts Rack" component_id="840" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-5" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3933.58" y="919.11" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="4033.58" y="919.11" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-841" label="Parts Rack" component_id="841" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-6" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3738.01" y="917.66" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3838.01" y="917.66" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-842" label="Parts Rack" component_id="842" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-7" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3890.4" y="918.79" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3990.4" y="918.79" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-846" label="Parts Rack" component_id="846" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-8" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3628.13" y="1005.76" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3728.13" y="1005.76" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-847" label="Parts Rack" component_id="847" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-9" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3627.48" y="1094.65" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3727.48" y="1094.65" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-848" label="Parts Rack" component_id="848" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-10" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3584.95" y="1005.44" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3684.95" y="1005.44" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-849" label="Parts Rack" component_id="849" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-11" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3584.3" y="1094.33" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3684.3" y="1094.33" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-850" label="Parts Rack" component_id="850" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-12" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3780.53" y="1006.88" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3880.53" y="1006.88" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-851" label="Parts Rack" component_id="851" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-13" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3779.87" y="1095.78" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3879.87" y="1095.78" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-852" label="Parts Rack" component_id="852" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-14" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3932.92" y="1008" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="4032.92" y="1008" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-853" label="Parts Rack" component_id="853" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-15" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3932.27" y="1096.9" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="4032.27" y="1096.9" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-854" label="Parts Rack" component_id="854" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-16" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3737.35" y="1006.56" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3837.35" y="1006.56" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-855" label="Parts Rack" component_id="855" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-17" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3736.69" y="1095.46" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3836.69" y="1095.46" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-856" label="Parts Rack" component_id="856" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-18" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3889.75" y="1007.69" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3989.75" y="1007.69" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-857" label="Parts Rack" component_id="857" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-19" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3889.09" y="1096.58" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3989.09" y="1096.58" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-858" label="Parts Rack" component_id="858" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 89.577 deg" rotation_deg="90" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-20" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=270;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3602.91" y="1161.9" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3702.91" y="1161.9" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-867" label="Parts Rack" component_id="867" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 89.577 deg" rotation_deg="90" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-21" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=270;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3755.31" y="1163.03" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3855.31" y="1163.03" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-868" label="Parts Rack" component_id="868" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 89.577 deg" rotation_deg="90" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-22" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=270;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3907.7" y="1164.15" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="4007.7" y="1164.15" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-871" label="Parts Rack" component_id="871" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 0 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-23" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3586.62" y="733.5" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3686.62" y="733.5" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-873" label="Parts Rack" component_id="873" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-25" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3586.28" y="825.1" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3686.28" y="825.1" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-885" label="New Paint Table" component_id="885" definition="New Paint Table" depth_m="3.05" elevation_m="0" footprint="tessellatedOutline" height_m="1.219" rotation_deg="0" sw_configuration="Default" sw_file="new paint table.SLDPRT" sw_instance="new paint table-1" width_m="0.94">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="5384.9" y="1829.66" width="94" height="305" as="geometry" />
+            <mxGeometry x="5484.9" y="1829.66" width="94" height="305" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-887" label="CNC Machine 1" component_id="887" definition="CNC Machine 1" depth_m="2.16" elevation_m="0" footprint="tessellatedOutline" height_m="2.438" rotation_deg="0" sw_configuration="Default" sw_file="cnc machine 1.SLDPRT" sw_instance="cnc machine 1-1" width_m="3.81">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3333.44" y="2561.09" width="381" height="216" as="geometry" />
+            <mxGeometry x="3433.44" y="2561.09" width="381" height="216" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-888" label="CNC Machine 2" component_id="888" definition="CNC Machine 2" depth_m="2.16" elevation_m="0" footprint="tessellatedOutline" height_m="2.438" rotation_deg="0" sw_configuration="Default" sw_file="cnc machine 2.SLDPRT" sw_instance="cnc machine 2-1" width_m="4.57">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4482.57" y="2692.54" width="457" height="216" as="geometry" />
+            <mxGeometry x="4582.57" y="2692.54" width="457" height="216" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-889" label="CNC Machine 3" component_id="889" definition="CNC Machine 3" depth_m="1.7" elevation_m="0" footprint="tessellatedOutline" height_m="2.438" rotation_deg="0" sw_configuration="Default" sw_file="cnc machine 3.SLDPRT" sw_instance="cnc machine 3-1" width_m="3.3">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3896.28" y="3522.31" width="330" height="170" as="geometry" />
+            <mxGeometry x="3996.28" y="3522.31" width="330" height="170" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-890" label="CNC Machine 4" component_id="890" definition="CNC Machine 4" depth_m="1.725" elevation_m="0" footprint="tessellatedOutline" height_m="2.438" rotation_deg="0" sw_configuration="Default" sw_file="cnc machine 4.SLDPRT" sw_instance="cnc machine 4-1" width_m="4.32">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3044.13" y="2926.07" width="432" height="172.5" as="geometry" />
+            <mxGeometry x="3144.13" y="2926.07" width="432" height="172.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-891" label="CNC Machine 5" component_id="891" definition="CNC Machine 5" depth_m="1.575" elevation_m="0" footprint="tessellatedOutline" height_m="2.438" rotation_deg="0" sw_configuration="Default" sw_file="cnc machine 5.SLDPRT" sw_instance="cnc machine 5-1" width_m="2.565">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="2996.7" y="3545.65" width="256.5" height="157.5" as="geometry" />
+            <mxGeometry x="3096.7" y="3545.65" width="256.5" height="157.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-898" label="Feeder" component_id="898" definition="Feeder" depth_m="0.445" elevation_m="0" footprint="tessellatedOutline" height_m="1.219" rotation_deg="0" sw_configuration="Default" sw_file="feeder.SLDPRT" sw_instance="feeder-1" width_m="2.135">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3253.24" y="3605" width="213.5" height="44.5" as="geometry" />
+            <mxGeometry x="3353.24" y="3605" width="213.5" height="44.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-899" label="Feeder" component_id="899" definition="Feeder" depth_m="0.445" elevation_m="0" footprint="tessellatedOutline" height_m="1.219" rotation_deg="0" sw_configuration="Default" sw_file="feeder.SLDPRT" sw_instance="feeder-2" width_m="2.135">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4226.48" y="3585.78" width="213.5" height="44.5" as="geometry" />
+            <mxGeometry x="4326.48" y="3585.78" width="213.5" height="44.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-904" label="New CNC Machine" component_id="904" definition="New CNC Machine" depth_m="2.285" elevation_m="1.269" footprint="tessellatedOutline" height_m="2.438" rotation_deg="0" sw_configuration="Default" sw_file="new cnc machine.SLDPRT" sw_instance="new cnc machine-1" width_m="4.625">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4602.95" y="3512.14" width="462.5" height="228.5" as="geometry" />
+            <mxGeometry x="4702.95" y="3512.14" width="462.5" height="228.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-905" label="Feeder" component_id="905" definition="Feeder" depth_m="0.445" elevation_m="1.269" footprint="tessellatedOutline" height_m="1.219" rotation_deg="0" sw_configuration="Default" sw_file="feeder.SLDPRT" sw_instance="feeder-3" width_m="2.135">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="5065.23" y="3590.81" width="213.5" height="44.5" as="geometry" />
+            <mxGeometry x="5165.23" y="3590.81" width="213.5" height="44.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-908" label="Machine Shop Lathe" component_id="908" definition="Machine Shop Lathe" depth_m="1.065" elevation_m="0" footprint="tessellatedOutline" height_m="1.372" rotation_deg="270" sw_configuration="Default" sw_file="machine shope lathe.SLDPRT" sw_instance="machine shope lathe-1" width_m="2.185">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=90;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="5370.86" y="2794.34" width="218.5" height="106.5" as="geometry" />
+            <mxGeometry x="5470.86" y="2794.34" width="218.5" height="106.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-911" label="Rack 4" component_id="911" definition="Rack 4" depth_m="6.095" elevation_m="0" footprint="tessellatedOutline" height_m="3.658" rotation_deg="0" sw_configuration="Default" sw_file="rack4.SLDPRT" sw_instance="rack4-1" width_m="1.22">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3392.63" y="1827.08" width="122" height="609.5" as="geometry" />
+            <mxGeometry x="3492.63" y="1827.08" width="122" height="609.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-917" label="Work Table" component_id="917" definition="Work Table" depth_m="1.22" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="work table.SLDPRT" sw_instance="work table-1" width_m="3.66">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4794.56" y="2087.63" width="366" height="122" as="geometry" />
+            <mxGeometry x="4894.56" y="2087.63" width="366" height="122" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-918" label="Work Table" component_id="918" definition="Work Table" depth_m="1.22" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="work table.SLDPRT" sw_instance="work table-2" width_m="3.66">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4314.5" y="2092.57" width="366" height="122" as="geometry" />
+            <mxGeometry x="4414.5" y="2092.57" width="366" height="122" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-926" label="Small Table" component_id="926" definition="Small Table" depth_m="1.83" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="small table.SLDPRT" sw_instance="small table-1" width_m="2.44">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4070.66" y="2089.52" width="244" height="183" as="geometry" />
+            <mxGeometry x="4170.66" y="2089.52" width="244" height="183" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-929" label="Smaller Table" component_id="929" definition="Smaller Table" depth_m="1.22" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="smaller table.SLDPRT" sw_instance="smaller table-1" width_m="2.44">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4041.66" y="2393.24" width="244" height="122" as="geometry" />
+            <mxGeometry x="4141.66" y="2393.24" width="244" height="122" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-932" label="Small Shelf" component_id="932" definition="Small Shelf" depth_m="1.065" elevation_m="0" footprint="tessellatedOutline" height_m="3.658" rotation_deg="0" sw_configuration="Default" sw_file="small shelf.SLDPRT" sw_instance="small shelf-1" width_m="2.44">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4916.48" y="2408.74" width="244" height="106.5" as="geometry" />
+            <mxGeometry x="5016.48" y="2408.74" width="244" height="106.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-937" label="Big Fridge" component_id="937" definition="Big Fridge" depth_m="0.76" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" rotation_deg="0" sw_configuration="Default" sw_file="big fridge.SLDPRT" sw_instance="big fridge-1" width_m="1.37">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4483.77" y="2430.5" width="137" height="76" as="geometry" />
+            <mxGeometry x="4583.77" y="2430.5" width="137" height="76" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-938" label="Small Fridge" component_id="938" definition="Small Fridge" depth_m="0.76" elevation_m="0" footprint="tessellatedOutline" height_m="1.524" rotation_deg="0" sw_configuration="Default" sw_file="small fridge.SLDPRT" sw_instance="small fridge-1" width_m="0.76">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4758.09" y="2439.24" width="76" height="76" as="geometry" />
+            <mxGeometry x="4858.09" y="2439.24" width="76" height="76" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-940" label="Shelf 5" component_id="940" definition="Shelf 5" depth_m="1.065" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" rotation_deg="0" sw_configuration="Default" sw_file="shelve5.SLDPRT" sw_instance="shelve5-1" width_m="1.37">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4620.93" y="2409.1" width="137" height="106.5" as="geometry" />
+            <mxGeometry x="4720.93" y="2409.1" width="137" height="106.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-949" label="Heat Sheet" component_id="949" definition="Heat Sheet" depth_m="1.17" elevation_m="0" footprint="tessellatedOutline" height_m="1.524" rotation_deg="0" sw_configuration="Default" sw_file="heat sheet.SLDPRT" sw_instance="heat sheet-1" width_m="0.56">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="4371.36" y="2325.85" width="56" height="117" as="geometry" />
+            <mxGeometry x="4471.36" y="2325.85" width="56" height="117" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-951" label="Lathe" component_id="951" definition="Lathe" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" rotation_deg="0" sw_configuration="Default" sw_file="lathe.SLDPRT" sw_instance="lathe-1" width_m="0.76">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3527.45" y="2413.5" width="76" height="91.5" as="geometry" />
+            <mxGeometry x="3627.45" y="2413.5" width="76" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-953" label="Sewing Table 1" component_id="953" definition="Sewing Table 1" depth_m="3.66" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="sew talble 1.SLDPRT" sw_instance="sew talble 1-1" width_m="2.44">
           <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[0.68648,1],[0.68648,0.33333],[1,0.33333],[1,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="2615.24" y="1713.89" width="244" height="366" as="geometry" />
+            <mxGeometry x="2715.24" y="1713.89" width="244" height="366" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-958" label="Shelf 3" component_id="958" definition="Shelf 3" depth_m="1.065" elevation_m="0" footprint="tessellatedOutline" height_m="3.658" rotation_deg="0" sw_configuration="Default" sw_file="shelve 3.SLDPRT" sw_instance="shelve 3-1" width_m="2.745">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3077.18" y="2408.74" width="274.5" height="106.5" as="geometry" />
+            <mxGeometry x="3177.18" y="2408.74" width="274.5" height="106.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-961" label="Sewing Table 2" component_id="961" definition="Sewing Table 2" depth_m="1.065" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="sew table 2.SLDPRT" sw_instance="sew table 2-1" width_m="2.44">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="2619.07" y="2196.56" width="244" height="106.5" as="geometry" />
+            <mxGeometry x="2719.07" y="2196.56" width="244" height="106.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-963" label="Large Sewing Table" component_id="963" definition="Large Sewing Table" depth_m="6.095" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="large sewing tale.SLDPRT" sw_instance="large sewing tale-1" width_m="3.66">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="2027.29" y="2019.72" width="366" height="609.5" as="geometry" />
+            <mxGeometry x="2127.29" y="2019.72" width="366" height="609.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-968" label="Medium Sewing Table" component_id="968" definition="Medium Sewing Table" depth_m="3.66" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="medium sewing table.SLDPRT" sw_instance="medium sewing table-2" width_m="2.44">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="2149.21" y="2702.64" width="244" height="366" as="geometry" />
+            <mxGeometry x="2249.21" y="2702.64" width="244" height="366" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-977" label="Small Sewing Table" component_id="977" definition="Small Sewing Table" depth_m="1.92" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="small sewing table.SLDPRT" sw_instance="small sewing table-1" width_m="1.83">
           <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0.33333,1],[1,1],[1,0],[0,0],[0,0.36458],[0.33333,0.36458]];rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="1966.21" y="2783.68" width="183" height="192" as="geometry" />
+            <mxGeometry x="2066.21" y="2783.68" width="183" height="192" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-980" label="Sewing Table 3" component_id="980" definition="Sewing Table 3" depth_m="3.25" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="sewing table 3.SLDPRT" sw_instance="sewing table 3-1" width_m="3.66">
           <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[1,0],[0.20082,0],[0.20082,0.26462],[0,0.26462]];rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="1990.1" y="3943.03" width="366" height="325" as="geometry" />
+            <mxGeometry x="2090.1" y="3943.03" width="366" height="325" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-983" label="Sewing Table 4" component_id="983" definition="Sewing Table 4" depth_m="4.42" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="0" sw_configuration="Default" sw_file="sewing table 4.SLDPRT" sw_instance="sewing table 4-1" width_m="3.66">
           <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0.58333,1],[1,1],[1,0.27602],[0.48361,0.27602],[0.48361,0],[0,0],[0,0.82805],[0.58333,0.82805]];rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="1986.47" y="3288.45" width="366" height="442" as="geometry" />
+            <mxGeometry x="2086.47" y="3288.45" width="366" height="442" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-986" label="Huge Table" component_id="986" definition="Huge Table" depth_m="2.47" elevation_m="0" footprint="tessellatedOutline" height_m="0.914" rotation_deg="270" sw_configuration="Default" sw_file="hige table.SLDPRT" sw_instance="hige table-1" width_m="11.125">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=90;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="1609.71" y="5149.63" width="1112.5" height="247" as="geometry" />
+            <mxGeometry x="1709.71" y="5149.63" width="1112.5" height="247" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-989" label="Table 5" component_id="989" definition="Table 5" depth_m="1.22" elevation_m="0.953" footprint="tessellatedOutline" height_m="0.914" rotation_deg="90" sw_configuration="Default" sw_file="table 5.SLDPRT" sw_instance="table 5-1" width_m="3.69">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;rotation=270;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="1573.75" y="5048.33" width="369" height="122" as="geometry" />
+            <mxGeometry x="1673.75" y="5048.33" width="369" height="122" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-1008" label="Parts Rack" component_id="1008" definition="Parts Rack" depth_m="0.915" elevation_m="0" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-26" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3629.46" y="825.42" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3729.46" y="825.42" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-1019" label="Parts Rack" component_id="1019" definition="Parts Rack" depth_m="0.915" elevation_m="0.009" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-27" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3891.08" y="827.35" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3991.08" y="827.35" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-1020" label="Parts Rack" component_id="1020" definition="Parts Rack" depth_m="0.915" elevation_m="0.003" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-28" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3738.68" y="826.23" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3838.68" y="826.23" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-1021" label="Parts Rack" component_id="1021" definition="Parts Rack" depth_m="0.915" elevation_m="0.009" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-29" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3934.25" y="827.67" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="4034.25" y="827.67" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-1022" label="Parts Rack" component_id="1022" definition="Parts Rack" depth_m="0.915" elevation_m="0.003" footprint="tessellatedOutline" height_m="1.829" import_note="rotation squared from 359.577 deg" rotation_deg="0" sw_configuration="Default" sw_file="parts rack.SLDPRT" sw_instance="parts rack-30" width_m="0.43">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="3781.86" y="826.54" width="43" height="91.5" as="geometry" />
+            <mxGeometry x="3881.86" y="826.54" width="43" height="91.5" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-1034" label="Rack 3" component_id="1034" definition="Rack 3" depth_m="5.08" elevation_m="0" footprint="tessellatedOutline" height_m="3.048" rotation_deg="0" sw_configuration="Default" sw_file="rack3.SLDPRT" sw_instance="rack3-2" width_m="1.065">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="5449.88" y="775.62" width="106.5" height="508" as="geometry" />
+            <mxGeometry x="5549.88" y="775.62" width="106.5" height="508" as="geometry" />
           </mxCell>
         </object>
         <object id="eq-1046" label="Machine Shop Lathe" component_id="1046" definition="Machine Shop Lathe" depth_m="1.065" elevation_m="0" footprint="tessellatedOutline" height_m="1.372" rotation_deg="0" sw_configuration="Default" sw_file="machine shope lathe.SLDPRT" sw_instance="machine shope lathe-2" width_m="2.185">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="layer-equipment">
-            <mxGeometry x="5309.42" y="2572.75" width="218.5" height="106.5" as="geometry" />
+            <mxGeometry x="5409.42" y="2572.75" width="218.5" height="106.5" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-1" label="" height_m="5.486" kind="wall" length_m="2.23" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-1" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="6.13" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="5130" y="702" width="223" height="15" as="geometry" />
+            <mxGeometry x="5651.5" y="717" width="10" height="613" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-2" label="" height_m="5.486" kind="wall" length_m="1.22" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-2" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="2.25" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="5435" y="702" width="122" height="15" as="geometry" />
+            <mxGeometry x="5229" y="711.5" width="225" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-3" label="" height_m="5.486" kind="wall" length_m="2.75" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-3" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="1.23" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="5130" y="427" width="15" height="275" as="geometry" />
+            <mxGeometry x="5534" y="711.5" width="123" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-4" label="" height_m="5.486" kind="wall" length_m="2.75" source="Room-1, Wall-1" thickness_m="0.16">
+        <object id="wall-4" label="" height_m="5.486" kind="wall" length_m="2.23" source="Room-1, Wall-1" thickness_m="0.14">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="5541" y="427" width="16" height="275" as="geometry" />
+            <mxGeometry x="5230" y="702" width="223" height="14" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-5" label="" height_m="5.486" kind="wall" length_m="0.31" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-5" label="" height_m="5.486" kind="wall" length_m="1.22" source="Room-1, Wall-1" thickness_m="0.14">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="223" y="412" width="30" height="31" as="geometry" />
+            <mxGeometry x="5535" y="702" width="122" height="14" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-6" label="" height_m="5.486" kind="wall" length_m="4.27" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-6" label="" height_m="5.486" kind="wall" length_m="2.75" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="5130" y="412" width="427" height="15" as="geometry" />
+            <mxGeometry x="5230" y="427" width="15" height="275" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-7" label="" height_m="5.486" kind="wall" length_m="53.34" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-7" label="" height_m="5.486" kind="wall" length_m="2.75" source="Room-1, Wall-1" thickness_m="0.16">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="223" y="382" width="5334" height="30" as="geometry" />
+            <mxGeometry x="5641" y="427" width="16" height="275" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-8" label="" height_m="5.486" kind="wall" length_m="0.31" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-8" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.32" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="4359" width="30" height="31" as="geometry" />
+            <mxGeometry x="322" y="437.5" width="32" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-9" label="" height_m="5.486" kind="wall" length_m="3.35" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-9" label="" height_m="5.486" kind="wall" length_m="0.3" source="Room-1, Wall-1" thickness_m="0.3">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="4344" width="335" height="15" as="geometry" />
+            <mxGeometry x="323" y="412" width="30" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-10" label="" height_m="5.486" kind="wall" length_m="4.88" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-10" label="" height_m="5.486" kind="wall" length_m="4.27" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="3856" width="30" height="488" as="geometry" />
+            <mxGeometry x="5230" y="412" width="427" height="15" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-11" label="" height_m="5.486" kind="wall" length_m="1.83" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-11" label="" height_m="5.486" kind="wall" length_m="53.34" source="Room-1, Wall-1" thickness_m="0.3">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="4109" y="3856" width="15" height="183" as="geometry" />
+            <mxGeometry x="323" y="382" width="5334" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-12" label="" height_m="5.486" kind="wall" length_m="1.73" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-12" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3667" y="3856" width="15" height="173" as="geometry" />
+            <mxGeometry x="5651.5" y="381" width="10" height="1" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-13" label="" height_m="5.486" kind="wall" length_m="29.57" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-13" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="13.12" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="3826" width="2957" height="30" as="geometry" />
+            <mxGeometry x="5651.5" y="3856" width="10" height="1312" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-14" label="" height_m="5.486" kind="wall" length_m="5.18" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-14" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.31" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="3308" width="30" height="518" as="geometry" />
+            <mxGeometry x="2700" y="4384.5" width="31" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-15" label="" height_m="5.486" kind="wall" length_m="14.02" source="Room-1, Wall-1" thickness_m="0.31">
+        <object id="wall-15" label="" height_m="5.486" kind="wall" length_m="0.3" source="Room-1, Wall-1" thickness_m="0.3">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="1228" y="6020" width="1402" height="31" as="geometry" />
+            <mxGeometry x="2700" y="4359" width="30" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-16" label="" height_m="5.486" kind="wall" length_m="0.3" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-16" label="" height_m="5.486" kind="wall" length_m="3.35" source="Room-1, Wall-1" thickness_m="0.14">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="5990" width="30" height="30" as="geometry" />
+            <mxGeometry x="2700" y="4345" width="335" height="14" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-17" label="" height_m="5.486" kind="wall" length_m="1.83" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-17" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="3.36" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="5975" width="183" height="15" as="geometry" />
+            <mxGeometry x="2700" y="4339.5" width="336" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-18" label="" height_m="5.486" kind="wall" length_m="3.05" source="Room-1, Wall-1" thickness_m="0.46">
+        <object id="wall-18" label="" height_m="5.486" kind="wall" length_m="4.88" source="Room-1, Wall-1" thickness_m="0.3">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="5670" width="46" height="305" as="geometry" />
+            <mxGeometry x="2700" y="3856" width="30" height="488" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-19" label="" height_m="5.486" kind="wall" length_m="3.2" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-19" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="5655" width="320" height="15" as="geometry" />
+            <mxGeometry x="4218.5" y="4039" width="10" height="1" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-20" label="" height_m="5.486" kind="wall" length_m="4.58" source="Room-1, Wall-1" thickness_m="0.46">
+        <object id="wall-20" label="" height_m="5.486" kind="wall" length_m="1.83" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="5197" width="46" height="458" as="geometry" />
+            <mxGeometry x="4209" y="3856" width="15" height="183" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-21" label="" height_m="5.486" kind="wall" length_m="3.23" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-21" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.17" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2905" y="5332" width="15" height="323" as="geometry" />
+            <mxGeometry x="3766" y="4023.5" width="17" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-22" label="" height_m="5.486" kind="wall" length_m="0.44" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-22" label="" height_m="5.486" kind="wall" length_m="1.72" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2905" y="5197" width="15" height="44" as="geometry" />
+            <mxGeometry x="3767" y="3856" width="15" height="172" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-23" label="" height_m="5.486" kind="wall" length_m="3.2" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-23" label="" height_m="5.486" kind="wall" length_m="29.57" source="Room-1, Wall-1" thickness_m="0.3">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="5182" width="320" height="15" as="geometry" />
+            <mxGeometry x="2700" y="3826" width="2957" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-24" label="" height_m="5.486" kind="wall" length_m="4.57" source="Room-1, Wall-1" thickness_m="0.46">
+        <object id="wall-24" label="" height_m="5.486" kind="wall" length_m="5.18" source="Room-1, Wall-1" thickness_m="0.3">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="4725" width="46" height="457" as="geometry" />
+            <mxGeometry x="2700" y="3308" width="30" height="518" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-25" label="" height_m="5.486" kind="wall" length_m="2.55" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-25" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="3.03" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2905" y="4927" width="15" height="255" as="geometry" />
+            <mxGeometry x="5651.5" y="3523" width="10" height="303" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-26" label="" height_m="5.486" kind="wall" length_m="1.11" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-26" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2905" y="4725" width="15" height="111" as="geometry" />
+            <mxGeometry x="2700" y="3302.5" width="1" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-27" label="" height_m="5.486" kind="wall" length_m="3.2" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-27" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="14.03" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="4710" width="320" height="15" as="geometry" />
+            <mxGeometry x="1328" y="6045.5" width="1403" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-28" label="" height_m="5.486" kind="wall" length_m="0.31" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-28" label="" height_m="5.486" kind="wall" length_m="14.02" source="Room-1, Wall-1" thickness_m="0.3">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="4679" width="30" height="31" as="geometry" />
+            <mxGeometry x="1328" y="6020" width="1402" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-29" label="" height_m="5.486" kind="wall" length_m="0.31" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-29" label="" height_m="5.486" kind="wall" length_m="0.3" source="Room-1, Wall-1" thickness_m="0.3">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="3033" width="30" height="31" as="geometry" />
+            <mxGeometry x="2700" y="5990" width="30" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-30" label="" height_m="5.486" kind="wall" length_m="3.05" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-30" label="" height_m="5.486" kind="wall" length_m="1.83" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="3018" width="305" height="15" as="geometry" />
+            <mxGeometry x="2700" y="5975" width="183" height="15" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-31" label="" height_m="5.486" kind="wall" length_m="0.31" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-31" label="" height_m="5.486" kind="wall" length_m="3.05" source="Room-1, Wall-1" thickness_m="0.46">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2996" y="3018" width="31" height="15" as="geometry" />
+            <mxGeometry x="2700" y="5670" width="46" height="305" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-32" label="" height_m="5.486" kind="wall" length_m="4.88" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-32" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="2530" width="15" height="488" as="geometry" />
+            <mxGeometry x="2882" y="5969.5" width="1" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-33" label="" height_m="5.486" kind="wall" length_m="4.72" source="Room-1, Wall-1" thickness_m="0.16">
+        <object id="wall-33" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="3.21" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3011" y="2546" width="16" height="472" as="geometry" />
+            <mxGeometry x="2700" y="5664.5" width="321" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-34" label="" height_m="5.486" kind="wall" length_m="25.46" source="Room-1, Wall-1" thickness_m="0.16">
+        <object id="wall-34" label="" height_m="5.486" kind="wall" length_m="3.2" source="Room-1, Wall-1" thickness_m="0.14">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3011" y="2530" width="2546" height="16" as="geometry" />
+            <mxGeometry x="2700" y="5655" width="320" height="14" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-35" label="" height_m="5.486" kind="wall" length_m="29.57" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-35" label="" height_m="5.486" kind="wall" length_m="4.58" source="Room-1, Wall-1" thickness_m="0.46">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="2515" width="2957" height="15" as="geometry" />
+            <mxGeometry x="2700" y="5197" width="46" height="458" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-36" label="" height_m="5.486" kind="wall" length_m="26.83" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-36" label="" height_m="5.486" kind="wall" length_m="3.22" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2874" y="5975" width="2683" height="15" as="geometry" />
+            <mxGeometry x="3005" y="5333" width="15" height="322" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-37" label="" height_m="5.486" kind="wall" length_m="8.23" source="Room-1, Wall-1" thickness_m="0.16">
+        <object id="wall-37" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.17" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3011" y="5152" width="16" height="823" as="geometry" />
+            <mxGeometry x="3004" y="5327.5" width="17" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-38" label="" height_m="5.486" kind="wall" length_m="3.05" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-38" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.17" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="5542" y="5670" width="15" height="305" as="geometry" />
+            <mxGeometry x="3004" y="5235.5" width="17" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-39" label="" height_m="5.486" kind="wall" length_m="8.39" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-39" label="" height_m="5.486" kind="wall" length_m="0.43" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="4718" y="5655" width="839" height="15" as="geometry" />
+            <mxGeometry x="3005" y="5197" width="15" height="43" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-40" label="" height_m="5.486" kind="wall" length_m="0.16" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-40" label="" height_m="5.486" kind="wall" length_m="3.2" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="4962" y="5639" width="15" height="16" as="geometry" />
+            <mxGeometry x="2700" y="5182" width="320" height="15" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-41" label="" height_m="5.486" kind="wall" length_m="3.21" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-41" label="" height_m="5.486" kind="wall" length_m="4.57" source="Room-1, Wall-1" thickness_m="0.46">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3011" y="5137" width="321" height="15" as="geometry" />
+            <mxGeometry x="2700" y="4725" width="46" height="457" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-42" label="" height_m="5.486" kind="wall" length_m="4.12" source="Room-1, Wall-1" thickness_m="0.16">
+        <object id="wall-42" label="" height_m="5.486" kind="wall" length_m="2.54" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3011" y="4725" width="16" height="412" as="geometry" />
+            <mxGeometry x="3005" y="4928" width="15" height="254" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-43" label="" height_m="5.486" kind="wall" length_m="6.1" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-43" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.17" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3011" y="4710" width="610" height="15" as="geometry" />
+            <mxGeometry x="3004" y="4922.5" width="17" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-44" label="" height_m="5.486" kind="wall" length_m="9.14" source="Room-1, Wall-1" thickness_m="0.31">
+        <object id="wall-44" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.17" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="223" y="6020" width="914" height="31" as="geometry" />
+            <mxGeometry x="3004" y="4830.5" width="17" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-45" label="" height_m="5.486" kind="wall" length_m="9.75" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-45" label="" height_m="5.486" kind="wall" length_m="1.1" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="223" y="5045" width="30" height="975" as="geometry" />
+            <mxGeometry x="3005" y="4725" width="15" height="110" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-46" label="" height_m="5.486" kind="wall" length_m="7.62" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-46" label="" height_m="5.486" kind="wall" length_m="3.2" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3865" y="5655" width="762" height="15" as="geometry" />
+            <mxGeometry x="2700" y="4710" width="320" height="15" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-47" label="" height_m="5.486" kind="wall" length_m="3.2" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-47" label="" height_m="5.486" kind="wall" length_m="0.3" source="Room-1, Wall-1" thickness_m="0.3">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3865" y="5335" width="15" height="320" as="geometry" />
+            <mxGeometry x="2700" y="4680" width="30" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-48" label="" height_m="5.486" kind="wall" length_m="4.73" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-48" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.31" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="4185" y="5182" width="15" height="473" as="geometry" />
+            <mxGeometry x="2700" y="4674.5" width="31" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-49" label="" height_m="5.486" kind="wall" length_m="3.66" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-49" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="6.12" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="4962" y="5182" width="15" height="366" as="geometry" />
+            <mxGeometry x="5651.5" y="2546" width="10" height="612" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-50" label="" height_m="5.486" kind="wall" length_m="8.63" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-50" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.31" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="4114" y="5167" width="863" height="15" as="geometry" />
+            <mxGeometry x="2700" y="3058.5" width="31" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-51" label="" height_m="5.486" kind="wall" length_m="0.45" source="Room-1, Wall-1" thickness_m="0.16">
+        <object id="wall-51" label="" height_m="5.486" kind="wall" length_m="0.3" source="Room-1, Wall-1" thickness_m="0.3">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2570" y="1448" width="45" height="16" as="geometry" />
+            <mxGeometry x="2700" y="3033" width="30" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-52" label="" height_m="5.486" kind="wall" length_m="3.04" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-52" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2570" y="1144" width="30" height="304" as="geometry" />
+            <mxGeometry x="2999.5" y="3033" width="10" height="1" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-53" label="" height_m="5.486" kind="wall" length_m="0.45" source="Room-1, Wall-1" thickness_m="0.16">
+        <object id="wall-53" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2570" y="1128" width="45" height="16" as="geometry" />
+            <mxGeometry x="3096" y="3028.5" width="1" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-54" label="" height_m="5.486" kind="wall" length_m="2.74" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-54" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2570" y="854" width="30" height="274" as="geometry" />
+            <mxGeometry x="3121.5" y="3033" width="10" height="1" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-55" label="" height_m="5.486" kind="wall" length_m="0.45" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-55" label="" height_m="5.486" kind="wall" length_m="3.05" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2570" y="839" width="45" height="15" as="geometry" />
+            <mxGeometry x="2700" y="3018" width="305" height="15" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-56" label="" height_m="5.486" kind="wall" length_m="3.35" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-56" label="" height_m="5.486" kind="wall" length_m="0.31" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2570" y="504" width="30" height="335" as="geometry" />
+            <mxGeometry x="3096" y="3018" width="31" height="15" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-57" label="" height_m="5.486" kind="wall" length_m="7.93" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-57" label="" height_m="5.486" kind="wall" length_m="4.88" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="223" y="3399" width="30" height="793" as="geometry" />
+            <mxGeometry x="2700" y="2530" width="15" height="488" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-58" label="" height_m="5.486" kind="wall" length_m="10.97" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-58" label="" height_m="5.486" kind="wall" length_m="4.72" source="Room-1, Wall-1" thickness_m="0.16">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3027" y="4344" width="1097" height="15" as="geometry" />
+            <mxGeometry x="3111" y="2546" width="16" height="472" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-59" label="" height_m="5.486" kind="wall" length_m="2.24" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-59" label="" height_m="5.486" kind="wall" length_m="25.46" source="Room-1, Wall-1" thickness_m="0.16">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3667" y="4120" width="15" height="224" as="geometry" />
+            <mxGeometry x="3111" y="2530" width="2546" height="16" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-60" label="" height_m="5.486" kind="wall" length_m="0.15" source="Room-1, Wall-1" thickness_m="0.05">
+        <object id="wall-60" label="" height_m="5.486" kind="wall" length_m="29.57" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="4109" y="4339" width="15" height="5" as="geometry" />
+            <mxGeometry x="2700" y="2515" width="2957" height="15" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-61" label="" height_m="5.486" kind="wall" length_m="5.79" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-61" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="6.68" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="223" y="534" width="30" height="579" as="geometry" />
+            <mxGeometry x="5651.5" y="1847" width="10" height="668" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-62" label="" height_m="5.486" kind="wall" length_m="0.61" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-62" label="" height_m="5.486" kind="wall" length_m="26.83" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3865" y="5182" width="15" height="61" as="geometry" />
+            <mxGeometry x="2974" y="5975" width="2683" height="15" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-63" label="" height_m="5.486" kind="wall" length_m="1.68" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-63" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3865" y="5167" width="168" height="15" as="geometry" />
+            <mxGeometry x="2974" y="5969.5" width="1" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-64" label="" height_m="5.486" kind="wall" length_m="0.15" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-64" label="" height_m="5.486" kind="wall" length_m="8.23" source="Room-1, Wall-1" thickness_m="0.16">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3865" y="5152" width="15" height="15" as="geometry" />
+            <mxGeometry x="3111" y="5152" width="16" height="823" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-65" label="" height_m="5.486" kind="wall" length_m="3.66" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-65" label="" height_m="5.486" kind="wall" length_m="3.05" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3514" y="5137" width="366" height="15" as="geometry" />
+            <mxGeometry x="5642" y="5670" width="15" height="305" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-66" label="" height_m="5.486" kind="wall" length_m="4.12" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-66" label="" height_m="5.486" kind="wall" length_m="8.39" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3865" y="4725" width="15" height="412" as="geometry" />
+            <mxGeometry x="4818" y="5655" width="839" height="15" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-67" label="" height_m="5.486" kind="wall" length_m="0.76" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-67" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="3804" y="4710" width="76" height="15" as="geometry" />
+            <mxGeometry x="4813.5" y="5654" width="10" height="1" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-68" label="" height_m="5.486" kind="wall" length_m="3.66" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-68" label="" height_m="5.486" kind="wall" length_m="0.15" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="223" y="1509" width="30" height="366" as="geometry" />
+            <mxGeometry x="5062" y="5640" width="15" height="15" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-69" label="" height_m="5.486" kind="wall" length_m="1.22" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-69" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.92" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="223" y="4496" width="30" height="122" as="geometry" />
+            <mxGeometry x="5651.5" y="5563" width="10" height="92" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-70" label="" height_m="5.486" kind="wall" length_m="0.92" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-70" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.16" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="223" y="3216" width="30" height="92" as="geometry" />
+            <mxGeometry x="5062" y="5634.5" width="16" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-71" label="" height_m="5.486" kind="wall" length_m="0.41" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-71" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="223" y="2525" width="30" height="41" as="geometry" />
+            <mxGeometry x="3426.5" y="5152" width="10" height="1" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-72" label="" height_m="5.486" kind="wall" length_m="0.41" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-72" label="" height_m="5.486" kind="wall" length_m="3.21" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="223" y="2180" width="30" height="41" as="geometry" />
+            <mxGeometry x="3111" y="5137" width="321" height="15" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-73" label="" height_m="5.486" kind="wall" length_m="0.4" source="Room-1, Wall-1" thickness_m="0.3">
+        <object id="wall-73" label="" height_m="5.486" kind="wall" length_m="4.12" source="Room-1, Wall-1" thickness_m="0.16">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="223" y="2871" width="30" height="40" as="geometry" />
+            <mxGeometry x="3111" y="4725" width="16" height="412" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-74" label="" height_m="5.486" kind="wall" length_m="0.3" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-74" label="" height_m="5.486" kind="wall" length_m="6.1" source="Room-1, Wall-1" thickness_m="0.15">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="223" y="4710" width="30" height="15" as="geometry" />
+            <mxGeometry x="3111" y="4710" width="610" height="15" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-75" label="" height_m="5.486" kind="wall" length_m="0.15" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-75" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="2485" width="15" height="15" as="geometry" />
+            <mxGeometry x="3106.5" y="4709" width="10" height="1" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-76" label="" height_m="5.486" kind="wall" length_m="0.15" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-76" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="9.15" source="Room-1, Wall-1" thickness_m="0.01">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="2058" width="15" height="15" as="geometry" />
+            <mxGeometry x="322" y="6045.5" width="915" height="10" as="geometry" />
           </mxCell>
         </object>
-        <object id="wall-77" label="" height_m="5.486" kind="wall" length_m="0.15" source="Room-1, Wall-1" thickness_m="0.15">
+        <object id="wall-77" label="" height_m="5.486" kind="wall" length_m="9.14" source="Room-1, Wall-1" thickness_m="0.3">
           <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
-            <mxGeometry x="2600" y="1860" width="15" height="15" as="geometry" />
+            <mxGeometry x="323" y="6020" width="914" height="30" as="geometry" />
           </mxCell>
         </object>
-        <object id="room-1" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="50.7" name="Room 1" type="room">
+        <object id="wall-78" label="" height_m="5.486" kind="wall" length_m="9.74" source="Room-1, Wall-1" thickness_m="0.3">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="323" y="5046" width="30" height="974" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-79" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.32" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="322" y="5040.5" width="32" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-80" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="7.63" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="3964" y="5664.5" width="763" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-81" label="" height_m="5.486" kind="wall" length_m="7.62" source="Room-1, Wall-1" thickness_m="0.14">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="3965" y="5655" width="762" height="14" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-82" label="" height_m="5.486" kind="wall" length_m="3.2" source="Room-1, Wall-1" thickness_m="0.15">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="3965" y="5335" width="15" height="320" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-83" label="" height_m="5.486" kind="wall" length_m="4.73" source="Room-1, Wall-1" thickness_m="0.15">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="4285" y="5182" width="15" height="473" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-84" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="4721.5" y="5654" width="10" height="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-85" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.16" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="5062" y="5542.5" width="16" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-86" label="" height_m="5.486" kind="wall" length_m="3.65" source="Room-1, Wall-1" thickness_m="0.15">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="5062" y="5182" width="15" height="365" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-87" label="" height_m="5.486" kind="wall" length_m="8.63" source="Room-1, Wall-1" thickness_m="0.14">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="4214" y="5168" width="863" height="14" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-88" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="8.65" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="4213" y="5162.5" width="865" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-89" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.47" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2669" y="1458.5" width="47" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-90" label="" height_m="5.486" kind="wall" length_m="0.45" source="Room-1, Wall-1" thickness_m="0.14">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2670" y="1449" width="45" height="14" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-91" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.46" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2670" y="1443.5" width="46" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-92" label="" height_m="5.486" kind="wall" length_m="3.04" source="Room-1, Wall-1" thickness_m="0.3">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2670" y="1144" width="30" height="304" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-93" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.46" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2670" y="1138.5" width="46" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-94" label="" height_m="5.486" kind="wall" length_m="0.45" source="Room-1, Wall-1" thickness_m="0.14">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2670" y="1129" width="45" height="14" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-95" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.46" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2670" y="1123.5" width="46" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-96" label="" height_m="5.486" kind="wall" length_m="2.73" source="Room-1, Wall-1" thickness_m="0.3">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2670" y="855" width="30" height="273" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-97" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.31" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2670" y="849.5" width="31" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-98" label="" height_m="5.486" kind="wall" length_m="0.45" source="Room-1, Wall-1" thickness_m="0.15">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2670" y="839" width="45" height="15" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-99" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.31" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2670" y="833.5" width="31" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-100" label="" height_m="5.486" kind="wall" length_m="3.34" source="Room-1, Wall-1" thickness_m="0.3">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2670" y="504" width="30" height="334" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-101" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.32" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="322" y="4186.5" width="32" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-102" label="" height_m="5.486" kind="wall" length_m="7.91" source="Room-1, Wall-1" thickness_m="0.3">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="323" y="3400" width="30" height="791" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-103" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.32" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="322" y="3394.5" width="32" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-104" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="4218.5" y="4359" width="10" height="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-105" label="" height_m="5.486" kind="wall" length_m="10.97" source="Room-1, Wall-1" thickness_m="0.14">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="3127" y="4345" width="1097" height="14" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-106" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="10.98" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="3126" y="4339.5" width="1098" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-107" label="" height_m="5.486" kind="wall" length_m="2.24" source="Room-1, Wall-1" thickness_m="0.15">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="3767" y="4120" width="15" height="224" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-108" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.15" source="Room-1, Wall-1" thickness_m="0.05">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="4209" y="4336.5" width="15" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-109" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="4218.5" y="4338" width="10" height="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-110" label="" height_m="5.486" kind="wall" length_m="5.78" source="Room-1, Wall-1" thickness_m="0.3">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="323" y="535" width="30" height="578" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-111" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.32" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="322" y="529.5" width="32" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-112" label="" height_m="5.486" kind="wall" length_m="0.61" source="Room-1, Wall-1" thickness_m="0.15">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="3965" y="5182" width="15" height="61" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-113" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="4132" y="5177.5" width="1" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-114" label="" height_m="5.486" kind="wall" length_m="1.68" source="Room-1, Wall-1" thickness_m="0.15">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="3965" y="5167" width="168" height="15" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-115" label="" height_m="5.486" kind="wall" length_m="0.15" source="Room-1, Wall-1" thickness_m="0.15">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="3965" y="5152" width="15" height="15" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-116" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="3609.5" y="5152" width="10" height="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-117" label="" height_m="5.486" kind="wall" length_m="3.66" source="Room-1, Wall-1" thickness_m="0.15">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="3614" y="5137" width="366" height="15" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-118" label="" height_m="5.486" kind="wall" length_m="4.12" source="Room-1, Wall-1" thickness_m="0.15">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="3965" y="4725" width="15" height="412" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-119" label="" height_m="5.486" kind="wall" length_m="0.76" source="Room-1, Wall-1" thickness_m="0.15">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="3904" y="4710" width="76" height="15" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-120" label="" height_m="5.486" kind="wall" length_m="3.65" source="Room-1, Wall-1" thickness_m="0.3">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="323" y="1510" width="30" height="365" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-121" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.32" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="322" y="1504.5" width="32" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-122" label="" height_m="5.486" kind="wall" length_m="1.21" source="Room-1, Wall-1" thickness_m="0.3">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="323" y="4497" width="30" height="121" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-123" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.32" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="322" y="4491.5" width="32" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-124" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.32" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="322" y="3302.5" width="32" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-125" label="" height_m="5.486" kind="wall" length_m="0.9" source="Room-1, Wall-1" thickness_m="0.3">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="323" y="3217" width="30" height="90" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-126" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.32" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="322" y="3211.5" width="32" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-127" label="" height_m="5.486" kind="wall" length_m="0.4" source="Room-1, Wall-1" thickness_m="0.3">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="323" y="2526" width="30" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-128" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.32" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="322" y="2520.5" width="32" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-129" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.32" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="322" y="2215.5" width="32" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-130" label="" height_m="5.486" kind="wall" length_m="0.4" source="Room-1, Wall-1" thickness_m="0.3">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="323" y="2180" width="30" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-131" label="" height_m="5.486" kind="wall" length_m="0.4" source="Room-1, Wall-1" thickness_m="0.3">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="323" y="2871" width="30" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-132" label="" height_m="5.486" kind="wall" length_m="0.3" source="Room-1, Wall-1" thickness_m="0.15">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="323" y="4710" width="30" height="15" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-133" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.16" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2700" y="2494.5" width="16" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-134" label="" height_m="5.486" kind="wall" length_m="0.15" source="Room-1, Wall-1" thickness_m="0.14">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2700" y="2485" width="15" height="14" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-135" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2695.5" y="2484" width="10" height="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-136" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2700" y="2068.5" width="1" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-137" label="" height_m="5.486" kind="wall" length_m="0.15" source="Room-1, Wall-1" thickness_m="0.14">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2700" y="2059" width="15" height="14" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-138" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.16" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2700" y="2053.5" width="16" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-139" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2700" y="1870.5" width="1" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-140" label="" height_m="5.486" kind="wall" length_m="0.15" source="Room-1, Wall-1" thickness_m="0.15">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2700" y="1860" width="15" height="15" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-141" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.01" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="2700" y="1854.5" width="1" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-142" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.62" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="5651.5" y="5258" width="10" height="62" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wall-143" label="" drawn_thickness_m="0.1" height_m="5.486" kind="wall" length_m="0.62" source="Room-1, Wall-1" thickness_m="0.01">
+          <mxCell style="rounded=0;html=1;fillColor=#4d4d4d;strokeColor=none;" vertex="1" parent="layer-building">
+            <mxGeometry x="5651.5" y="1694" width="10" height="62" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="door-1" label="" head_m="2.075" name="Door 1" sill_m="0" type="door" width_m="0.9">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="325" y="445" width="30" height="90" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ohdoor-1" label="" head_m="3.675" name="OH Door 1" sill_m="0" type="overheadDoor" width_m="3.95">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;dashed=1;dashPattern=4 2;" vertex="1" parent="layer-openings">
+            <mxGeometry x="325" y="1115" width="30" height="395" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ohdoor-1-label" value="OH Door 1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#4d4d4d;rotation=270;" vertex="1" parent="layer-openings">
+          <mxGeometry x="82.5" y="1272.5" width="395" height="80" as="geometry" />
+        </mxCell>
+        <object id="ohdoor-2" label="" head_m="3.025" name="OH Door 2" sill_m="0" type="overheadDoor" width_m="3.05">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;dashed=1;dashPattern=4 2;" vertex="1" parent="layer-openings">
+            <mxGeometry x="325" y="1875" width="30" height="305" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ohdoor-2-label" value="OH Door 2" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#4d4d4d;rotation=270;" vertex="1" parent="layer-openings">
+          <mxGeometry x="127.5" y="1987.5" width="305" height="80" as="geometry" />
+        </mxCell>
+        <object id="ohdoor-3" label="" head_m="3.025" name="OH Door 3" sill_m="0" type="overheadDoor" width_m="3.05">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;dashed=1;dashPattern=4 2;" vertex="1" parent="layer-openings">
+            <mxGeometry x="325" y="2220" width="30" height="305" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ohdoor-3-label" value="OH Door 3" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#4d4d4d;rotation=270;" vertex="1" parent="layer-openings">
+          <mxGeometry x="127.5" y="2332.5" width="305" height="80" as="geometry" />
+        </mxCell>
+        <object id="ohdoor-4" label="" head_m="3.025" name="OH Door 4" sill_m="0" type="overheadDoor" width_m="3.05">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;dashed=1;dashPattern=4 2;" vertex="1" parent="layer-openings">
+            <mxGeometry x="325" y="2565" width="30" height="305" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ohdoor-4-label" value="OH Door 4" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#4d4d4d;rotation=270;" vertex="1" parent="layer-openings">
+          <mxGeometry x="127.5" y="2677.5" width="305" height="80" as="geometry" />
+        </mxCell>
+        <object id="ohdoor-5" label="" head_m="3.025" name="OH Door 5" sill_m="0" type="overheadDoor" width_m="3.05">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;dashed=1;dashPattern=4 2;" vertex="1" parent="layer-openings">
+            <mxGeometry x="325" y="2910" width="30" height="305" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ohdoor-5-label" value="OH Door 5" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#4d4d4d;rotation=270;" vertex="1" parent="layer-openings">
+          <mxGeometry x="127.5" y="3022.5" width="305" height="80" as="geometry" />
+        </mxCell>
+        <object id="door-2" label="" head_m="2.075" name="Door 2" sill_m="0" type="door" width_m="0.9">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="325" y="3310" width="30" height="90" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ohdoor-6" label="" head_m="3.025" name="OH Door 6" sill_m="0" type="overheadDoor" width_m="3.05">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;dashed=1;dashPattern=4 2;" vertex="1" parent="layer-openings">
+            <mxGeometry x="325" y="4190" width="30" height="305" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ohdoor-6-label" value="OH Door 6" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#4d4d4d;rotation=270;" vertex="1" parent="layer-openings">
+          <mxGeometry x="127.5" y="4302.5" width="305" height="80" as="geometry" />
+        </mxCell>
+        <object id="door-3" label="" head_m="2.075" name="Door 3" sill_m="0" type="door" width_m="0.9">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="325" y="4620" width="30" height="90" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ohdoor-7" label="" head_m="3.025" name="OH Door 7" sill_m="0" type="overheadDoor" width_m="3.2">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;dashed=1;dashPattern=4 2;" vertex="1" parent="layer-openings">
+            <mxGeometry x="325" y="4725" width="30" height="320" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ohdoor-7-label" value="OH Door 7" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#4d4d4d;rotation=270;" vertex="1" parent="layer-openings">
+          <mxGeometry x="120" y="4845" width="320" height="80" as="geometry" />
+        </mxCell>
+        <object id="door-4" label="" head_m="2.075" name="Door 4" sill_m="0" type="door" width_m="0.95">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="1235" y="6020" width="95" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="door-5" label="" head_m="2.125" name="Door 5" sill_m="0" type="door" width_m="0.95">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="2665" y="410" width="40" height="95" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ohdoor-8" label="" head_m="3.025" name="OH Door 8" sill_m="0" type="overheadDoor" width_m="2.45">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;dashed=1;dashPattern=4 2;" vertex="1" parent="layer-openings">
+            <mxGeometry x="2700" y="3065" width="30" height="245" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ohdoor-8-label" value="OH Door 8" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#4d4d4d;rotation=270;" vertex="1" parent="layer-openings">
+          <mxGeometry x="2652.5" y="3147.5" width="245" height="80" as="geometry" />
+        </mxCell>
+        <object id="door-6" label="" head_m="2.075" name="Door 6" sill_m="0" type="door" width_m="0.9">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="2885" y="5975" width="90" height="15" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="door-7" label="" head_m="2.075" name="Door 7" sill_m="0" type="door" width_m="0.9">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="3005" y="4835" width="15" height="90" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="door-8" label="" head_m="2.075" name="Door 8" sill_m="0" type="door" width_m="0.9">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="3005" y="5240" width="15" height="90" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="door-9" label="" head_m="2.075" name="Door 9" sill_m="0" type="door" width_m="0.9">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="3005" y="3020" width="90" height="15" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ohdoor-9" label="" head_m="2.575" name="OH Door 9" sill_m="0" type="overheadDoor" width_m="0.9">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;dashed=1;dashPattern=4 2;" vertex="1" parent="layer-openings">
+            <mxGeometry x="3035" y="4345" width="90" height="15" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ohdoor-9-label" value="OH Door 9" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#4d4d4d;" vertex="1" parent="layer-openings">
+          <mxGeometry x="2980" y="4252.5" width="200" height="80" as="geometry" />
+        </mxCell>
+        <object id="door-10" label="" head_m="2.075" name="Door 10" sill_m="0" type="door" width_m="1.85">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="3430" y="5135" width="185" height="15" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="door-11" label="" head_m="2.075" name="Door 11" sill_m="0" type="door" width_m="0.9">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="3765" y="4030" width="15" height="90" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="door-12" label="" head_m="2.075" name="Door 12" sill_m="0" type="door" width_m="1.85">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="3720" y="4710" width="185" height="15" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ohdoor-10" label="" head_m="2.925" name="OH Door 10" sill_m="0" type="overheadDoor" width_m="0.9">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;dashed=1;dashPattern=4 2;" vertex="1" parent="layer-openings">
+            <mxGeometry x="3965" y="5245" width="15" height="90" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ohdoor-10-label" value="OH Door 10" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#4d4d4d;rotation=270;" vertex="1" parent="layer-openings">
+          <mxGeometry x="3932.5" y="5250" width="200" height="80" as="geometry" />
+        </mxCell>
+        <object id="door-13" label="" head_m="2.075" name="Door 13" sill_m="0" type="door" width_m="0.8">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="4135" y="5165" width="80" height="15" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ohdoor-11" label="" head_m="3.025" name="OH Door 11" sill_m="0" type="overheadDoor" width_m="3">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;dashed=1;dashPattern=4 2;" vertex="1" parent="layer-openings">
+            <mxGeometry x="4210" y="4040" width="15" height="300" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ohdoor-11-label" value="OH Door 11" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#4d4d4d;rotation=270;" vertex="1" parent="layer-openings">
+          <mxGeometry x="4127.5" y="4150" width="300" height="80" as="geometry" />
+        </mxCell>
+        <object id="door-14" label="" head_m="2.075" name="Door 14" sill_m="0" type="door" width_m="0.9">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="5060" y="5550" width="15" height="90" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="door-15" label="" head_m="2.075" name="Door 15" sill_m="0" type="door" width_m="0.8">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="5455" y="700" width="80" height="15" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ohdoor-12" label="" head_m="3.675" name="OH Door 12" sill_m="0" type="overheadDoor" width_m="3.6">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;dashed=1;dashPattern=4 2;" vertex="1" parent="layer-openings">
+            <mxGeometry x="5655" y="1330" width="5" height="360" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ohdoor-12-label" value="OH Door 12" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#4d4d4d;rotation=270;" vertex="1" parent="layer-openings">
+          <mxGeometry x="5537.5" y="1470" width="360" height="80" as="geometry" />
+        </mxCell>
+        <object id="door-16" label="" head_m="2.075" name="Door 16" sill_m="0" type="door" width_m="0.85">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="5655" y="1760" width="5" height="85" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ohdoor-13" label="" head_m="3.675" name="OH Door 13" sill_m="0" type="overheadDoor" width_m="3.6">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;dashed=1;dashPattern=4 2;" vertex="1" parent="layer-openings">
+            <mxGeometry x="5655" y="3160" width="5" height="360" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ohdoor-13-label" value="OH Door 13" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#4d4d4d;rotation=270;" vertex="1" parent="layer-openings">
+          <mxGeometry x="5537.5" y="3300" width="360" height="80" as="geometry" />
+        </mxCell>
+        <object id="door-17" label="" head_m="2.075" name="Door 17" sill_m="0" type="door" width_m="0.85">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="5655" y="5170" width="5" height="85" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ohdoor-14" label="" head_m="3.025" name="OH Door 14" sill_m="0" type="overheadDoor" width_m="2.4">
+          <mxCell style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;dashed=1;dashPattern=4 2;" vertex="1" parent="layer-openings">
+            <mxGeometry x="5655" y="5320" width="5" height="240" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ohdoor-14-label" value="OH Door 14" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#4d4d4d;rotation=270;" vertex="1" parent="layer-openings">
+          <mxGeometry x="5597.5" y="5400" width="240" height="80" as="geometry" />
+        </mxCell>
+        <object id="platform-1" label="Raised platform&lt;br&gt;0.92 m" area_m2="100.3" top_m="0.92" type="raisedPlatform">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[0.99649,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#e6e6e6;strokeColor=#808080;dashed=1;fontSize=10;fontColor=#4d4d4d;" vertex="1" parent="layer-openings">
+            <mxGeometry x="355" y="410" width="1425" height="705" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="room-lunchroom" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="50.7" name="Lunchroom" type="lunchroom">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
-            <mxGeometry x="2630" y="3855" width="1035" height="490" as="geometry" />
+            <mxGeometry x="2730" y="3855" width="1035" height="490" as="geometry" />
           </mxCell>
         </object>
-        <object id="room-2" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="36.1" name="Room 2" type="room">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
-            <mxGeometry x="4200" y="5180" width="760" height="475" as="geometry" />
+        <object id="room-office" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="170.7" merged_from="3 detected spaces" name="Office" type="office">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[1,0.6303],[0.76938,0.6303],[0.76938,0.03636],[0.40159,0.04242],[0.33201,0.03636],[0.33201,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+            <mxGeometry x="3125" y="5150" width="2515" height="825" as="geometry" />
           </mxCell>
         </object>
-        <object id="room-3" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="19.4" name="Room 3" type="room">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
-            <mxGeometry x="2615" y="2530" width="395" height="490" as="geometry" />
+        <object id="room-test-room" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="19.3" name="Test Room" type="lab">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,0.9898],[1,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+            <mxGeometry x="2715" y="2530" width="395" height="490" as="geometry" />
           </mxCell>
         </object>
-        <object id="room-4" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="14.5" name="Room 4" type="room">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
-            <mxGeometry x="3880" y="5180" width="305" height="475" as="geometry" />
+        <object id="room-women-s-restroom" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="11.8" name="Women's Restroom" type="restroom">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[0.98077,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+            <mxGeometry x="2745" y="5195" width="260" height="460" as="geometry" />
           </mxCell>
         </object>
-        <object id="room-5" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="12.0" name="Room 5" type="room">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
-            <mxGeometry x="2645" y="5195" width="260" height="460" as="geometry" />
+        <object id="room-men-s-restroom" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="11.7" name="Men's Restroom" type="restroom">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[0.98077,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+            <mxGeometry x="2745" y="4725" width="260" height="455" as="geometry" />
           </mxCell>
         </object>
-        <object id="room-6" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="11.8" name="Room 6" type="room">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
-            <mxGeometry x="2645" y="4725" width="260" height="455" as="geometry" />
+        <object id="room-entrance" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="11.0" name="Entrance" type="entrance">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[0.63014,0.98361],[1,1],[1,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+            <mxGeometry x="2745" y="5670" width="365" height="305" as="geometry" />
           </mxCell>
         </object>
-        <object id="room-7" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="11.1" name="Room 7" type="room">
+        <object id="room-mechanicals" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="10.9" name="Mechanicals" type="mechanical">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
-            <mxGeometry x="2645" y="5670" width="365" height="305" as="geometry" />
+            <mxGeometry x="5245" y="425" width="395" height="275" as="geometry" />
           </mxCell>
         </object>
-        <object id="room-8" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="10.9" name="Room 8" type="room">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
-            <mxGeometry x="5145" y="425" width="395" height="275" as="geometry" />
+        <object id="room-conference-room" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="34.2" name="Conference Room" type="conference">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[1,0.0122],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+            <mxGeometry x="3125" y="4725" width="840" height="410" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="room-space-1" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="354.7" name="Space 1" type="room">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[1,1],[1,0],[0.13504,0],[0.13675,0.38281],[0.00171,0.38281]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+            <mxGeometry x="2730" y="2545" width="2925" height="1280" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="room-space-2" label="%name%&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;%area_m2% m²&lt;/span&gt;" placeholders="1" area_m2="20.9" name="Space 2" type="room">
+          <mxCell style="shape=mxgraph.basic.polygon;polyline=0;polyCoords=[[0,1],[0.98837,1],[1,0],[0,0]];rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;opacity=35;strokeColor=#d6b656;dashed=1;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="layer-rooms">
+            <mxGeometry x="3780" y="3855" width="430" height="490" as="geometry" />
           </mxCell>
         </object>
         <object id="note-title" label="Back Area&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px&quot;&gt;Scale 100 px = 1 m · grid 10 cm · imported from SolidWorks BACK AREA LAYOUT revised.SLDASM&lt;/span&gt;" px_per_meter="100">
           <mxCell style="text;html=1;align=left;verticalAlign=top;fontSize=20;fontStyle=1;" vertex="1" parent="layer-notes">
-            <mxGeometry x="220" y="220" width="1200" height="120" as="geometry" />
+            <mxGeometry x="240" y="220" width="1200" height="120" as="geometry" />
           </mxCell>
         </object>
         <mxCell id="note-scalebar" value="5 m" style="rounded=0;html=1;fillColor=#000000;strokeColor=none;fontColor=#000000;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fontSize=12;" vertex="1" parent="layer-notes">
-          <mxGeometry x="220" y="6127" width="500" height="10" as="geometry" />
+          <mxGeometry x="240" y="6130.5" width="500" height="10" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

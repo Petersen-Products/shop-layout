@@ -1,24 +1,65 @@
 # Import log: Back Area
 
 - Source: BACK AREA LAYOUT revised.SLDASM [Default], floor plane XZ
-- Building: 2 element(s) (Room-1, Wall-1) cut at 1.2 m -> 77 wall shape(s), ~390.7 m of straight wall; 1 floor outline(s)
-- Rooms: 8 enclosed space(s) of at least 4 m² (openings up to 1.3 m bridged)
+- Building: 2 element(s) (Room-1, Wall-1) cut at 1.2 m -> 143 wall shape(s), ~496.9 m of straight wall (67 sheet-thin, drawn 0.1 m thick); 1 floor outline(s)
+- Raised platforms (below the plan cut): 1
+- Openings: 0 loading dock(s), 14 overhead door(s), 17 door(s), 0 window(s)
+- Rooms: 12 enclosed space(s) of at least 4 m² (detected openings closed; other gaps up to 1.3 m bridged)
 - Equipment: 97 placed (3 duplicates dropped), 53 library shapes
 - Rotations squared up (within 1°): 31
 - Labels changed: 52 distinct names
 
-## Rooms (8)
+## Rooms (10)
 
 | Name | Area (m²) | Extent W × D (m) | Centre (m) |
 |---|---|---|---|
-| Room 1 | 50.7 | 10.35 x 4.9 | (5.475, -16) |
-| Room 2 | 36.1 | 7.6 x 4.75 | (19.8, -29.175) |
-| Room 3 | 19.4 | 3.95 x 4.9 | (2.125, -2.75) |
-| Room 4 | 14.5 | 3.05 x 4.75 | (14.325, -29.175) |
-| Room 5 | 12.0 | 2.6 x 4.6 | (1.75, -29.25) |
-| Room 6 | 11.8 | 2.6 x 4.55 | (1.75, -24.525) |
-| Room 7 | 11.1 | 3.65 x 3.05 | (2.275, -33.225) |
-| Room 8 | 10.9 | 3.95 x 2.75 | (27.425, 19.375) |
+| Lunchroom | 50.7 | 10.35 x 4.9 | (5.475, -16) |
+| Office (merged 3) | 170.7 | 25.15 x 8.25 | (16.825, -30.625) |
+| Test Room | 19.3 | 3.95 x 4.9 | (2.125, -2.75) |
+| Women's Restroom | 11.8 | 2.6 x 4.6 | (1.75, -29.25) |
+| Men's Restroom | 11.7 | 2.6 x 4.55 | (1.75, -24.525) |
+| Entrance | 11.0 | 3.65 x 3.05 | (2.275, -33.225) |
+| Mechanicals | 10.9 | 3.95 x 2.75 | (27.425, 19.375) |
+| Conference Room | 34.2 | 8.4 x 4.1 | (8.45, -24.3) |
+| Space 1 | 354.7 | 29.25 x 12.8 | (14.925, -6.85) |
+| Space 2 | 20.9 | 4.3 x 4.9 | (12.95, -16) |
+
+## Doors, docks and windows (32)
+
+| Name | Type | Width (m) | Sill (m) | Head (m) | Centre (m) |
+|---|---|---|---|---|---|
+| Door 1 | Door | 0.9 | 0 | 2.075 | (-23.6, 20.1) |
+| OH Door 1 | Overhead door | 3.95 | 0 | 3.675 | (-23.6, 11.875) |
+| OH Door 2 | Overhead door | 3.05 | 0 | 3.025 | (-23.6, 4.725) |
+| OH Door 3 | Overhead door | 3.05 | 0 | 3.025 | (-23.6, 1.275) |
+| OH Door 4 | Overhead door | 3.05 | 0 | 3.025 | (-23.6, -2.175) |
+| OH Door 5 | Overhead door | 3.05 | 0 | 3.025 | (-23.6, -5.625) |
+| Door 2 | Door | 0.9 | 0 | 2.075 | (-23.6, -8.55) |
+| OH Door 6 | Overhead door | 3.05 | 0 | 3.025 | (-23.6, -18.425) |
+| Door 3 | Door | 0.9 | 0 | 2.075 | (-23.6, -21.65) |
+| OH Door 7 | Overhead door | 3.2 | 0 | 3.025 | (-23.6, -23.85) |
+| Door 4 | Door | 0.95 | 0 | 2.075 | (-14.175, -35.35) |
+| Door 5 | Door | 0.95 | 0 | 2.125 | (-0.15, 20.425) |
+| OH Door 8 | Overhead door | 2.45 | 0 | 3.025 | (0.15, -6.875) |
+| Door 6 | Door | 0.9 | 0 | 2.075 | (2.3, -34.825) |
+| Door 7 | Door | 0.9 | 0 | 2.075 | (3.125, -23.8) |
+| Door 8 | Door | 0.9 | 0 | 2.075 | (3.125, -27.85) |
+| Door 9 | Door | 0.9 | 0 | 2.075 | (3.5, -5.275) |
+| OH Door 9 | Overhead door | 0.9 | 0 | 2.575 | (3.8, -18.525) |
+| Door 10 | Door | 1.85 | 0 | 2.075 | (8.225, -26.425) |
+| Door 11 | Door | 0.9 | 0 | 2.075 | (10.725, -15.75) |
+| Door 12 | Door | 1.85 | 0 | 2.075 | (11.125, -22.175) |
+| OH Door 10 | Overhead door | 0.9 | 0 | 2.925 | (12.725, -27.9) |
+| Door 13 | Door | 0.8 | 0 | 2.075 | (14.75, -26.725) |
+| OH Door 11 | Overhead door | 3 | 0 | 3.025 | (15.175, -16.9) |
+| Door 14 | Door | 0.9 | 0 | 2.075 | (23.675, -30.95) |
+| Door 15 | Door | 0.8 | 0 | 2.075 | (27.95, 17.925) |
+| OH Door 12 | Overhead door | 3.6 | 0 | 3.675 | (29.575, 9.9) |
+| Door 16 | Door | 0.85 | 0 | 2.075 | (29.575, 6.975) |
+| OH Door 13 | Overhead door | 3.6 | 0 | 3.675 | (29.575, -8.4) |
+| Door 17 | Door | 0.85 | 0 | 2.075 | (29.575, -27.125) |
+| OH Door 14 | Overhead door | 2.4 | 0 | 3.025 | (29.575, -29.4) |
+| Platform 1 | Raised platform |  |  | 0.92 | (-16.325, 17.375), 100.3 m² |
 
 ## Rotations squared up (31)
 

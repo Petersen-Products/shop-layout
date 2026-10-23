@@ -18,6 +18,7 @@ namespace ShopLayout.Drawio
     public sealed class LayoutImporter
     {
         public const string LayerBuilding = "layer-building";
+        public const string LayerOpenings = "layer-openings";
         public const string LayerRooms = "layer-rooms";
         public const string LayerZones = "layer-zones";
         public const string LayerEquipment = "layer-equipment";
@@ -31,6 +32,13 @@ namespace ShopLayout.Drawio
         public const string StyleZone = "rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;opacity=35;strokeColor=#82b366;dashed=1;fontSize=12;verticalAlign=top;";
         public const string StyleClearance = "rounded=0;html=1;fillColor=#f8cecc;opacity=30;strokeColor=#b85450;dashed=1;";
         public const string StyleText = "text;html=1;align=left;verticalAlign=top;fontSize=20;fontStyle=1;";
+        public const string StyleDock = "rounded=0;html=1;fillColor=#fa6800;strokeColor=#c73500;";
+        public const string StyleDockLabel = "text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#c73500;";
+        public const string StyleOverheadDoor = "rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;dashed=1;dashPattern=4 2;";
+        public const string StyleDoor = "rounded=0;html=1;fillColor=#ffffff;strokeColor=#4d4d4d;";
+        public const string StyleWindow = "rounded=0;html=1;fillColor=#dae8fc;strokeColor=#4d4d4d;";
+        public const string StylePlatform = "rounded=0;whiteSpace=wrap;html=1;fillColor=#e6e6e6;strokeColor=#808080;dashed=1;fontSize=10;fontColor=#4d4d4d;";
+        public const string StyleOpeningLabel = "text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#4d4d4d;";
 
         private static readonly Regex InstanceSuffix = new Regex(@"-\d+$", RegexOptions.CultureInvariant);
         private static readonly CultureInfo Inv = CultureInfo.InvariantCulture;
@@ -39,6 +47,7 @@ namespace ShopLayout.Drawio
         private readonly ImportCleanup _c;
         private readonly DiagramModel _m = new DiagramModel();
         private readonly Dictionary<Definition, string> _titles = new Dictionary<Definition, string>();
+        private readonly List<List<Vec2>> _floorRings = new List<List<Vec2>>();
 
         public LayoutImporter(ExportResult result, ImportCleanup cleanup)
         {
@@ -53,6 +62,7 @@ namespace ShopLayout.Drawio
             _m.GridSizePx = _c.GridSizePx;
             _m.MarginMeters = _c.MarginMeters;
             _m.Layers.Add(new DiagramLayer { Id = LayerBuilding, Name = "Building", Locked = true });
+            _m.Layers.Add(new DiagramLayer { Id = LayerOpenings, Name = "Doors & Docks", Locked = true });
             _m.Layers.Add(new DiagramLayer { Id = LayerRooms, Name = "Rooms" });
             _m.Layers.Add(new DiagramLayer { Id = LayerZones, Name = "Zones" });
             _m.Layers.Add(new DiagramLayer { Id = LayerEquipment, Name = "Equipment" });
@@ -64,8 +74,9 @@ namespace ShopLayout.Drawio
             var kept = DropDuplicates(equipment);
             AddEquipment(kept);
             var building = _res.Placements.Where(p => p.Kind == PlacedKind.Building).ToList();
-            var segments = AddBuilding(building);
-            AddRooms(segments);
+            var buildingTris = AddBuilding(building);
+            var plan = AddOpenings(buildingTris);
+            AddRooms(plan);
             AddZones();
             AddNotes();
 
@@ -282,6 +293,7 @@ namespace ShopLayout.Drawio
                     fi.Data["source"] = p.Component.InstanceName;
                     fi.Data["area_m2"] = reg.Area.ToString("0.0", Inv);
                     _m.Items.Insert(0, fi);
+                    _floorRings.Add(reg.Outer);
                 }
             }
 
@@ -289,18 +301,18 @@ namespace ShopLayout.Drawio
             if (segs.Count == 0)
             {
                 _m.Log.Notes.Add($"No building geometry crosses the cut height {_c.CutHeight} m; no walls drawn.");
-                return segs;
+                return tris;
             }
             var walls = RasterOutline.BuildSection(segs, new OutlineOptions
             {
                 Resolution = _c.WallResolution,
                 MaxCells = 80_000_000,
                 ClosingRadiusCells = 0,
-                SimplifyFactor = 1.0,
+                SimplifyFactor = 0, // keep exact cell steps so walls stay rectilinear and split into rectangles
                 MinIslandArea = _c.MinWallArea,
                 MinHoleArea = 0.0001
             });
-            int n = 0, polys = 0;
+            int n = 0, polys = 0, thinCount = 0;
             double totalLength = 0;
             string sources = string.Join(", ", building.Select(b => b.Component.InstanceName).OrderBy(x => x, StringComparer.Ordinal));
             foreach (var reg in walls.Regions)
@@ -310,13 +322,19 @@ namespace ShopLayout.Drawio
                     foreach (var (x0, y0, x1, y1) in PlanSection.Rectangles(reg))
                     {
                         double w = x1 - x0, h = y1 - y0;
+                        double thickness = Math.Min(w, h);
+                        // Sheet walls (siding a few mm thick) are drawn at a visible minimum thickness.
+                        bool thin = thickness < _c.MinDisplayThickness;
                         var wi = new DiagramItem
                         {
                             Id = "wall-" + (++n), Layer = LayerBuilding, Kind = "wall", Label = "", Style = StyleWall,
-                            Center = new Vec2((x0 + x1) / 2, (y0 + y1) / 2), Width = w, Height = h
+                            Center = new Vec2((x0 + x1) / 2, (y0 + y1) / 2),
+                            Width = thin && w <= h ? _c.MinDisplayThickness : w,
+                            Height = thin && h < w ? _c.MinDisplayThickness : h
                         };
                         wi.Data["kind"] = "wall";
-                        wi.Data["thickness_m"] = F(Math.Min(w, h));
+                        wi.Data["thickness_m"] = F(thickness);
+                        if (thin) { wi.Data["drawn_thickness_m"] = F(_c.MinDisplayThickness); thinCount++; }
                         wi.Data["length_m"] = F(Math.Max(w, h));
                         wi.Data["height_m"] = F(maxHeight);
                         wi.Data["source"] = sources;
@@ -336,19 +354,115 @@ namespace ShopLayout.Drawio
                     if (reg.Holes.Count > 0) _m.Log.Notes.Add($"Wall piece {wi.Id} has holes that diagrams.net cannot show; drawn as outline only.");
                 }
             }
-            _m.Log.Summary.Add($"Building: {building.Count} element(s) ({sources}) cut at {_c.CutHeight.ToString(Inv)} m -> {n} wall shape(s){(polys > 0 ? $" ({polys} non-rectangular)" : "")}, ~{totalLength:0.#} m of straight wall; {floorN} floor outline(s)");
-            return segs;
+            _m.Log.Summary.Add($"Building: {building.Count} element(s) ({sources}) cut at {_c.CutHeight.ToString(Inv)} m -> {n} wall shape(s){(polys > 0 ? $" ({polys} non-rectangular)" : "")}, ~{totalLength:0.#} m of straight wall{(thinCount > 0 ? $" ({thinCount} sheet-thin, drawn {_c.MinDisplayThickness.ToString(Inv)} m thick)" : "")}; {floorN} floor outline(s)");
+            return tris;
         }
 
-        private void AddRooms(List<double> segs)
+        /// <summary>Detects doors, overhead doors, loading docks and windows, and draws them in the wall gaps.</summary>
+        private BuildingPlanResult AddOpenings(List<double> tris)
         {
-            if (!_c.DetectRooms || segs.Count == 0) return;
-            double res = _c.RoomResolution;
+            if (tris.Count < 9) return null;
+            var opt = _c.Openings;
+            opt.CutHeight = _c.CutHeight;
+            opt.Resolution = _c.RoomResolution;
+            opt.Margin = Math.Max(opt.Margin, _c.MaxOpeningWidth + 0.5);
+            var plan = BuildingPlan.Analyze(tris, opt);
+            if (!_c.DetectOpenings) { plan.Openings.Clear(); Array.Clear(plan.OpeningCells, 0, plan.OpeningCells.Length); return plan; }
+
+            // Manual designations (e.g. which overhead doors are loading docks) by a point near the opening.
+            var forcedName = new Dictionary<Opening, string>();
+            foreach (var ov in _c.OpeningOverrides)
+            {
+                var hit = plan.Openings
+                    .Where(q => ov.At.X >= q.Min.X - 0.5 && ov.At.X <= q.Max.X + 0.5 && ov.At.Y >= q.Min.Y - 0.5 && ov.At.Y <= q.Max.Y + 0.5)
+                    .OrderBy(q => (q.Center - ov.At).Length).FirstOrDefault();
+                if (hit == null) { _m.Log.Notes.Add($"Opening override at ({ov.At.X}, {ov.At.Y}) is not near any detected opening."); continue; }
+                if (!string.IsNullOrEmpty(ov.Type)) hit.Type = ov.Type;
+                if (!string.IsNullOrEmpty(ov.Name)) forcedName[hit] = ov.Name;
+            }
+
+            var counters = new Dictionary<string, int>(StringComparer.Ordinal);
+            foreach (var op in plan.Openings)
+            {
+                counters.TryGetValue(op.Type, out int k);
+                counters[op.Type] = ++k;
+                string style = op.Type == "loadingDock" ? StyleDock : op.Type == "overheadDoor" ? StyleOverheadDoor : op.Type == "window" ? StyleWindow : StyleDoor;
+                string name = forcedName.TryGetValue(op, out var fn) ? fn
+                    : op.Type == "loadingDock" ? $"Dock {k}" : op.Type == "overheadDoor" ? $"OH Door {k}" : op.Type == "window" ? $"Window {k}" : $"Door {k}";
+                string id = (op.Type == "loadingDock" ? "dock-" : op.Type == "overheadDoor" ? "ohdoor-" : op.Type == "window" ? "window-" : "door-") + k;
+                var item = new DiagramItem
+                {
+                    Id = id, Layer = LayerOpenings, Kind = op.Type, Label = "", Style = style,
+                    Center = op.Center, Width = op.Max.X - op.Min.X, Height = op.Max.Y - op.Min.Y
+                };
+                item.Data["name"] = name;
+                item.Data["type"] = op.Type;
+                item.Data["width_m"] = F(op.Width);
+                item.Data["sill_m"] = F(op.Sill);
+                item.Data["head_m"] = F(op.Head);
+                _m.Items.Add(item);
+                _m.Log.Openings.Add(new[] { name, TypeName(op.Type), F(op.Width), F(op.Sill), F(op.Head), $"({F(op.Center.X)}, {F(op.Center.Y)})" });
+
+                // Docks and overhead doors get a callout on the outside of the building.
+                if (op.Type == "loadingDock" || op.Type == "overheadDoor")
+                {
+                    var outward = OutsideDirection(op);
+                    double off = op.Type == "loadingDock" ? 1.0 : 0.6;
+                    var lbl = new DiagramItem
+                    {
+                        Id = id + "-label", Layer = LayerOpenings, Kind = "label", Shape = ShapeKind.Text,
+                        Style = op.Type == "loadingDock" ? StyleDockLabel : StyleOpeningLabel,
+                        Label = op.Type == "loadingDock" ? $"{name}<br><span style=\"font-weight:normal;font-size:10px\">{F(op.Width)} m</span>" : name,
+                        Center = op.Center + outward * off, Width = Math.Max(op.Width, 2.0), Height = 0.8,
+                        RotationDeg = op.AlongX ? 0 : 90
+                    };
+                    _m.Items.Add(lbl);
+                }
+            }
+            if (_c.DrawPlatforms)
+            {
+                int pn = 0;
+                foreach (var pf in plan.Platforms)
+                {
+                    var pi = RingItem(pf.Outline, "platform-" + (++pn), LayerOpenings, "platform", StylePlatform);
+                    pi.Label = $"Raised platform<br>{F(pf.Top)} m";
+                    pi.Data["type"] = "raisedPlatform";
+                    pi.Data["top_m"] = F(pf.Top);
+                    pi.Data["area_m2"] = pf.Area.ToString("0.0", Inv);
+                    _m.Items.Add(pi);
+                    _m.Log.Openings.Add(new[] { "Platform " + pn, "Raised platform", "", "", F(pf.Top), $"({F(pi.Center.X)}, {F(pi.Center.Y)}), {pi.Data["area_m2"]} m²" });
+                }
+                if (pn > 0) _m.Log.Summary.Add($"Raised platforms (below the plan cut): {pn}");
+            }
+            string Count(string t) => counters.TryGetValue(t, out int c) ? c.ToString(Inv) : "0";
+            _m.Log.Summary.Add($"Openings: {Count("loadingDock")} loading dock(s), {Count("overheadDoor")} overhead door(s), {Count("door")} door(s), {Count("window")} window(s)");
+            return plan;
+        }
+
+        private static string TypeName(string t) =>
+            t == "loadingDock" ? "Loading dock" : t == "overheadDoor" ? "Overhead door" : t == "window" ? "Window" : "Door";
+
+        /// <summary>Unit normal of an opening's wall pointing away from the floor slab (outside the building).</summary>
+        private Vec2 OutsideDirection(Opening op)
+        {
+            var n = op.AlongX ? new Vec2(0, 1) : new Vec2(1, 0);
+            bool Inside(Vec2 p) => _floorRings.Any(r => Polygon2.Contains(r, p));
+            double probe = op.Depth / 2 + 0.5;
+            if (Inside(op.Center + n * probe) && !Inside(op.Center - n * probe)) return n * -1;
+            return n;
+        }
+
+        private void AddRooms(BuildingPlanResult planGrid)
+        {
+            if (!_c.DetectRooms || planGrid == null || planGrid.Walls.Length == 0) return;
+            double res = planGrid.R;
+            // Walls with every detected opening closed; small remaining gaps (interior doors) bridged by closing.
+            var closed = new bool[planGrid.Walls.Length];
+            for (int i = 0; i < closed.Length; i++) closed[i] = planGrid.Walls[i] || planGrid.OpeningCells[i];
             int k = (int)Math.Ceiling(_c.MaxOpeningWidth / (2 * res));
-            var plan = RasterOutline.BuildSection(segs, new OutlineOptions
+            var plan = RasterOutline.FromGrid(closed, planGrid.Nx, planGrid.Ny, planGrid.Ox, planGrid.Oy, res, new OutlineOptions
             {
                 Resolution = res,
-                MaxCells = 40_000_000,
                 ClosingRadiusCells = k,
                 SimplifyFactor = 1.0,
                 MinIslandArea = 0,
@@ -359,30 +473,67 @@ namespace ShopLayout.Drawio
                 .OrderByDescending(h => Math.Round(Polygon2.SignedArea(h), 6))
                 .ThenBy(h => h[0].Y).ThenBy(h => h[0].X)
                 .ToList();
-            var names = new string[rooms.Count];
-            var types = new string[rooms.Count];
+            // Named rooms (config order); several points in one entry merge those rooms into one.
+            var claimed = new bool[rooms.Count];
+            var output = new List<(List<Vec2> ring, double area, string name, string type, int members)>();
             foreach (var rn in _c.RoomNames)
             {
-                int idx = rooms.FindIndex(r => Polygon2.Contains(r, rn.At));
-                if (idx < 0) { _m.Log.Notes.Add($"Room name '{rn.Name}' at ({rn.At.X}, {rn.At.Y}) is not inside any detected room."); continue; }
-                names[idx] = rn.Name;
-                types[idx] = rn.Type;
+                var members = new List<int>();
+                foreach (var pt in rn.At)
+                {
+                    int idx = rooms.FindIndex(r => Polygon2.Contains(r, pt));
+                    if (idx < 0) { _m.Log.Notes.Add($"Room '{rn.Name}': point ({pt.X}, {pt.Y}) is not inside any detected room."); continue; }
+                    if (claimed[idx]) { _m.Log.Notes.Add($"Room '{rn.Name}': point ({pt.X}, {pt.Y}) is in a room already named by an earlier entry; ignored."); continue; }
+                    if (!members.Contains(idx)) members.Add(idx);
+                }
+                if (members.Count == 0) continue;
+                foreach (int m in members) claimed[m] = true;
+                var ring = members.Count == 1 ? rooms[members[0]] : MergeRooms(members.Select(m => rooms[m]).ToList(), res);
+                double area = members.Sum(m => Polygon2.SignedArea(rooms[m]));
+                output.Add((ring, area, rn.Name, rn.Type, members.Count));
             }
+            int unnamed = 0;
             for (int i = 0; i < rooms.Count; i++)
+                if (!claimed[i]) output.Add((rooms[i], Polygon2.SignedArea(rooms[i]), $"Space {++unnamed}", "room", 1));
+
+            var usedIds = new HashSet<string>(StringComparer.Ordinal);
+            foreach (var (ring, area, name, type, members) in output)
             {
-                var ring = rooms[i];
-                double area = Polygon2.SignedArea(ring);
-                var ri = RingItem(ring, "room-" + (i + 1), LayerRooms, "room", StyleRoom);
-                ri.Data["name"] = names[i] ?? $"Room {i + 1}";
-                ri.Data["type"] = types[i] ?? "room";
+                string id = "room-" + Regex.Replace(name.ToLowerInvariant(), "[^a-z0-9]+", "-").Trim('-');
+                for (int k2 = 2; !usedIds.Add(id); k2++) id = Regex.Replace(id, @"-\d+$", "") + "-" + k2;
+                var ri = RingItem(ring, id, LayerRooms, "room", StyleRoom);
+                ri.Data["name"] = name;
+                ri.Data["type"] = type;
                 ri.Data["area_m2"] = area.ToString("0.0", Inv);
+                if (members > 1) ri.Data["merged_from"] = members.ToString(Inv) + " detected spaces";
                 ri.Label = "%name%<br><span style=\"font-weight:normal;font-size:12px\">%area_m2% m²</span>";
                 ri.UsePlaceholders = true;
                 _m.Items.Add(ri);
                 var (mn, mx) = Polygon2.Bounds(ring);
-                _m.Log.Rooms.Add(new[] { ri.Data["name"], ri.Data["area_m2"], $"{F(mx.X - mn.X)} x {F(mx.Y - mn.Y)}", $"({F((mn.X + mx.X) / 2)}, {F((mn.Y + mx.Y) / 2)})" });
+                _m.Log.Rooms.Add(new[] { name + (members > 1 ? $" (merged {members})" : ""), ri.Data["area_m2"], $"{F(mx.X - mn.X)} x {F(mx.Y - mn.Y)}", $"({F((mn.X + mx.X) / 2)}, {F((mn.Y + mx.Y) / 2)})" });
             }
-            _m.Log.Summary.Add($"Rooms: {rooms.Count} enclosed space(s) of at least {_c.MinRoomArea.ToString(Inv)} m² (openings up to {_c.MaxOpeningWidth.ToString(Inv)} m bridged)");
+            _m.Log.Summary.Add($"Rooms: {rooms.Count} enclosed space(s) of at least {_c.MinRoomArea.ToString(Inv)} m² (detected openings closed; other gaps up to {_c.MaxOpeningWidth.ToString(Inv)} m bridged)");
+        }
+
+        /// <summary>
+        /// One outline around several neighbouring rooms: rasterize them, bridge the walls between them by
+        /// closing (up to ~0.8 m), and keep the largest outline.
+        /// </summary>
+        private static List<Vec2> MergeRooms(List<List<Vec2>> rings, double res)
+        {
+            int k = (int)Math.Ceiling(0.4 / res);
+            var (mn, mx) = Polygon2.Bounds(rings.SelectMany(r => r));
+            double ox = mn.X - (k + 2) * res, oy = mn.Y - (k + 2) * res;
+            int nx = (int)Math.Ceiling((mx.X - ox) / res) + k + 3, ny = (int)Math.Ceiling((mx.Y - oy) / res) + k + 3;
+            var grid = new bool[nx * ny];
+            for (int j = 0; j < ny; j++)
+                for (int i = 0; i < nx; i++)
+                {
+                    var c = new Vec2(ox + (i + 0.5) * res, oy + (j + 0.5) * res);
+                    if (rings.Any(r => Polygon2.Contains(r, c))) grid[j * nx + i] = true;
+                }
+            var o = RasterOutline.FromGrid(grid, nx, ny, ox, oy, res, new OutlineOptions { Resolution = res, ClosingRadiusCells = k, SimplifyFactor = 1, MinIslandArea = 0, MinHoleArea = 1e9 });
+            return o.Regions.Count > 0 ? o.Regions[0].Outer : rings[0];
         }
 
         private void AddZones()

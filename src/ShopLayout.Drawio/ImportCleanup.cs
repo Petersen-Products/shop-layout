@@ -24,6 +24,13 @@ namespace ShopLayout.Drawio
         public double WallResolution = 0.01;
         public double MinWallArea = 0.005;
         public List<string> FloorFromElements = new List<string>();
+        /// <summary>Walls thinner than this (e.g. 2 mm sheet siding) are drawn this thick so they stay visible.</summary>
+        public double MinDisplayThickness = 0.1;
+        public bool DetectOpenings = true;
+        public BuildingPlanOptions Openings = new BuildingPlanOptions();
+        /// <summary>Set an opening's type/name by a point near it (floor metres), e.g. to mark dock doors.</summary>
+        public List<OpeningOverride> OpeningOverrides = new List<OpeningOverride>();
+        public bool DrawPlatforms = true;
         public bool DetectRooms = true;
         public double RoomResolution = 0.05;
         public double MaxOpeningWidth = 1.3;
@@ -31,7 +38,9 @@ namespace ShopLayout.Drawio
         public List<RoomName> RoomNames = new List<RoomName>();
         public List<ZoneDef> Zones = new List<ZoneDef>();
 
-        public sealed class RoomName { public Vec2 At; public string Name; public string Type = "room"; }
+        /// <summary>Names a detected room by a point inside it. Several points merge those rooms into one.</summary>
+        public sealed class RoomName { public List<Vec2> At = new List<Vec2>(); public string Name; public string Type = "room"; }
+        public sealed class OpeningOverride { public Vec2 At; public string Type; public string Name; }
         public sealed class ZoneDef { public string Name; public string Type = "zone"; public List<Vec2> Polygon = new List<Vec2>(); }
 
         public static ImportCleanup Load(string path) => FromJson(JsonParser.ParseObject(File.ReadAllText(path)));
@@ -70,6 +79,29 @@ namespace ShopLayout.Drawio
                 c.MinWallArea = b.GetDouble("minWallArea", c.MinWallArea);
                 var f = b.GetArray("floorFromElements");
                 if (f != null) c.FloorFromElements = f.OfType<string>().ToList();
+                c.MinDisplayThickness = b.GetDouble("minDisplayThickness", c.MinDisplayThickness);
+            }
+
+            var op = o.GetObject("openings");
+            if (op != null)
+            {
+                var p = c.Openings;
+                c.DetectOpenings = op.GetBool("detect", c.DetectOpenings);
+                p.HeaderCuts = op.GetDoubleArray("headerCuts") ?? p.HeaderCuts;
+                p.MinOpeningWidth = op.GetDouble("minWidth", p.MinOpeningWidth);
+                p.DockSillMin = op.GetDouble("dockSillMin", p.DockSillMin);
+                p.DockSillMax = op.GetDouble("dockSillMax", p.DockSillMax);
+                p.DockMinHeight = op.GetDouble("dockMinHeight", p.DockMinHeight);
+                p.DockMinWidth = op.GetDouble("dockMinWidth", p.DockMinWidth);
+                p.DoorMaxSill = op.GetDouble("doorMaxSill", p.DoorMaxSill);
+                p.OverheadMinHead = op.GetDouble("overheadMinHead", p.OverheadMinHead);
+                c.DrawPlatforms = op.GetBool("drawPlatforms", c.DrawPlatforms);
+                foreach (var ov in (op.GetArray("overrides") ?? new List<object>()).OfType<JsonObject>())
+                {
+                    var at = ov.GetDoubleArray("at");
+                    if (at == null || at.Length < 2) continue;
+                    c.OpeningOverrides.Add(new OpeningOverride { At = new Vec2(at[0], at[1]), Type = ov.GetString("type"), Name = ov.GetString("name") });
+                }
             }
 
             var r = o.GetObject("rooms");
@@ -77,13 +109,17 @@ namespace ShopLayout.Drawio
             {
                 c.DetectRooms = r.GetBool("detect", c.DetectRooms);
                 c.RoomResolution = r.GetDouble("resolution", c.RoomResolution);
+                c.Openings.Resolution = c.RoomResolution;
                 c.MaxOpeningWidth = r.GetDouble("maxOpeningWidth", c.MaxOpeningWidth);
                 c.MinRoomArea = r.GetDouble("minArea", c.MinRoomArea);
                 foreach (var n in (r.GetArray("names") ?? new List<object>()).OfType<JsonObject>())
                 {
-                    var at = n.GetDoubleArray("at");
-                    if (at == null || at.Length < 2) continue;
-                    c.RoomNames.Add(new RoomName { At = new Vec2(at[0], at[1]), Name = n.GetString("name", ""), Type = n.GetString("type", "room") });
+                    var rn = new RoomName { Name = n.GetString("name", ""), Type = n.GetString("type", "room") };
+                    var at = n.GetArray("at") ?? new List<object>();
+                    if (at.Count >= 2 && at[0] is double x0 && at[1] is double y0) rn.At.Add(new Vec2(x0, y0));
+                    else foreach (var pt in at.OfType<List<object>>())
+                        if (pt.Count >= 2 && pt[0] is double x && pt[1] is double y) rn.At.Add(new Vec2(x, y));
+                    if (rn.At.Count > 0) c.RoomNames.Add(rn);
                 }
             }
 

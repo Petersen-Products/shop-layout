@@ -184,6 +184,7 @@ namespace ShopLayout.Drawio
             sb.AppendLine();
             foreach (var s in m.Log.Summary) sb.AppendLine("- " + s);
             Table(sb, "Rooms", new[] { "Name", "Area (m²)", "Extent W × D (m)", "Centre (m)" }, m.Log.Rooms);
+            Table(sb, "Doors, docks and windows", new[] { "Name", "Type", "Width (m)", "Sill (m)", "Head (m)", "Centre (m)" }, m.Log.Openings);
             Table(sb, "Rotations squared up", new[] { "Label", "Component", "From (°)", "To (°)" }, m.Log.Snapped);
             Table(sb, "Duplicates dropped", new[] { "Dropped", "Component", "Same as", "Component" }, m.Log.Duplicates);
             Table(sb, "Labels", new[] { "SolidWorks name", "Diagram label", "Instances" }, m.Log.Renamed);

@@ -20,7 +20,7 @@ Editable shop-floor layouts for diagrams.net, imported once from SolidWorks.
 
 **Conventions in the diagram:**
 - 100 px = 1 m, and the grid is 10 cm.
-- Layers: Building (locked), Rooms, Zones, Equipment, Clearances, Notes.
+- Layers: Building and Doors & Docks (locked), Rooms, Zones, Equipment, Clearances, Notes.
 - Equipment shapes keep their original SolidWorks data (`component_id`, `sw_instance`, `sw_file`, dimensions). View it with Edit › Edit Data.
 
 The rest of this README documents the import tooling.
@@ -53,7 +53,7 @@ dotnet build ShopLayoutExport.sln -c Release
 | `src/ShopLayout.SolidWorks` | `SwAssemblySource`, the only code that calls the SolidWorks API. Turns a live assembly into the Core raw model. |
 | `src/ShopLayout.Cli` | `ShopLayoutExport.exe`, a console host that attaches to a running SolidWorks through COM. |
 | `src/ShopLayout.Drawio` | One-time import: export result + cleanup rules → `.drawio` diagram, shape library and import log. |
-| `tests/ShopLayout.Tests` | Console test runner (112 checks), with a fake in-memory assembly. Pass `--write-sample <dir>` to regenerate `samples/`. |
+| `tests/ShopLayout.Tests` | Console test runner (119 checks), with a fake in-memory assembly. Pass `--write-sample <dir>` to regenerate `samples/`. |
 
 **Adding an add-in later:** create a `swpublished` add-in project that references `ShopLayout.Core` and `ShopLayout.SolidWorks`. Construct `new SwAssemblySource(addinSldWorks)` and run `new ExportPipeline(source, config).Run()`. No extraction code changes.
 
@@ -255,14 +255,20 @@ Cleanup rules, all set in [`config/import_cleanup.json`](config/import_cleanup.j
 - **Duplicates:** instances of the same definition at the same pose are dropped; the lowest component ID is kept.
 - **Labels:** SolidWorks instance suffixes (`-1`, `-12`) are stripped, then `labels.map` fixes typos and capitalisation. The original name stays on each shape as `sw_instance`.
 - **Building:** every building element (Room, Wall, …) is cut at `building.cutHeight` (1.2 m), like an architectural plan. Openings below the cut, such as doors, stay open. Walls are drawn as uniform rectangles on the locked *Building* layer, and the slab becomes the floor outline.
+- **Thin walls:** walls thinner than the grid, such as 2 mm sheet siding, are kept and drawn `minDisplayThickness` thick. Overlapping wall solids combine instead of cancelling.
+- **Openings:** gaps in the wall at the cut that have wall above them (`openings.headerCuts`) are drawn on the locked *Doors & Docks* layer.
+  - Each is classified from its sill and head height: door, overhead door, loading dock (sill 0.6–1.5 m) or window.
+  - Docks that are level with the floor inside look like overhead doors. Mark them with `openings.overrides` (a point near the door, plus a type and name).
+  - Docks and overhead doors get a callout outside the building.
+  - Raised areas below the cut, such as dock platforms, are drawn as *Raised platform* with their height.
 - **Rooms:** enclosed spaces in that wall plan become labelled room shapes on the *Rooms* layer, with name, type and area.
-  - Door openings up to `maxOpeningWidth` are bridged when finding rooms. Larger openings, such as roll-up doors, leave a space unenclosed, and it is not detected.
+  - Detected openings are closed when finding rooms. Other gaps up to `maxOpeningWidth` are bridged.
   - Name a room by giving a point inside it under `rooms.names`, or edit its `name` field in diagrams.net (Edit Data); the label updates itself.
   - Hand-drawn zones (aisles, work areas) go under `zones`, or are drawn directly on the *Zones* layer.
 
 **Diagram conventions:**
 - Scale is 100 px = 1 m and the grid is 10 cm. A scale note and a 5 m scale bar are on the *Notes* layer.
-- Layers, bottom to top: Building (locked), Rooms, Zones, Equipment, Clearances, Notes.
+- Layers, bottom to top: Building (locked), Doors & Docks (locked), Rooms, Zones, Equipment, Clearances, Notes.
 - Each equipment shape carries: `component_id`, `definition`, `sw_instance`, `sw_file`, `sw_configuration`, `width_m`, `depth_m`, `height_m`, `elevation_m`, `rotation_deg`, `footprint`, and `import_note` when it was squared up.
 - Non-rectangular footprints use the diagrams.net *Polygon* shape. Footprint holes (for example inside SHELVING) are not shown.
 

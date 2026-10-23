@@ -73,6 +73,7 @@ namespace ShopLayout.Drawio
         public List<string[]> Duplicates = new List<string[]>();
         public List<string[]> Renamed = new List<string[]>();
         public List<string[]> Rooms = new List<string[]>();
+        public List<string[]> Openings = new List<string[]>();
         public List<string> Notes = new List<string>();
     }
 }
